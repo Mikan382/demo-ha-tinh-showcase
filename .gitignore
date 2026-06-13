@@ -1,0 +1,9 @@
+# Git ignore rules for showcase
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+*.log
