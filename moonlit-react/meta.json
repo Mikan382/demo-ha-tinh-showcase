@@ -1,0 +1,168 @@
+{
+  "source": "https://moonlit-react.netlify.app/",
+  "title": "Moonlit - Hotel and Resturant React Js Template",
+  "scrapedAt": "2026-06-10T08:11:02.500Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "https://moonlit-react.netlify.app/"
+    },
+    {
+      "file": "home-2.html",
+      "url": "https://moonlit-react.netlify.app/home-2"
+    },
+    {
+      "file": "home-3.html",
+      "url": "https://moonlit-react.netlify.app/home-3"
+    },
+    {
+      "file": "home-4.html",
+      "url": "https://moonlit-react.netlify.app/home-4"
+    },
+    {
+      "file": "home-5.html",
+      "url": "https://moonlit-react.netlify.app/home-5"
+    },
+    {
+      "file": "home-6.html",
+      "url": "https://moonlit-react.netlify.app/home-6"
+    },
+    {
+      "file": "home-7.html",
+      "url": "https://moonlit-react.netlify.app/home-7"
+    },
+    {
+      "file": "home-dark.html",
+      "url": "https://moonlit-react.netlify.app/home-dark"
+    },
+    {
+      "file": "home-video.html",
+      "url": "https://moonlit-react.netlify.app/home-video"
+    },
+    {
+      "file": "room-one.html",
+      "url": "https://moonlit-react.netlify.app/room-one"
+    },
+    {
+      "file": "room-two.html",
+      "url": "https://moonlit-react.netlify.app/room-two"
+    },
+    {
+      "file": "room-three.html",
+      "url": "https://moonlit-react.netlify.app/room-three"
+    },
+    {
+      "file": "room-four.html",
+      "url": "https://moonlit-react.netlify.app/room-four"
+    },
+    {
+      "file": "room_1.html",
+      "url": "https://moonlit-react.netlify.app/room/1"
+    },
+    {
+      "file": "room_2.html",
+      "url": "https://moonlit-react.netlify.app/room/2"
+    },
+    {
+      "file": "about.html",
+      "url": "https://moonlit-react.netlify.app/about"
+    },
+    {
+      "file": "resturant.html",
+      "url": "https://moonlit-react.netlify.app/resturant"
+    },
+    {
+      "file": "gallery.html",
+      "url": "https://moonlit-react.netlify.app/gallery"
+    },
+    {
+      "file": "service.html",
+      "url": "https://moonlit-react.netlify.app/service"
+    },
+    {
+      "file": "event.html",
+      "url": "https://moonlit-react.netlify.app/event"
+    },
+    {
+      "file": "activities.html",
+      "url": "https://moonlit-react.netlify.app/activities"
+    },
+    {
+      "file": "blog.html",
+      "url": "https://moonlit-react.netlify.app/blog"
+    },
+    {
+      "file": "blog_1.html",
+      "url": "https://moonlit-react.netlify.app/blog/1"
+    },
+    {
+      "file": "contact.html",
+      "url": "https://moonlit-react.netlify.app/contact"
+    },
+    {
+      "file": "room-details-1.html",
+      "url": "https://moonlit-react.netlify.app/room-details-1"
+    },
+    {
+      "file": "room-details-2.html",
+      "url": "https://moonlit-react.netlify.app/room-details-2"
+    },
+    {
+      "file": "restaurant.html",
+      "url": "https://moonlit-react.netlify.app/restaurant"
+    },
+    {
+      "file": "room_3.html",
+      "url": "https://moonlit-react.netlify.app/room/3"
+    },
+    {
+      "file": "room_4.html",
+      "url": "https://moonlit-react.netlify.app/room/4"
+    },
+    {
+      "file": "room_5.html",
+      "url": "https://moonlit-react.netlify.app/room/5"
+    },
+    {
+      "file": "room_6.html",
+      "url": "https://moonlit-react.netlify.app/room/6"
+    },
+    {
+      "file": "blog_2.html",
+      "url": "https://moonlit-react.netlify.app/blog/2"
+    },
+    {
+      "file": "blog_3.html",
+      "url": "https://moonlit-react.netlify.app/blog/3"
+    },
+    {
+      "file": "blog_4.html",
+      "url": "https://moonlit-react.netlify.app/blog/4"
+    },
+    {
+      "file": "blog_5.html",
+      "url": "https://moonlit-react.netlify.app/blog/5"
+    },
+    {
+      "file": "blog_6.html",
+      "url": "https://moonlit-react.netlify.app/blog/6"
+    },
+    {
+      "file": "blog_7.html",
+      "url": "https://moonlit-react.netlify.app/blog/7"
+    },
+    {
+      "file": "home-dark_contact.html",
+      "url": "https://moonlit-react.netlify.app/home-dark/contact"
+    },
+    {
+      "file": "home.html",
+      "url": "https://moonlit-react.netlify.app/home"
+    },
+    {
+      "file": "home-video_contact.html",
+      "url": "https://moonlit-react.netlify.app/home-video/contact"
+    }
+  ],
+  "assetCount": 376
+}

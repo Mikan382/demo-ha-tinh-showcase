@@ -1,0 +1,48 @@
+{
+  "source": "https://preview.colorlib.com/theme/deluxe/",
+  "title": "Deluxe - Free Bootstrap 4 Template by Colorlib",
+  "scrapedAt": "2026-06-10T07:57:12.887Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/"
+    },
+    {
+      "file": "index-1.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/index.html"
+    },
+    {
+      "file": "rooms.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/rooms.html"
+    },
+    {
+      "file": "restaurant.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/restaurant.html"
+    },
+    {
+      "file": "about.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/about.html"
+    },
+    {
+      "file": "blog.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/blog.html"
+    },
+    {
+      "file": "contact.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/contact.html"
+    },
+    {
+      "file": "room-single.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/room-single.html"
+    },
+    {
+      "file": "blog-single.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/blog-single.html"
+    },
+    {
+      "file": "rooms-single.html",
+      "url": "https://preview.colorlib.com/theme/deluxe/rooms-single.html"
+    }
+  ],
+  "assetCount": 106
+}

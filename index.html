@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase — 10 mẫu website du lịch & lưu trú Hà Tĩnh</title>
+  <style>
+    :root {
+      --bg: #f4f1ec;
+      --card: #fff;
+      --text: #1a2332;
+      --muted: #5c6672;
+      --accent: #1e6b8c;
+      --border: #e2ddd4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 3rem 1.5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin: 0 0 .5rem; }
+    .lead { color: var(--muted); max-width: 60ch; margin: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      padding: 0 1.5rem 3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .thumb {
+      position: relative;
+      height: 140px;
+      background: #1a2332 center/cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+      overflow: hidden;
+    }
+    .thumb::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.55) 0%, rgba(0,0,0,.1) 60%, transparent 100%);
+    }
+    .thumb.limit { background: linear-gradient(135deg, #666, #999); }
+    .thumb.limit::after { display: none; }
+    .thumb span {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      font-weight: 600;
+      font-size: .9rem;
+      text-shadow: 0 1px 3px rgba(0,0,0,.4);
+    }
+    .body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
+    .brand { font-size: 1.1rem; font-weight: 700; margin: 0 0 .25rem; }
+    .concept { color: var(--muted); font-size: .9rem; margin: 0 0 .75rem; flex: 1; }
+    .tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: 1rem; }
+    .tag {
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      padding: .2rem .5rem;
+      border-radius: 4px;
+      background: #eef2f5;
+      color: var(--accent);
+    }
+    .tag.warn { background: #fff3cd; color: #856404; }
+    .actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+    a.btn {
+      display: inline-block;
+      padding: .55rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: .875rem;
+      font-weight: 600;
+    }
+    a.btn-primary { background: var(--accent); color: #fff; }
+    a.btn-secondary { background: #eef2f5; color: var(--text); }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: .85rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Showcase website du lịch & lưu trú Hà Tĩnh</h1>
+    <p class="lead">10 phong cách khác nhau — nội dung tiếng Việt, ảnh theo concept Hà Tĩnh. Chọn mẫu để xem demo offline.</p>
+  </header>
+
+  <main class="grid">
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png')"><span>Travel / Tour</span></div>
+      <div class="body">
+        <h2 class="brand">Ha Tinh Travel</h2>
+        <p class="concept">Công ty du lịch địa phương — tour, điểm đến, trải nghiệm văn hóa.</p>
+        <div class="tags"><span class="tag">Travel</span><span class="tag">Tier A</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="travol-duruthemes/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/08_hospitality_hospitality_beachfront_resort.png')"><span>Resort / Hotel</span></div>
+      <div class="body">
+        <h2 class="brand">Thien Cam Resort</h2>
+        <p class="concept">Resort ven biển — phòng, tiện ích, ẩm thực.</p>
+        <div class="tags"><span class="tag">Resort</span><span class="tag">Tier A</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="hotale-resort/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/18_hero_ke_go_lake_misty_morning.png')"><span>Luxury Retreat</span></div>
+      <div class="body">
+        <h2 class="brand">Ke Go Retreat</h2>
+        <p class="concept">Luxury retreat — villa, wellness, ẩm thực bên hồ Kẻ Gỗ.</p>
+        <div class="tags"><span class="tag">Luxury</span><span class="tag">Tier A</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="asatha-luxury-webflow/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/35_hospitality_peaceful_beach_resort.png')"><span>Seaside Clean</span></div>
+      <div class="body">
+        <h2 class="brand">Coastal Stay Ha Tinh</h2>
+        <p class="concept">Hotel/resort sạch, sáng — homestay & resort ven biển.</p>
+        <div class="tags"><span class="tag">Hotel</span><span class="tag">Tier A</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="seaside-webflow/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/17_hospitality_modern_beach_hotel_exterior.png')"><span>Modern Hotel</span></div>
+      <div class="body">
+        <h2 class="brand">Moonlit Hotel Ha Tinh</h2>
+        <p class="concept">Khách sạn hiện đại — booking nhanh, giao diện tối.</p>
+        <div class="tags"><span class="tag">Hotel</span><span class="tag">Tier B</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="moonlit-react/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/12_destination_coastal_road_mountain_sea.png')"><span>Travel Agency</span></div>
+      <div class="body">
+        <h2 class="brand">Wander Hà Tĩnh</h2>
+        <p class="concept">Travel agency trẻ, năng động — tour ngắn ngày.</p>
+        <div class="tags"><span class="tag">Travel</span><span class="tag">Tier C</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="wanderway-framer/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/19_hospitality_forest_lake_lodge.png')"><span>Eco Lodge</span></div>
+      <div class="body">
+        <h2 class="brand">Ke Go Eco Lodge</h2>
+        <p class="concept">Eco lodge — thiên nhiên, hồ, rừng.</p>
+        <div class="tags"><span class="tag">Eco</span><span class="tag">Tier C</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="mountain-lodge-framer/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/15_hospitality_luxury_resort_pool_sunset.png')"><span>Boutique Villa</span></div>
+      <div class="body">
+        <h2 class="brand">LuxeStay Ha Tinh</h2>
+        <p class="concept">Luxury villa — riêng tư, tối giản.</p>
+        <div class="tags"><span class="tag">Luxury</span><span class="tag">Tier C</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="luxestay-framer/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb" style="background-image:url('assets/shared-images/09_hospitality_hospitality_sea_view_room.png')"><span>Classic Hotel</span></div>
+      <div class="body">
+        <h2 class="brand">Deluxe Hotel Ha Tinh</h2>
+        <p class="concept">Khách sạn phổ thông — đơn giản, dễ dùng.</p>
+        <div class="tags"><span class="tag">Hotel</span><span class="tag">Tier B</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="colorlib-deluxe/index.html">Xem demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="thumb limit"><span>Limitation</span></div>
+      <div class="body">
+        <h2 class="brand">Discover Ha Tinh</h2>
+        <p class="concept">Travel inspiration — crawl không có HTML đầy đủ. Xem preview gốc hoặc README.</p>
+        <div class="tags"><span class="tag warn">Chưa có bản local</span><span class="tag">Inspiration</span></div>
+        <div class="actions">
+          <a class="btn btn-secondary" href="webflow-bali-travel/README.md">Đọc limitation</a>
+          <a class="btn btn-primary" href="https://preview.webflow.com/preview/bali-travel?utm_medium=preview_link&utm_source=designer&utm_content=bali-travel&preview=e208992ee8a3b1b9b84ea7711e5a8f17&workflow=preview" target="_blank" rel="noopener">Preview gốc</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Bản demo concept Hà Tĩnh — mở local: <code>python -m http.server 8080</code> trong thư mục này.</p>
+    <p>© 2026 Showcase demo</p>
+  </footer>
+</body>
+</html>

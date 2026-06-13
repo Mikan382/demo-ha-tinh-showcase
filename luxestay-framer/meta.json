@@ -1,0 +1,56 @@
+{
+  "source": "https://luxestay.framer.website/",
+  "title": "Luxestay",
+  "scrapedAt": "2026-06-10T08:04:58.733Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "https://luxestay.framer.website/"
+    },
+    {
+      "file": "rooms_modern-cityscape-room-with-queen-bed-work-desk-and-essential-business-traveler-amenities.html",
+      "url": "https://luxestay.framer.website/rooms/modern-cityscape-room-with-queen-bed-work-desk-and-essential-business-traveler-amenities"
+    },
+    {
+      "file": "restaurant.html",
+      "url": "https://luxestay.framer.website/restaurant"
+    },
+    {
+      "file": "wellness.html",
+      "url": "https://luxestay.framer.website/wellness"
+    },
+    {
+      "file": "wedding.html",
+      "url": "https://luxestay.framer.website/wedding"
+    },
+    {
+      "file": "contact-us.html",
+      "url": "https://luxestay.framer.website/contact-us"
+    },
+    {
+      "file": "rooms.html",
+      "url": "https://luxestay.framer.website/rooms"
+    },
+    {
+      "file": "rooms_spacious-king-room-featuring-private-balcony-marble-bath-and-premium-amenities-for-couples.html",
+      "url": "https://luxestay.framer.website/rooms/spacious-king-room-featuring-private-balcony-marble-bath-and-premium-amenities-for-couples"
+    },
+    {
+      "file": "rooms_luxury-suite-with-separate-living-area-kitchenette-city-views-and-exclusive-lounge-access.html",
+      "url": "https://luxestay.framer.website/rooms/luxury-suite-with-separate-living-area-kitchenette-city-views-and-exclusive-lounge-access"
+    },
+    {
+      "file": "rooms_two-connecting-rooms-with-king-and-twin-beds-perfect-for-families-seeking-comfort.html",
+      "url": "https://luxestay.framer.website/rooms/two-connecting-rooms-with-king-and-twin-beds-perfect-for-families-seeking-comfort"
+    },
+    {
+      "file": "rooms_spacious-suite-with-separate-living-area-balcony-luxurious-bath-amenities-and-city-skyline-views.html",
+      "url": "https://luxestay.framer.website/rooms/spacious-suite-with-separate-living-area-balcony-luxurious-bath-amenities-and-city-skyline-views"
+    },
+    {
+      "file": "rooms_large-room-with-2-queen-beds-workspace-family-friendly-amenities-and-a-cozy-sitting-area.html",
+      "url": "https://luxestay.framer.website/rooms/large-room-with-2-queen-beds-workspace-family-friendly-amenities-and-a-cozy-sitting-area"
+    }
+  ],
+  "assetCount": 193
+}

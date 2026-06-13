@@ -1,0 +1,52 @@
+{
+  "source": "https://mountain-lodge.framer.website/",
+  "title": "Mountain Lodge",
+  "scrapedAt": "2026-06-10T08:35:31.525Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "https://mountain-lodge.framer.website/"
+    },
+    {
+      "file": "about.html",
+      "url": "https://mountain-lodge.framer.website/about"
+    },
+    {
+      "file": "rooms.html",
+      "url": "https://mountain-lodge.framer.website/rooms"
+    },
+    {
+      "file": "area.html",
+      "url": "https://mountain-lodge.framer.website/area"
+    },
+    {
+      "file": "restaurants.html",
+      "url": "https://mountain-lodge.framer.website/restaurants"
+    },
+    {
+      "file": "events.html",
+      "url": "https://mountain-lodge.framer.website/events"
+    },
+    {
+      "file": "gallery.html",
+      "url": "https://mountain-lodge.framer.website/gallery"
+    },
+    {
+      "file": "contact.html",
+      "url": "https://mountain-lodge.framer.website/contact"
+    },
+    {
+      "file": "privacy.html",
+      "url": "https://mountain-lodge.framer.website/privacy"
+    },
+    {
+      "file": "terms.html",
+      "url": "https://mountain-lodge.framer.website/terms"
+    },
+    {
+      "file": "licensing.html",
+      "url": "https://mountain-lodge.framer.website/licensing"
+    }
+  ],
+  "assetCount": 313
+}
