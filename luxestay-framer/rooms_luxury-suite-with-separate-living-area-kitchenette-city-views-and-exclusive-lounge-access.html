@@ -231,4 +231,6 @@ body>div[style*="position: fixed"][style*="bottom"],a[href*="framer.com/edit"]{d
     <!-- End of bodyEnd -->
 
 
-</body></html>
+<script id="framer-badge-cleanup">
+setInterval(()=>document.querySelectorAll('#__framer-badge-container,.__framer-badge,.framer-badge').forEach(el=>el.remove()),500);
+</script></body></html>

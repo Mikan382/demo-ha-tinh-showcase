@@ -1466,8 +1466,9 @@ def fix_hotale_uploads(html: str) -> str:
     )
     for old, new in HOTALE_VI:
         html = html.replace(old, new)
-    html = html.replace("Kỳ nghỉ ven biển trọn vẹn tại Thiên Cầm", "Resort biển Thiên Cầm")
-    html = html.replace("Nghỉ dưỡng ven biển Thiên Cầm", "Resort biển Thiên Cầm")
+    html = html.replace("Kỳ nghỉ ven biển trọn vẹn tại Thiên Cầm", "Resort Hà Tĩnh")
+    html = html.replace("Nghỉ dưỡng ven biển Thiên Cầm", "Resort Hà Tĩnh")
+    html = html.replace("Resort biển Thiên Cầm", "Resort Hà Tĩnh")
     html = re.sub(
         r'(<input\b[^>]*class="[^"]*\btourmaster-room-search-submit\b[^"]*"[^>]*\bvalue=")[^"]+(")',
         r"\1Tìm phòng\2",
