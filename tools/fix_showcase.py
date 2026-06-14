@@ -12,7 +12,7 @@ IMG = "../assets/shared-images"
 GLOBAL_HIDE = """<style id="showcase-cleanup">
 .template-popup-wrapper,.showcase-dropdown-wrapper,.showcase-dropdown,.w-webflow-badge,.w-iframe-block,
 a[href*="framer.com/templates"],[data-framer-name="Buy"],
-a[href*="framer.market"],a[href*="framer.com/marketplace"],
+a[href*="framer.market"],a[href*="framer.com/marketplace"],a[href*="lemonsqueezy.com"],
 .framer-badge,.__framer-badge,#__framer-badge-container,[class*="buy-template"],[data-framer-component-type="Badge"],
 p:has(a[href*="framer.com"]):last-child{display:none!important;visibility:hidden!important}
 </style>"""
@@ -66,11 +66,26 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 
 COLORLIB_LAYOUT_FIX = """<style id="colorlib-layout-fix">
 html,body{max-width:100%;overflow-x:hidden}
-.home-slider,.home-slider .slider-item,.owl-carousel,.owl-stage-outer{max-width:100vw!important;overflow:hidden!important}
-.home-slider .owl-stage{transform:none!important;width:100%!important}
-.home-slider .owl-item{display:none!important;width:100%!important}
-.home-slider .owl-item.active,.home-slider .owl-item:first-child{display:block!important}
-.home-slider .slider-item .overlay{background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(0,0,0,.15))}
+/* ftco-animate starts at opacity:0/visibility:hidden - needs JS to animate in */
+.ftco-animate{opacity:1!important;visibility:visible!important}
+/* Owl Carousel JS re-runs on pre-initialized HTML (double-init bug).
+   The LEAVING slide (owl-animated-out) holds all real content but gets display:none.
+   The ENTERING slide (owl-animated-in active) is empty.
+   Fix: kill animations, show animated-out item, hide animated-in. */
+.home-slider *{animation:none!important;-webkit-animation:none!important}
+.home-slider .owl-item{display:none!important}
+/* Show the outer "leaving" slide which contains the real inner carousel.
+   Owl JS sets left:1021px to push it off-screen — must override. */
+.home-slider .owl-item.owl-animated-out{display:block!important;opacity:1!important;width:100%!important;float:none!important;left:0!important;position:relative!important}
+/* Inside the leaving slide, show the inner carousel's active item */
+.home-slider .owl-item.owl-animated-out .owl-item.active{display:block!important;opacity:1!important;width:100%!important}
+/* Stage and outer layout */
+.home-slider .owl-stage-outer{overflow:hidden!important;height:900px!important;max-width:100vw!important}
+.home-slider .owl-stage{transform:none!important;width:100%!important;height:auto!important}
+/* Slider item */
+.home-slider .slider-item{height:900px;width:100%;display:block}
+.home-slider .owl-animated-out .slider-item{opacity:1!important}
+.home-slider .slider-item .overlay{background:linear-gradient(90deg,rgba(0,0,0,.4),rgba(0,0,0,.2))!important}
 .home-slider .slider-text h1{max-width:1120px;margin-left:auto;margin-right:auto;line-height:1.05}
 </style>"""
 
@@ -527,6 +542,9 @@ COLORLIB_VI_EXTRA = [
         "far from the countries Vokalia and Consonantia, there live the blind texts.",
         "với dịch vụ chu đáo, phòng nghỉ yên tĩnh và vị trí thuận tiện để khám phá Hà Tĩnh.",
     ),
+    ("We Are Food Lover", "Ẩm Thực Hà Tĩnh"),
+    (">Restaurants<", ">Ẩm thực<"),
+    (">RESTAURANTS<", ">ẨM THỰC<"),
 ]
 
 FRAMER_VI_EXTRA = [
@@ -1534,6 +1552,14 @@ def fix_asatha_assets(html: str) -> str:
         flags=re.I,
     )
     html = re.sub(r'\s+srcset="assets/cdn\.prod\.website-files\.com/[^"]*"', "", html)
+    html = html.replace(
+        "Where time slows, <em>Comfort deepens</em>",
+        "Nơi thời gian chậm lại, <em>An lạc sâu thêm</em>",
+    )
+    html = html.replace(
+        "Every space is more than a room; it’s a sanctuary where comfort, privacy, and style meet.",
+        "Mỗi không gian là một ốc đảo riêng tư — tiện nghi, cảnh quan và dịch vụ hoà quyện.",
+    )
     if "asatha-hide-vendor" not in html and "copyright-flowcub" in html:
         html = html.replace("</head>", ASATHA_HIDE + "</head>", 1)
     return html
@@ -1605,6 +1631,7 @@ def fix_travol_imgs(html: str) -> str:
     )
     if "travol-hide-clients" not in html and "img/clients/" in html:
         html = html.replace("</head>", TRAVOL_HIDE_CLIENTS + "</head>", 1)
+    html = html.replace(">Gallery<", ">Thư viện<")
     return html
 
 
