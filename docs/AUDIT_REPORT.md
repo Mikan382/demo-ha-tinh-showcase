@@ -1,7 +1,7 @@
 # Báo cáo rà soát — Ha Tinh Template Showcase
 
 **Ngày:** 2026-06-12  
-**Phạm vi:** 9 template demo + catalog (`index.html`)  
+**Phạm vi:** 8 template demo + catalog (`index.html`)
 **Công cụ:** `tools/deep_fix.py`, `tools/audit_core.py`, kiểm tra HTTP + browser snapshot
 
 ---
@@ -12,7 +12,6 @@ Lần triển khai đầu dùng thay thế hàng loạt (đổi `img src` tuần
 
 | Vấn đề ban đầu | Cách xử lý |
 |---|---|
-| `seaside-webflow` — icon sao/avatar bị thay bằng ảnh phòng | Khôi phục 5 trang core từ `template-scrapes/`, chỉ đổi hero CSS + text có chủ đích |
 | `asatha` — popup "Buy this template $99" | Xóa DOM popup + `display:none` trên mọi `.html` |
 | `colorlib` — hero `bg_1.jpg`, title lỗi | Map `shared-images`, sửa nav/title |
 | `hotale` — menu/blog tiếng Anh, địa chỉ Madrid | Menu desktop 6 mục VI; blog titles VI; map label Hà Tĩnh |
@@ -25,15 +24,15 @@ Lần triển khai đầu dùng thay thế hàng loạt (đổi `img src` tuần
 
 ## Checklist Definition of Done
 
-| Tiêu chí | Catalog | travol | hotale | seaside | asatha | colorlib | moonlit | framer×3 | bali |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| HTTP 200 homepage | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | N/A |
-| Brand / title VI | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ README |
-| Nav core VI | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ⚠️ | ⚠️ | — |
-| Hero ảnh Hà Tĩnh | — | ✅ | ✅ | ✅ CSS | ✅ | ✅ | ✅ | ✅ | — |
-| Không popup vendor | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
-| Form demo (preventDefault) | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
-| Nội dung body VI (core) | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | — |
+| Tiêu chí | Catalog | travol | hotale | asatha | colorlib | moonlit | framer×3 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| HTTP 200 homepage | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Brand / title VI | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Nav core VI | ✅ | ✅ | ✅ | ⚠️ | ✅ | ⚠️ | ⚠️ |
+| Hero ảnh Hà Tĩnh | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Không popup vendor | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Form demo (preventDefault) | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Nội dung body VI (core) | ✅ | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ |
 
 **Chú thích:** ✅ đạt trên trang ưu tiên · ⚠️ còn tiếng Anh ở section phụ / trang con / footer template · — không áp dụng
 
@@ -48,10 +47,6 @@ Lần triển khai đầu dùng thay thế hàng loạt (đổi `img src` tuần
 ### hotale-resort — Thien Cam Resort
 - **Pass:** Homepage VI, ảnh resort `shared-images`, menu desktop gọn 6 mục, blog section đã Việt hóa tiêu đề.
 - **Còn lại:** Menu mobile (`mm-menu`) vẫn nhiều mục template gốc; `price-table.html` / `contact.html` không có hero ảnh (trang phụ); Google Maps embed vẫn tọa độ UK (chỉ đổi label text).
-
-### seaside-webflow — Coastal Stay Ha Tinh
-- **Pass:** Hero 3 slide qua CSS → `shared-images`; địa chỉ Thiên Cầm; điểm đến Hà Tĩnh; form VI; không còn lỗi ảnh sao/avatar.
-- **Còn lại:** Trang `events/*`, `rooms/*` chi tiết chưa localize; footer link "Webflow".
 
 ### asatha-luxury-webflow — Ke Go Retreat
 - **Pass:** Popup mua template đã xóa/ẩn; hero + section ảnh Kẻ Gỗ; brand VI; CTA chính VI.
@@ -68,11 +63,6 @@ Lần triển khai đầu dùng thay thế hàng loạt (đổi `img src` tuần
 ### mountain-lodge / wanderway / luxestay (Framer)
 - **Pass:** Brand VI, ảnh hero `shared-images`, badge Framer ẩn, CTA cơ bản VI.
 - **Còn lại:** Nội dung SSR Framer vẫn lẫn tiếng Anh trong JSON/text node; chỉ homepage + 2–3 trang nav đã chạm.
-
-### webflow-bali-travel
-- **Pass:** Card limitation + `README.md` + link preview (đúng spec, không rebuild HTML).
-
----
 
 ## Cách chạy lại audit
 
@@ -93,7 +83,6 @@ python tools/audit_core.py      # quét trang core
 | hotale map embed | ✅ Tọa độ Thiên Cầm / Hà Tĩnh |
 | hotale lorem / blog sót | ✅ Thay đoạn "wonderful serenity", blog title EN |
 | asatha toàn bộ `*.html` | ✅ Text VI + xóa popup trên mọi trang |
-| seaside trang phụ | ✅ `events.html`, `rooms_*`, `events_*` (9 trang) |
 | audit_core | ✅ 0 lỗi blocking |
 
 ## Pass 4 — Infrastructure (trang trắng, asset, bản quyền)
@@ -103,7 +92,6 @@ Script mới: `tools/fix_showcase.py` (chạy tự động sau `deep_fix.py`)
 | Vấn đề | Cách xử lý |
 |---|---|
 | **moonlit** trang tối/trống (0 ảnh raster) | Sửa `index.htmlassets/` → `assets/`; map ảnh → `shared-images`; fallback icon emoji |
-| **seaside** ảnh card 404 | Sửa path `561acb.../NN_*.png` → `../assets/shared-images/` |
 | **colorlib** ảnh `images/` thiếu | Map toàn bộ `images/*.jpg` → `shared-images`; bỏ script timepicker hỏng |
 | **wanderway** phụ thuộc CDN Framer | Rewrite URL → `assets/framerusercontent.com/...` (offline) |
 | **luxestay** `.mjs` 404 | Copy symlink `.mjs.js` → `.mjs` |

@@ -6,7 +6,6 @@ ROOT = Path(__file__).resolve().parents[1]
 CORE = {
     "travol-duruthemes": ["index.html", "about.html", "tours.html", "destination.html", "gallery.html", "contact.html"],
     "hotale-resort": ["index.html", "about-us.html", "room-grid-style-1.html", "price-table.html", "gallery.html", "contact.html"],
-    "seaside-webflow": ["index.html", "about.html", "resort.html", "rooms-overview.html", "contact.html"],
     "asatha-luxury-webflow": ["index.html", "about-us.html", "villas-and-suites.html", "wellness.html", "dining.html", "contact-us.html"],
     "colorlib-deluxe": ["index.html", "about.html", "rooms.html", "restaurant.html", "contact.html"],
     "moonlit-react": ["index.html", "about.html", "room-one.html", "gallery.html", "contact.html"],
@@ -24,7 +23,6 @@ PATTERNS = [
     ("More about us", r"More about us"),
     ("Peru", r"\bPeru\b"),
     ("Deluxe Khách sạn", r"Deluxe Khách sạn"),
-    ("Seaside - Webflow", r"Seaside - Webflow"),
     (">About<", r">About<"),
     ("Rooms overview", r"Rooms overview"),
 ]
@@ -40,9 +38,6 @@ for slug, pages in CORE.items():
         hits = [name for name, pat in PATTERNS if re.search(pat, html, re.I)]
         tpl_dir = ROOT / slug
         has_images = "shared-images" in html
-        if not has_images and slug == "seaside-webflow":
-            css = tpl_dir / "assets/assets.website-files.com/559ee37b3d3fed5c59f31670/css/template-seaside.webflow.ca9779723.css"
-            has_images = css.exists() and "shared-images" in css.read_text(encoding="utf-8", errors="ignore")
         skip_img = page in ("contact.html", "contact-us.html", "price-table.html")
         if (
             slug not in ("mountain-lodge-framer", "wanderway-framer", "luxestay-framer")

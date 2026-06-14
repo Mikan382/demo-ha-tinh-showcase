@@ -6,7 +6,7 @@
 
 ## Kết luận: ĐẠT
 
-`python tools/audit_seaside_moonlit.py` → MOONLIT PASS
+`python tools/audit_core.py` → `moonlit-react` core pass tại thời điểm audit này
 
 ---
 
@@ -39,7 +39,7 @@
 ```bash
 cd demo-ha-tinh-showcase
 python tools/deep_fix.py
-python tools/audit_seaside_moonlit.py
+python tools/audit_core.py
 python -m http.server 8080
 # http://localhost:8080/moonlit-react/index.html
 ```

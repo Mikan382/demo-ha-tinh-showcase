@@ -28,9 +28,28 @@
 
 <style type="text/css">/* Chart.js */
 @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style id="showcase-cleanup">
-.template-popup-wrapper,.showcase-dropdown-wrapper,.w-webflow-badge,.w-iframe-block,
+.template-popup-wrapper,.showcase-dropdown-wrapper,.showcase-dropdown,.w-webflow-badge,.w-iframe-block,
 a[href*="framer.com/templates"],[data-framer-name="Buy"],
-.framer-badge,[class*="buy-template"]{display:none!important;visibility:hidden!important}
+a[href*="framer.market"],a[href*="framer.com/marketplace"],
+.framer-badge,.__framer-badge,#__framer-badge-container,[class*="buy-template"],[data-framer-component-type="Badge"],
+p:has(a[href*="framer.com"]):last-child{display:none!important;visibility:hidden!important}
+</style><style id="hotale-polish">
+html,body{max-width:100%;overflow-x:hidden}
+.hotale-body-wrapper{background:#f7f4ef}
+.hotale-body-wrapper.hotale-with-frame{margin:0!important}
+.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{border-radius:0!important;min-height:760px!important;padding-top:220px!important}
+.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child .gdlr-core-pbf-background-wrap{border-radius:0!important}
+.hotale-header-wrap .hotale-header-container{max-width:1320px}
+.title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:54px!important;line-height:1.08!important;letter-spacing:0!important;max-width:980px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+.gdlr-core-text-box-item-content p{line-height:1.55}
+.tourmaster-room-search-wrap{box-shadow:0 22px 60px rgba(31,23,12,.18);border-radius:0!important;overflow:hidden}
+.tourmaster-room-search-wrap .tourmaster-room-search-field{min-height:138px}
+.tourmaster-head{letter-spacing:.08em}
+i.icon-phone:before{content:"\260E";font-family:Arial,sans-serif!important}
+i.icon-envelope:before{content:"\2709";font-family:Arial,sans-serif!important}
+i.icon_lock_alt:before{content:"\25CB";font-family:Arial,sans-serif!important}
+i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
+@media(max-width:900px){.title-rotate .gdlr-core-title-item-title{font-size:42px!important}.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{padding-top:170px!important}}
 </style></head>
 
 <body class="home page-template-default page page-id-14980 theme-hotale gdlr-core-body tourmaster-body woocommerce-no-js hotale-body hotale-body-front hotale-full hotale-with-sticky-navigation hotale-blockquote-style-3 gdlr-core-link-to-lightbox" data-home-url="index.html"><div class="hotale-mm-menu-wrap hotale-navigation-font mm-menu mm-pagedim-black mm-offcanvas mm-right" id="hotale-mobile-menu" data-slide="right"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened mm-current" id="menu-main-navigation"><div class="mm-navbar"><a class="mm-title"><span class="mmenu-custom-close"></span></a></div><ul class="m-menu mm-listview">
@@ -38,7 +57,7 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
                                 <li class="menu-item"><a href="about-us.html">Giới thiệu</a></li>
                                 <li class="menu-item"><a href="room-grid-style-1.html">Phòng</a></li>
                                 <li class="menu-item"><a href="price-table.html">Ẩm thực</a></li>
-                                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                                <li class="menu-item"><a href="gallery.html">Thư viện</a></li>
                                 <li class="menu-item current-menu-item"><a href="contact.html">Liên hệ</a></li>
                             </ul></div></div></div>
 
@@ -179,14 +198,14 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
                                         <li class="menu-item hotale-normal-menu"><a href="about-us.html">Giới thiệu</a></li>
                                         <li class="menu-item hotale-normal-menu"><a href="room-grid-style-1.html">Phòng</a></li>
                                         <li class="menu-item hotale-normal-menu"><a href="price-table.html">Ẩm thực</a></li>
-                                        <li class="menu-item hotale-normal-menu"><a href="gallery.html">Gallery</a></li>
+                                        <li class="menu-item hotale-normal-menu"><a href="gallery.html">Thư viện</a></li>
                                         <li class="menu-item current-menu-item hotale-normal-menu"><a href="contact.html">Liên hệ</a></li>
                                     </ul>
                                     <div class="hotale-navigation-slide-bar hotale-navigation-slide-bar-style-2 hotale-left" data-size-offset="0" data-width="19px" id="hotale-navigation-slide-bar" style="width: 19px; left: 445.672px; display: block;"></div>
                                 </div>
                                 <div class="hotale-main-menu-right-wrap clearfix hotale-item-mglr hotale-navigation-top">
                                     <div class="tourmaster-currency-switcher">
-                                        <span class="tourmaster-head"><span>USD</span><i class="fa fa-sort-down"></i></span>
+                                        <span class="tourmaster-head"><span>VND</span><i class="fa fa-sort-down"></i></span>
                                         <div class="tourmaster-currency-switcher-inner">
                                             <div class="tourmaster-currency-switcher-content">
                                                 <ul>
@@ -455,7 +474,7 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
                         <div class="hotale-footer-column hotale-item-pdlr hotale-column-15">
                             <div id="block-21" class="widget widget_block widget_media_image hotale-widget">
                                 <figure class="wp-block-image">
-                                    <img loading="lazy" width="110" height="27" src="assets/max-themes.net/demos/hotale/hotale/resort/../assets/shared-images/08_hospitality_hospitality_beachfront_resort.png" alt="" class="wp-image-14995">
+                                    <img loading="lazy" width="110" height="27" src="../assets/shared-images/08_hospitality_hospitality_beachfront_resort.png" alt="" class="wp-image-14995">
                                 </figure>
                             </div>
                             <div id="block-7" class="widget widget_block widget_text hotale-widget">
@@ -475,7 +494,7 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
                             <div id="block-25" class="widget widget_block hotale-widget">
                                 <div class="tourmaster-currency-switcher-shortcode clearfix">
                                     <div class="tourmaster-currency-switcher" style="background: #333333;">
-                                        <span class="tourmaster-head" style="color: #ffffff;"><span>USD</span><i class="fa fa-sort-down"></i></span>
+                                        <span class="tourmaster-head" style="color: #ffffff;"><span>VND</span><i class="fa fa-sort-down"></i></span>
                                         <div class="tourmaster-currency-switcher-inner">
                                             <div class="tourmaster-currency-switcher-content">
                                                 <ul>
@@ -518,14 +537,14 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
                             <div id="block-18" class="widget widget_block widget_media_image hotale-widget">
                                 <div class="wp-block-image">
                                     <figure class="aligncenter size-full">
-                                        <img loading="lazy" width="213" height="90" src="assets/max-themes.net/demos/hotale/hotale/resort/../assets/shared-images/48_hospitality_beach_resort_golden_hour.png" alt="" class="wp-image-15004">
+                                        <img loading="lazy" width="213" height="90" src="../assets/shared-images/48_hospitality_beach_resort_golden_hour.png" alt="" class="wp-image-15004">
                                     </figure>
                                 </div>
                             </div>
                             <div id="block-20" class="widget widget_block widget_media_image hotale-widget">
                                 <div class="wp-block-image">
                                     <figure class="aligncenter is-resized">
-                                        <img loading="lazy" src="assets/max-themes.net/demos/hotale/hotale/resort/../assets/shared-images/08_hospitality_hospitality_beachfront_resort.png" alt="" class="wp-image-15005" width="154" height="26">
+                                        <img loading="lazy" src="../assets/shared-images/08_hospitality_hospitality_beachfront_resort.png" alt="" class="wp-image-15005" width="154" height="26">
                                     </figure>
                                 </div>
                             </div>

@@ -28,13 +28,6 @@
 | Wellness | IMG28, IMG57 |
 | Dining | IMG26, IMG59 |
 
-## seaside-webflow (blue-seaside)
-| Section | Image IDs |
-|---|---|
-| Hero | IMG08, IMG35 |
-| Rooms | IMG09, IMG29, IMG60 |
-| Resort | IMG16, IMG48 |
-
 ## moonlit-react (dark-modern)
 | Section | Image IDs |
 |---|---|

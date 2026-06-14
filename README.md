@@ -1,4 +1,4 @@
-# Demo showcase — 10 mẫu website du lịch & lưu trú Hà Tĩnh
+# Demo showcase — 8 mẫu website du lịch & lưu trú Hà Tĩnh
 
 Mở catalog: [index.html](index.html)
 
@@ -14,7 +14,7 @@ Truy cập: http://localhost:8080/
 
 - `assets/shared-images/` — 60 ảnh PNG dùng chung
 - `docs/` — nội dung và mapping ảnh theo template
-- 9 template demo local + `webflow-bali-travel/` (limitation)
+- 8 template demo local
 
 ## Template
 
@@ -23,13 +23,11 @@ Truy cập: http://localhost:8080/
 | travol-duruthemes | Ha Tinh Travel |
 | hotale-resort | Thien Cam Resort |
 | asatha-luxury-webflow | Ke Go Retreat |
-| seaside-webflow | Coastal Stay Ha Tinh |
 | moonlit-react | Moonlit Hotel Ha Tinh |
 | wanderway-framer | Wander Hà Tĩnh |
 | mountain-lodge-framer | Ke Go Eco Lodge |
 | luxestay-framer | LuxeStay Ha Tinh |
 | colorlib-deluxe | Deluxe Hotel Ha Tinh |
-| webflow-bali-travel | Discover Ha Tinh (preview gốc only) |
 
 Nguồn gốc crawl: `../template-scrapes/` (reference only, không sửa).
 

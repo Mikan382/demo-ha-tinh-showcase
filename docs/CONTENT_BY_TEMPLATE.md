@@ -19,11 +19,6 @@
 - **CTA:** Khám phá retreat
 - **Menu:** Giới thiệu, Villa & Suites, Wellness, Ẩm thực, Liên hệ
 
-## seaside-webflow — Coastal Stay Ha Tinh
-- **Concept:** Hotel/resort sạch, sáng, ven biển
-- **Hero:** Lưu trú gần biển, tận hưởng nhịp sống Hà Tĩnh
-- **CTA:** Xem không gian
-
 ## moonlit-react — Moonlit Hotel Ha Tinh
 - **Concept:** Khách sạn hiện đại / booking nhanh
 - **Hero:** Khách sạn hiện đại cho chuyến đi Hà Tĩnh
@@ -48,6 +43,3 @@
 - **Concept:** Khách sạn phổ thông, dễ dùng
 - **Hero:** Lựa chọn lưu trú tiện nghi tại Hà Tĩnh
 - **CTA:** Xem phòng
-
-## webflow-bali-travel — Discover Ha Tinh (limitation)
-- Chỉ có preview gốc — xem README trong folder

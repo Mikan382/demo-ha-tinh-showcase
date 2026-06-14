@@ -37,9 +37,19 @@
     <link rel="stylesheet" href="assets/preview.colorlib.com/theme/deluxe/css/icomoon.css">
     <link rel="stylesheet" href="assets/preview.colorlib.com/theme/deluxe/css/style.css">
   <style type="text/css">.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };</style><style id="showcase-cleanup">
-.template-popup-wrapper,.showcase-dropdown-wrapper,.w-webflow-badge,.w-iframe-block,
+.template-popup-wrapper,.showcase-dropdown-wrapper,.showcase-dropdown,.w-webflow-badge,.w-iframe-block,
 a[href*="framer.com/templates"],[data-framer-name="Buy"],
-.framer-badge,[class*="buy-template"]{display:none!important;visibility:hidden!important}
+a[href*="framer.market"],a[href*="framer.com/marketplace"],
+.framer-badge,.__framer-badge,#__framer-badge-container,[class*="buy-template"],[data-framer-component-type="Badge"],
+p:has(a[href*="framer.com"]):last-child{display:none!important;visibility:hidden!important}
+</style><style id="colorlib-layout-fix">
+html,body{max-width:100%;overflow-x:hidden}
+.home-slider,.home-slider .slider-item,.owl-carousel,.owl-stage-outer{max-width:100vw!important;overflow:hidden!important}
+.home-slider .owl-stage{transform:none!important;width:100%!important}
+.home-slider .owl-item{display:none!important;width:100%!important}
+.home-slider .owl-item.active,.home-slider .owl-item:first-child{display:block!important}
+.home-slider .slider-item .overlay{background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(0,0,0,.15))}
+.home-slider .slider-text h1{max-width:1120px;margin-left:auto;margin-right:auto;line-height:1.05}
 </style></head>
   <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
 
@@ -55,9 +65,9 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
 	          <li class="nav-item"><a href="index-1.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="rooms.html" class="nav-link">Phòngs</a></li>
 	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">Giới thiệu</a></li>
 	          <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -91,7 +101,7 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
             <h2 class="mb-3 mt-5">#2. Creative WordPress Themes</h2>
             <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
             <p>
-              <img src="assets/preview.colorlib.com/theme/deluxe/images/image_8.jpg" alt="" class="img-fluid" fetchpriority="high" decoding="sync">
+              <img src="../assets/shared-images/48_hospitality_beach_resort_golden_hour.png" alt="" class="img-fluid" fetchpriority="high" decoding="sync">
             </p>
             <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
             <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
@@ -102,7 +112,7 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
                 <a href="#" class="tag-cloud-link">Life</a>
                 <a href="#" class="tag-cloud-link">Sport</a>
                 <a href="#" class="tag-cloud-link">Tech</a>
-                <a href="#" class="tag-cloud-link">Travel</a>
+                <a href="#" class="tag-cloud-link">Du lịch</a>
               </div>
             </div>
             
@@ -318,7 +328,7 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Deluxe Hotel</h2>
-              <p>Khách sạn tiện nghi ven biển Thiên Cầm, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p>Khách sạn tiện nghi ven biển Thiên Cầm, với dịch vụ chu đáo, phòng nghỉ yên tĩnh và vị trí thuận tiện để khám phá Hà Tĩnh.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -342,8 +352,8 @@ a[href*="framer.com/templates"],[data-framer-name="Buy"],
               <h2 class="ftco-heading-2">Riêng tư</h2>
               <ul class="list-unstyled">
                 <li><a href="#" class="py-2 d-block">Tuyển dụng</a></li>
-                <li><a href="#" class="py-2 d-block">About Us</a></li>
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="#" class="py-2 d-block">Giới thiệu</a></li>
+                <li><a href="#" class="py-2 d-block">Liên hệ</a></li>
                 <li><a href="#" class="py-2 d-block">Dịch vụ</a></li>
               </ul>
             </div>
