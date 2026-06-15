@@ -1,0 +1,618 @@
+/* 
+   Deluxe Hotel Ha Tinh — Custom Luxury Theme
+   Aesthetics: Luxury Resort, High Contrast, Warm Gold & Deep Charcoal Accent
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --primary-gold: #C5A880;
+  --primary-gold-hover: #b4946a;
+  --dark-charcoal: #1a1a1a;
+  --warm-bg: #FAF9F6;
+  --white-glass: rgba(255, 255, 255, 0.95);
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Global Font Settings */
+body {
+  font-family: var(--font-sans) !important;
+  color: #333333 !important;
+  background-color: var(--warm-bg) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: var(--font-serif) !important;
+}
+
+/* Color Overrides for Buttons & Accents */
+.btn-primary {
+  background-color: var(--primary-gold) !important;
+  border-color: var(--primary-gold) !important;
+  color: #fff !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  font-size: 0.8rem !important;
+  padding: 12px 28px !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--primary-gold-hover) !important;
+  border-color: var(--primary-gold-hover) !important;
+  color: #fff !important;
+  box-shadow: 0 5px 15px rgba(197, 168, 128, 0.4) !important;
+  transform: translateY(-1px);
+}
+
+.btn-custom {
+  color: var(--primary-gold) !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  font-size: 0.8rem !important;
+}
+
+.btn-custom:hover {
+  color: var(--primary-gold-hover) !important;
+  text-decoration: none !important;
+}
+
+/* Hero Section Overlay & Contrast Improvements */
+.home-slider {
+  height: 850px !important;
+}
+
+.home-slider .owl-stage-outer, .home-slider .slider-item {
+  height: 850px !important;
+}
+
+.home-slider .slider-item {
+  background-position: center center !important;
+  background-size: cover !important;
+  filter: brightness(0.88) contrast(1.02);
+}
+
+/* Enhancing overlay for better text contrast */
+.home-slider .slider-item .overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.6) 100%) !important;
+  opacity: 1 !important;
+}
+
+.home-slider .slider-text h1 {
+  font-family: var(--font-serif) !important;
+  font-weight: 700 !important;
+  font-size: clamp(2.5rem, 5vw, 4.2rem) !important;
+  line-height: 1.15 !important;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 20px !important;
+}
+
+.home-slider .slider-text h2 {
+  font-family: var(--font-sans) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Navigation Bar Upgrade */
+.ftco_navbar {
+  padding: 1.2rem 0 !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.ftco_navbar.awake {
+  background: rgba(26, 26, 26, 0.98) !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: var(--shadow-sm) !important;
+  padding: 0.8rem 0 !important;
+}
+
+.navbar-brand {
+  font-weight: 800 !important;
+  font-size: 1.6rem !important;
+  letter-spacing: 1px !important;
+  color: #ffffff !important;
+  transition: color 0.3s ease !important;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-gold) !important;
+}
+
+.ftco_navbar .navbar-nav > .nav-item > .nav-link {
+  font-family: var(--font-sans) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: color 0.3s ease !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.ftco_navbar .navbar-nav > .nav-item > .nav-link:hover {
+  color: var(--primary-gold) !important;
+}
+
+.ftco_navbar .navbar-nav > .nav-item.active > .nav-link {
+  color: var(--primary-gold) !important;
+}
+
+/* Floating Luxury Booking Form */
+.ftco-booking {
+  margin-top: -100px !important;
+  position: relative;
+  z-index: 10;
+}
+
+.booking-form {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-md) !important;
+  padding: 1.8rem !important;
+  border: 1px solid rgba(197, 168, 128, 0.2) !important;
+}
+
+.booking-form .form-group {
+  margin-bottom: 0 !important;
+  border-right: 1px solid #eeeeee !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.booking-form .col-md-3:first-child .form-group,
+.booking-form .col-md:first-child .form-group {
+  padding-left: 0 !important;
+}
+
+@media (max-width: 991.98px) {
+  .ftco-booking {
+    margin-top: -50px !important;
+  }
+  .booking-form {
+    padding: 1.2rem !important;
+  }
+  .booking-form .form-group {
+    border-right: none !important;
+    border-bottom: 1px solid #eeeeee !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.booking-form label {
+  font-family: var(--font-sans) !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  color: #777777 !important;
+  margin-bottom: 8px !important;
+  display: block;
+}
+
+.booking-form .form-control {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: var(--dark-charcoal) !important;
+  height: auto !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.booking-form select.form-control {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form .select-wrap {
+  position: relative;
+}
+
+.booking-form .select-wrap .icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--primary-gold) !important;
+  font-size: 0.85rem;
+}
+
+.booking-form .btn-primary {
+  width: 100% !important;
+  border-radius: 6px !important;
+  padding: 16px 20px !important;
+  font-size: 0.85rem !important;
+  margin-top: 5px;
+}
+
+/* Sections Styling */
+.heading-section .subheading {
+  font-family: var(--font-sans) !important;
+  color: var(--primary-gold) !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 10px !important;
+  display: inline-block;
+}
+
+.heading-section h2 {
+  font-family: var(--font-serif) !important;
+  font-weight: 700 !important;
+  font-size: clamp(2rem, 4vw, 2.8rem) !important;
+  color: var(--dark-charcoal) !important;
+  line-height: 1.2 !important;
+}
+
+/* Services / Blocks Styling */
+.services {
+  background: #ffffff !important;
+  border-radius: 8px !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid rgba(0, 0, 0, 0.02) !important;
+  padding: 2.5rem 1.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.services:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md) !important;
+}
+
+.services .icon {
+  background: rgba(197, 168, 128, 0.1) !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+  color: var(--primary-gold) !important;
+  margin-bottom: 1.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.services:hover .icon {
+  background: var(--primary-gold) !important;
+  color: #ffffff !important;
+}
+
+.services h3 {
+  font-family: var(--font-serif) !important;
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+  color: var(--dark-charcoal) !important;
+}
+
+/* Rooms Card Upgrades */
+.room {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 30px;
+}
+
+.room:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md) !important;
+}
+
+.room .img {
+  height: 280px !important;
+  transition: transform 0.5s ease !important;
+}
+
+.room:hover .img {
+  transform: scale(1.03);
+}
+
+.room .text {
+  padding: 1.8rem !important;
+  background: #ffffff !important;
+}
+
+.room .text h3 {
+  font-size: 1.4rem !important;
+  margin-bottom: 12px !important;
+}
+
+.room .text h3 a {
+  color: var(--dark-charcoal) !important;
+  font-weight: 600 !important;
+  transition: color 0.3s ease !important;
+}
+
+.room .text h3 a:hover {
+  color: var(--primary-gold) !important;
+  text-decoration: none !important;
+}
+
+.room .price {
+  color: var(--primary-gold) !important;
+  font-weight: 700 !important;
+  font-size: 1.35rem !important;
+}
+
+.room .per {
+  color: #888888 !important;
+  font-size: 0.85rem !important;
+  font-weight: 500;
+}
+
+.room hr {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  border-color: #f2f2f2 !important;
+}
+
+/* Counters styling */
+.ftco-counter {
+  position: relative;
+  filter: brightness(0.9) contrast(1.05);
+}
+
+.ftco-counter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.85) !important;
+}
+
+.ftco-counter .container {
+  position: relative;
+  z-index: 2;
+}
+
+.block-18 {
+  background: transparent !important;
+}
+
+.block-18 .text strong.number {
+  font-family: var(--font-sans) !important;
+  color: var(--primary-gold) !important;
+  font-weight: 700 !important;
+  font-size: 2.8rem !important;
+}
+
+.block-18 .text span {
+  font-family: var(--font-sans) !important;
+  color: #dddddd !important;
+  font-size: 0.9rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+/* Testimony section */
+.testimony-section {
+  background-color: #FAF9F6 !important;
+}
+
+.testimony-wrap {
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid rgba(197, 168, 128, 0.1) !important;
+  padding: 2.5rem !important;
+}
+
+.testimony-wrap .user-img {
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 auto 1.5rem !important;
+  border-radius: 50% !important;
+  border: 3px solid var(--primary-gold) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.testimony-wrap .quote {
+  background: var(--primary-gold) !important;
+  color: #ffffff !important;
+}
+
+.testimony-wrap .text p {
+  font-style: italic !important;
+  color: #555555 !important;
+  line-height: 1.6 !important;
+}
+
+.testimony-wrap .name {
+  font-family: var(--font-serif) !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+  color: var(--dark-charcoal) !important;
+  margin-top: 15px !important;
+  margin-bottom: 2px !important;
+}
+
+.testimony-wrap .position {
+  font-family: var(--font-sans) !important;
+  font-size: 0.8rem !important;
+  color: #888888 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+.owl-dots .owl-dot.active span {
+  background: var(--primary-gold) !important;
+}
+
+/* Blog entry cards */
+.blog-entry {
+  background: #ffffff !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 30px;
+}
+
+.blog-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md) !important;
+}
+
+.blog-entry .block-20 {
+  height: 220px !important;
+  border-bottom: 2px solid rgba(197, 168, 128, 0.1) !important;
+}
+
+.blog-entry .text {
+  padding: 1.5rem !important;
+}
+
+.blog-entry .heading a {
+  font-family: var(--font-serif) !important;
+  color: var(--dark-charcoal) !important;
+  font-weight: 600 !important;
+  font-size: 1.15rem !important;
+  line-height: 1.4 !important;
+  transition: color 0.3s ease !important;
+}
+
+.blog-entry .heading a:hover {
+  color: var(--primary-gold) !important;
+  text-decoration: none !important;
+}
+
+.blog-entry .meta > div {
+  font-size: 0.8rem !important;
+  color: #888888 !important;
+}
+
+.blog-entry .meta > div a {
+  color: #888888 !important;
+}
+
+.blog-entry .meta > div a:hover {
+  color: var(--primary-gold) !important;
+}
+
+/* Footer Section styling */
+.ftco-footer {
+  background: #111111 !important;
+  padding: 6rem 0 3rem !important;
+  font-family: var(--font-sans) !important;
+}
+
+.ftco-footer-widget h2.ftco-heading-2 {
+  font-family: var(--font-serif) !important;
+  color: #ffffff !important;
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+.ftco-footer-widget ul li a {
+  color: #aaaaaa !important;
+  font-size: 0.9rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.ftco-footer-widget ul li a:hover {
+  color: var(--primary-gold) !important;
+  padding-left: 5px;
+  text-decoration: none !important;
+}
+
+.ftco-footer p {
+  color: #777777 !important;
+  font-size: 0.9rem !important;
+}
+
+.ftco-footer a {
+  color: var(--primary-gold) !important;
+}
+
+.ftco-footer a:hover {
+  color: var(--primary-gold-hover) !important;
+}
+
+.ftco-footer .block-23 ul li, .ftco-footer .block-23 ul li a {
+  color: #aaaaaa !important;
+}
+
+.ftco-footer .block-23 ul li span.icon {
+  color: var(--primary-gold) !important;
+}
+
+.ftco-footer .ftco-social li a {
+  background: rgba(255,255,255,0.05) !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+
+.ftco-footer .ftco-social li a:hover {
+  background: var(--primary-gold) !important;
+  color: #ffffff !important;
+}
+
+/* Fix calendar/datepicker styling to match theme */
+.datepicker {
+  border-radius: 8px !important;
+  box-shadow: var(--shadow-md) !important;
+  border: 1px solid rgba(197, 168, 128, 0.2) !important;
+  font-family: var(--font-sans) !important;
+}
+
+.datepicker table tr td.active, 
+.datepicker table tr td.active:hover, 
+.datepicker table tr td.active.disabled, 
+.datepicker table tr td.active.disabled:hover {
+  background-image: none !important;
+  background-color: var(--primary-gold) !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+.datepicker table tr td.today {
+  background-color: rgba(197, 168, 128, 0.15) !important;
+  border-color: var(--primary-gold) !important;
+}
+
+/* About Section custom block styling */
+.img-2 {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.popup-vimeo {
+  background: var(--primary-gold) !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 5px 20px rgba(197, 168, 128, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.popup-vimeo:hover {
+  transform: scale(1.08);
+  background-color: var(--primary-gold-hover) !important;
+}
