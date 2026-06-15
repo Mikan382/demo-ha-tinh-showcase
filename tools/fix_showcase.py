@@ -54,6 +54,7 @@ MOONLIT_ICON_FALLBACK = """<style id="moonlit-icon-fallback">
 
 MOONLIT_LAYOUT_FIX = """<style id="moonlit-layout-fix">
 html,body,#root{max-width:100%;overflow-x:hidden}
+.jarallax-img{transform:none!important;top:0!important;left:0!important;width:100%!important;height:100%!important;object-fit:cover!important}
 .banner__area .banner__slider,.banner__area .swiper-wrapper{width:100%!important;overflow:hidden!important;transform:none!important}
 .banner__area .banner__slider .swiper-slide{display:none!important;width:100%!important;margin-right:0!important}
 .banner__area .banner__slider .swiper-slide-active,.banner__area .banner__slider .swiper-slide:first-child{display:block!important}
