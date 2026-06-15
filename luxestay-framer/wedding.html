@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="vi" data-redirect-timezone="1" dir="ltr" class="lenis"><head>
+﻿<!DOCTYPE html><html lang="vi" data-redirect-timezone="1" dir="ltr" class="lenis"><head>
 	<meta charset="utf-8">
 	
 	
@@ -224,4 +224,234 @@ body>div[style*="position: fixed"][style*="bottom"],a[href*="framer.com/edit"]{d
 
 <script id="framer-badge-cleanup">
 setInterval(()=>document.querySelectorAll('#__framer-badge-container,.__framer-badge,.framer-badge').forEach(el=>el.remove()),500);
-</script></body></html>
+</script><style id="lxs-demo-overrides">
+:root{
+  --lxs-intro-top:#2b5e60;
+  --lxs-intro-bottom:#18383c;
+}
+body .framer-Dh4vv .framer-1vyj1i7{
+  background:
+    radial-gradient(circle at top center, rgba(255,255,255,.08), transparent 42%),
+    linear-gradient(180deg, var(--lxs-intro-top) 0%, var(--lxs-intro-bottom) 100%) !important;
+}
+body .framer-Dh4vv .framer-1vyj1i7 .framer-1xiel0e p{
+  max-width:580px;
+}
+body.lxs-menu-open{
+  overflow:hidden;
+}
+#lxs-site-menu{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:flex;
+  justify-content:flex-end;
+  background:rgba(37,43,21,.18);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .22s ease;
+  backdrop-filter:blur(1.5px);
+}
+#lxs-site-menu.is-open{
+  opacity:1;
+  pointer-events:auto;
+}
+#lxs-site-menu .lxs-menu-panel{
+  width:min(420px,100vw);
+  min-height:100vh;
+  background:#f1ebe3;
+  display:flex;
+  flex-direction:column;
+  padding:32px 36px 48px;
+  box-sizing:border-box;
+  transform:translateX(100%);
+  transition:transform .32s cubic-bezier(.4,0,.2,1);
+  overflow-y:auto;
+  justify-content:space-between;
+  gap:24px;
+}
+#lxs-site-menu.is-open .lxs-menu-panel{
+  transform:translateX(0);
+}
+#lxs-site-menu .lxs-menu-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+#lxs-site-menu .lxs-menu-brand{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+#lxs-site-menu .lxs-menu-kicker{
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#90320a;
+}
+#lxs-site-menu .lxs-menu-book{
+  display:inline-block;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  color:#332015;
+  text-decoration:none;
+  border:1px solid rgba(51,32,21,.3);
+  border-radius:2px;
+  padding:8px 16px;
+  margin-top:4px;
+  transition:background .18s,color .18s;
+}
+#lxs-site-menu .lxs-menu-book:hover{
+  background:#332015;
+  color:#f1ebe3;
+}
+#lxs-site-menu .lxs-menu-close{
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-size:22px;
+  color:#332015;
+  padding:4px;
+  line-height:1;
+  flex-shrink:0;
+}
+#lxs-site-menu .lxs-menu-links{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  flex:1;
+  margin-top:32px;
+}
+#lxs-site-menu .lxs-menu-link{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 0;
+  border-bottom:1px solid rgba(51,32,21,.12);
+  text-decoration:none;
+  color:#332015;
+  font-family:Georgia,serif;
+  font-size:22px;
+  transition:color .18s;
+}
+#lxs-site-menu .lxs-menu-link:hover{
+  color:#90320a;
+}
+#lxs-site-menu .lxs-menu-label{
+  flex:1;
+}
+#lxs-site-menu .lxs-menu-arrow{
+  font-size:18px;
+  opacity:.45;
+}
+#lxs-site-menu .lxs-menu-foot{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  color:rgba(51,32,21,.55);
+  letter-spacing:.06em;
+  margin-top:32px;
+}
+@media(max-width:580px){
+  #lxs-site-menu .lxs-menu-panel{padding:24px 24px 36px;}
+  #lxs-site-menu .lxs-menu-link{font-size:18px;}
+  #lxs-site-menu .lxs-menu-foot{font-size:11px;}
+}
+</style>
+<script id="lxs-demo-nav">
+(()=>{
+  const MENU_ID = "lxs-site-menu";
+  const menuItems = [
+    { href: "index.html", label: "Trang ch\u1ee7" },
+    { href: "rooms.html", label: "Ph\u00f2ng" },
+    { href: "restaurant.html", label: "\u1ea8m th\u1ef1c" },
+    { href: "wellness.html", label: "Spa" },
+    { href: "wedding.html", label: "Ti\u1ec7c c\u01b0\u1eddi" },
+    { href: "contact-us.html", label: "Li\u00ean h\u1ec7" },
+  ];
+  const kicker  = "LuxeStay H\u00e0 T\u0129nh";
+  const bookTxt = "Xem ph\u00f2ng";
+  const closeLbl = "\u0110\u00f3ng menu";
+  const foot1   = "Khu ngh\u1ec9 d\u01b0\u1ee1ng ven h\u1ed3 v\u00e0 bi\u1ec3n";
+  const foot2   = "H\u00e0 T\u0129nh";
+
+  function ensureMenu(){
+    let menu = document.getElementById(MENU_ID);
+    if(menu) return menu;
+    menu = document.createElement("aside");
+    menu.id = MENU_ID;
+    menu.setAttribute("aria-hidden", "true");
+    menu.innerHTML = [
+      '<div class="lxs-menu-panel" role="dialog" aria-modal="true">',
+        '<div class="lxs-menu-head">',
+          '<div class="lxs-menu-brand">',
+            '<div class="lxs-menu-kicker">' + kicker + '</div>',
+            '<a class="lxs-menu-book" href="rooms.html">' + bookTxt + '</a>',
+          '</div>',
+          '<button class="lxs-menu-close" type="button" aria-label="' + closeLbl + '">&times;</button>',
+        '</div>',
+        '<nav class="lxs-menu-links"></nav>',
+        '<div class="lxs-menu-foot">',
+          '<span>' + foot1 + '</span>',
+          '<span>' + foot2 + '</span>',
+        '</div>',
+      '</div>'
+    ].join('');
+    const links = menu.querySelector(".lxs-menu-links");
+    menuItems.forEach((item)=>{
+      const a = document.createElement("a");
+      a.className = "lxs-menu-link";
+      a.href = item.href;
+      a.innerHTML = '<span class="lxs-menu-label">' + item.label + '</span>'
+                  + '<span class="lxs-menu-arrow">&rarr;</span>';
+      links.appendChild(a);
+    });
+    document.body.appendChild(menu);
+    return menu;
+  }
+
+  function init(){
+    const burger = document.querySelector('.framer-1ipfx6b-container [data-framer-name="Start"]');
+    const cta    = document.querySelector('.framer-krc2jy-container a');
+    if(!burger || !cta) return false;
+
+    const menu    = ensureMenu();
+    const panel   = menu.querySelector('.lxs-menu-panel');
+    const closeBtn = menu.querySelector('.lxs-menu-close');
+
+    cta.href   = 'rooms.html';
+    cta.target = '';
+    cta.rel    = '';
+
+    if(!burger.dataset.lxsBound){
+      burger.dataset.lxsBound = '1';
+      burger.setAttribute('role', 'button');
+      burger.style.cursor = 'pointer';
+
+      const openMenu  = ()=>{ menu.classList.add('is-open');    menu.setAttribute('aria-hidden','false'); document.body.classList.add('lxs-menu-open'); };
+      const closeMenu = ()=>{ menu.classList.remove('is-open'); menu.setAttribute('aria-hidden','true');  document.body.classList.remove('lxs-menu-open'); };
+
+      burger.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      menu.addEventListener('click', (e)=>{ if(e.target===menu) closeMenu(); });
+      panel.addEventListener('click', (e)=>e.stopPropagation());
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeMenu(); });
+      menu.querySelectorAll('a').forEach((l)=>l.addEventListener('click', closeMenu));
+      if(window.location.search.includes('menu=open')) openMenu();
+    }
+    return true;
+  }
+
+  let attempts = 0;
+  const timer = setInterval(()=>{
+    attempts++;
+    if(init() || attempts > 40) clearInterval(timer);
+  }, 250);
+})();
+</script>
+</body></html>
