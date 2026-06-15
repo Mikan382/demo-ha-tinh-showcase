@@ -900,6 +900,77 @@ COLORLIB_VI_EXTRA = [
     (">RESTAURANTS<", ">ẨM THỰC<"),
     ("Advanced Search", "Tìm kiếm nâng cao"),
     ("Star Rating", "Xếp hạng sao"),
+    ("<html lang=\"en\">", "<html lang=\"vi\">"),
+    ('href="index-1.html"', 'href="index.html"'),
+    ('<a class="navbar-brand" href="index-1.html">Deluxe</a>', '<a class="navbar-brand" href="index.html">Deluxe Hotel Ha Tinh</a>'),
+    ('class="nav-link">Home</a>', 'class="nav-link">Trang chủ</a>'),
+    ('class="nav-link">Phòngs</a>', 'class="nav-link">Phòng</a>'),
+    ('class="nav-link">Restaurant</a>', 'class="nav-link">Ẩm thực</a>'),
+    ('class="nav-link">Blog</a>', 'class="nav-link">Tin tức</a>'),
+    ('Deluxe Hotel Ha Tinh Ha Tinh</a>', 'Deluxe Hotel Ha Tinh</a>'),
+    ("Blog Single", "Chi tiết tin tức"),
+    ("Deluxe - Free Bootstrap 4 Template by", "Chi tiết tin tức — Deluxe Hotel Ha Tinh"),
+    ("Be A Creative Web Designer", "Thiết kế không gian nghỉ dưỡng tối giản và hiện đại"),
+    ("Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!", "Trải nghiệm lưu trú tại Deluxe Hotel Ha Tinh mang đến sự thoải mái và yên bình tuyệt đối. Tọa lạc bên bờ biển Thiên Cầm thơ mộng, khách sạn là nơi lý tưởng để quý khách lánh xa những ồn ào thường nhật, tận hưởng làn gió biển mát lành và ngắm nhìn hoàng hôn buông xuống dải đất miền Trung."),
+    ("#2. Creative WordPress Themes", "Dịch vụ đẳng cấp và không gian thư giãn hoàn hảo"),
+    ("Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.", "Chúng tôi cung cấp các dịch vụ đa dạng từ phòng nghỉ cao cấp hướng biển, hồ bơi ngoài trời hiện đại cho đến các liệu trình chăm sóc sức khỏe chuyên sâu tại spa. Mọi chi tiết đều được chăm chút kỹ lưỡng nhằm mang lại sự hài lòng cao nhất cho quý khách."),
+    ("Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.", "Bên cạnh không gian nghỉ ngơi yên tĩnh, thực đơn ẩm thực phong phú tại nhà hàng Deluxe cũng là một điểm nhấn không thể bỏ qua. Những món hải sản tươi ngon được đánh bắt trong ngày và chế biến bởi đầu bếp bản địa sẽ làm xiêu lòng cả những thực khách khó tính nhất."),
+    ("Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.", "Deluxe Hotel Ha Tinh tự hào là cầu nối giúp du khách khám phá vẻ đẹp thiên nhiên và văn hóa đặc sắc của Hà Tĩnh. Từ khách sạn, quý khách dễ dàng di chuyển tới các điểm tham quan nổi tiếng như hồ Kẻ Gỗ ngút ngàn hay chùa Hương Tích cổ kính ẩn hiện trong làn sương mờ."),
+    ("Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!", "Đội ngũ nhân sự tận tâm, chuyên nghiệp và giàu lòng hiếu khách luôn sẵn sàng hỗ trợ quý khách 24/7. Chúng tôi mong muốn mỗi khoảnh khắc quý khách lưu trú tại đây đều ngập tràn niềm vui và sự thư thái trọn vẹn."),
+    ("Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?", "Hãy để Deluxe Hotel Ha Tinh đồng hành cùng bạn trong chuyến đi sắp tới để tạo nên những kỷ niệm đáng nhớ bên người thân và gia đình. Đặt phòng ngay hôm nay để nhận các ưu đãi hấp dẫn nhất dành riêng cho bạn."),
+    ("Lance Smith", "Nguyễn Minh Tuấn"),
+    ("John Doe", "Lê Văn Nam"),
+    ("Decmener 7, 2018 at 2:21pm", "14 tháng 6, 2026 lúc 14:21"),
+    ("December 7, 2018 at 2:21pm", "14 tháng 6, 2026 lúc 14:21"),
+    ("Leave a comment", "Để lại bình luận"),
+    ("Name *", "Họ và tên *"),
+    ("Email *", "Email *"),
+    ('>Website</label>', '>Trang web</label>'),
+    ("Message", "Nội dung bình luận"),
+    ("Post Comment", "Gửi bình luận"),
+    ("6 Comments", "6 bình luận"),
+    ("Tag Cloud", "Chủ đề"),
+    ('class="tag-cloud-link">dish</a>', 'class="tag-cloud-link">món ăn</a>'),
+    ('class="tag-cloud-link">menu</a>', 'class="tag-cloud-link">thực đơn</a>'),
+    ('class="tag-cloud-link">food</a>', 'class="tag-cloud-link">ẩm thực</a>'),
+    ('class="tag-cloud-link">sweet</a>', 'class="tag-cloud-link">tráng miệng</a>'),
+    ('class="tag-cloud-link">tasty</a>', 'class="tag-cloud-link">hương vị</a>'),
+    ('class="tag-cloud-link">delicious</a>', 'class="tag-cloud-link">thơm ngon</a>'),
+    ('class="tag-cloud-link">desserts</a>', 'class="tag-cloud-link">bánh ngọt</a>'),
+    ('class="tag-cloud-link">drinks</a>', 'class="tag-cloud-link">đồ uống</a>'),
+    ('<h3>Paragraph</h3>', '<h3>Giới thiệu</h3>'),
+    ("Type a keyword and hit enter", "Nhập từ khóa và nhấn enter..."),
+    ("Categories", "Danh mục"),
+    ("Properties <span>(12)</span>", "Lưu trú <span>(12)</span>"),
+    ("Home <span>(22)</span>", "Trang chủ <span>(22)</span>"),
+    ("House <span>(37)</span>", "Nhà riêng <span>(37)</span>"),
+    ("Villa <span>(42)</span>", "Biệt thự <span>(42)</span>"),
+    ("Apartment <span>(14)</span>", "Căn hộ <span>(14)</span>"),
+    ("Condominium <span>(140)</span>", "Căn hộ dịch vụ <span>(140)</span>"),
+    ("info@yoursite.com", "contact@deluxe.demo"),
+    ("yoursite.com", "deluxe.demo"),
+    ("Oops! Something went wrong.", "Đã xảy ra lỗi!"),
+    ("This page didn't load Google Maps correctly. See the JavaScript console for technical details.", "Trang này không thể tải bản đồ Google Maps chính xác. Vui lòng kiểm tra console."),
+    ("Welcome To Deluxe", "Chào mừng đến với Deluxe Hotel"),
+    ("Hotels & Resorts", "Khách sạn & Khu nghỉ dưỡng"),
+    ("Enjoy A Luxury Experience", "Trải nghiệm kỳ nghỉ dưỡng tuyệt vời"),
+    ("Welcome to Deluxe Hotel", "Chào mừng đến với Deluxe Hotel"),
+    ("Welcome To Our Hotel", "Chào mừng đến với khách sạn của chúng tôi"),
+    ("Grilled Beef with potatoes", "Bò nướng tảng kèm khoai tây"),
+    ("A small river named Duden flows by their place and supplies", "Hải sản tươi sống đánh bắt trong ngày tại vùng biển Thiên Cầm, chế biến tinh tế bởi đầu bếp địa phương."),
+    ("Ultimate Overload", "Lẩu hải sản thập cẩm khổng lồ"),
+    ("Ham & Pineapple", "Pizza dăm bông và dứa"),
+    ("View:", "Tầm nhìn:"),
+    ("Sea View", "Hướng biển"),
+    ("0 Adult", "0 người lớn"),
+    ("0 Children", "0 trẻ em"),
+    ("Take A Tour", "Trải nghiệm phòng nghỉ"),
+    ("Review & Ratings", "Đánh giá & Xếp hạng"),
+    ("100 Ratings", "100 Đánh giá"),
+    ("30 Ratings", "30 Đánh giá"),
+    ("5 Ratings", "5 Đánh giá"),
+    ("0 Ratings", "0 Đánh giá"),
+    ("Spa & suite", "Spa & Suite"),
 ]
 
 FRAMER_VI_EXTRA = [
@@ -1964,7 +2035,17 @@ def fix_seaside_imgs(html: str) -> str:
     return fix_seaside_rating(html)
 
 
-def fix_colorlib(html: str) -> str:
+def fix_colorlib(fp: Path, html: str) -> str:
+    # Page-specific title tag replacements
+    if fp.name == "blog-single.html":
+        html = html.replace("<title>Deluxe - Free Bootstrap 4 Template by </title>", "<title>Chi tiết tin tức — Deluxe Hotel Ha Tinh</title>")
+    elif fp.name == "blog.html":
+        html = html.replace("<title>Deluxe - Free Bootstrap 4 Template by </title>", "<title>Tin tức & Sự kiện — Deluxe Hotel Ha Tinh</title>")
+    elif fp.name == "index-1.html":
+        html = html.replace("<title>Deluxe - Free Bootstrap 4 Template by </title>", "<title>Deluxe Hotel Ha Tinh — Lưu trú tiện nghi ven biển Thiên Cầm</title>")
+    elif fp.name == "rooms-single.html":
+        html = html.replace("<title>Deluxe - Free Bootstrap 4 Template by </title>", "<title>Chi tiết phòng nghỉ — Deluxe Hotel Ha Tinh</title>")
+
     html = inject_head(html, COLORLIB_LAYOUT_FIX, "colorlib-layout-fix")
     for old, new in COLORLIB_VI:
         html = html.replace(old, new)
@@ -3259,7 +3340,7 @@ def process_html(fp: Path, html: str) -> str:
     html = inject_head(html, GLOBAL_HIDE, "showcase-cleanup")
     html = strip_vendor(html)
     if slug == "colorlib-deluxe":
-        html = fix_colorlib(html)
+        html = fix_colorlib(fp, html)
     elif slug == "moonlit-react":
         html = fix_moonlit(html)
     elif slug in ("wanderway-framer", "luxestay-framer", "mountain-lodge-framer"):

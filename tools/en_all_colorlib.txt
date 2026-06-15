@@ -1,0 +1,147 @@
+=== about.html ===
+  - Deluxe Hotel Ha Tinh — Lưu trú tiện nghi
+  - Deluxe Hotel Ha Tinh
+  - END nav
+  - Chào mừng đến Deluxe Hotel Ha Tinh
+  - Deluxe Hotel Ha Tinh mang đến không gian nghỉ dưỡng tiện nghi ven biển Thiên Cầm, phù hợp cho kỳ nghỉ ngắn và dài ngày tại Hà Tĩnh.
+  - Spa & suite
+  - Deluxe Hotel Ha Tinh Khách sạn
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== blog-single.html ===
+  - Deluxe - Free Bootstrap 4 Template by
+  - Blog
+  - END nav
+  - Blog Single
+  - Be A Creative Web Designer
+  - Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!
+  - #2. Creative WordPress Themes
+  - Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.
+  - Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.
+  - Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.
+  - Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!
+  - Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?
+  - Lance Smith
+  - John Doe
+  - Decmener 7, 2018 at 2:21pm
+  - December 7, 2018 at 2:21pm
+  - END comment-list
+  - Leave a comment
+  - Name *
+  - Email *
+  - Website
+  - Message
+  - .col-md-8
+  - Tin tức và ưu đãi tại Deluxe Hotel Ha Tĩnh.
+  - December 7, 2018
+  - Tag Cloud
+  - Deluxe Hotel
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== blog.html ===
+  - Deluxe - Free Bootstrap 4 Template by
+  - Blog
+  - END nav
+  - Tin tức và ưu đãi tại Deluxe Hotel Ha Tĩnh.
+  - Deluxe Hotel
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== contact.html ===
+  - Deluxe Hotel Ha Tinh — Lưu trú tiện nghi
+  - Deluxe Hotel Ha Tinh
+  - END nav
+  - Email:
+  - info@yoursite.com
+  - Website
+  - yoursite.com
+  - Oops! Something went wrong.
+  - This page didn't load Google Maps correctly. See the JavaScript console for technical details.
+  - Deluxe Hotel Ha Tinh Khách sạn
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== index-1.html ===
+  - Deluxe - Free Bootstrap 4 Template by
+  - Blog
+  - END nav
+  - Welcome To Deluxe
+  - Hotels & Resorts
+  - Enjoy A Luxury Experience
+  - Welcome to Deluxe Hotel
+  - Welcome To Our Hotel
+  - Deluxe Hotel Ha Tinh mang đến không gian nghỉ dưỡng tiện nghi ven biển Thiên Cầm, phù hợp cho kỳ nghỉ ngắn và dài ngày tại Hà Tĩnh.
+  - Spa & suite
+  - Tin tức và ưu đãi tại Deluxe Hotel Ha Tĩnh.
+  - Deluxe Hotel
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== index.html ===
+  - Deluxe Hotel Ha Tinh — Lưu trú tiện nghi
+  - Deluxe Hotel Ha Tinh
+  - END nav
+  - Chào mừng đến Deluxe Hotel Ha Tinh
+  - Deluxe Hotel Ha Tinh mang đến không gian nghỉ dưỡng tiện nghi ven biển Thiên Cầm, phù hợp cho kỳ nghỉ ngắn và dài ngày tại Hà Tĩnh.
+  - Spa & suite
+  - Tin tức và ưu đãi tại Deluxe Hotel Ha Tĩnh.
+  - Deluxe Hotel Ha Tinh Khách sạn
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== restaurant.html ===
+  - Deluxe Hotel Ha Tinh Ha Tinh — Ẩm thực
+  - Deluxe Hotel Ha Tinh Ha Tinh
+  - END nav
+  - Nhà hàng Deluxe Hotel phục vụ hải sản và đặc sản Hà Tĩnh trong không gian ven biển Thiên Cầm.
+  - Grilled Beef with potatoes
+  - A small river named Duden flows by their place and supplies
+  - Ultimate Overload
+  - Ham & Pineapple
+  - Deluxe Hotel Ha Tinh
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== room-single.html ===
+  - Chi tiết phòng — Deluxe Hotel Ha Tinh
+  - Deluxe Hotel Ha Tinh
+  - END nav
+  - View:
+  - Sea View
+  - 0 Adult
+  - Deluxe Hotel Ha Tinh Khách sạn
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== rooms-single.html ===
+  - Deluxe - Free Bootstrap 4 Template by
+  - Blog
+  - END nav
+  - View:
+  - Sea View
+  - Take A Tour
+  - Review & Ratings
+  - 100 Ratings
+  - 30 Ratings
+  - 5 Ratings
+  - 0 Ratings
+  - .col-md-8
+  - Tin tức và ưu đãi tại Deluxe Hotel Ha Tĩnh.
+  - Tag Cloud
+  - Deluxe Hotel
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
+=== rooms.html ===
+  - Deluxe Hotel Ha Tinh — Lưu trú tiện nghi
+  - Deluxe Hotel Ha Tinh
+  - END nav
+  - View:
+  - Sea View
+  - 0 Adult
+  - Deluxe Hotel Ha Tinh Khách sạn
+  - contact@deluxe.demo
+  - Link back to can't be removed. Template is licensed under CC BY 3.0.
+  - Global site tag (gtag.js) - Google Analytics
