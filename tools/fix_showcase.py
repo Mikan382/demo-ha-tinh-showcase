@@ -2323,6 +2323,31 @@ def fix_travol_imgs(html: str) -> str:
     if "travol-hide-clients" not in html and "img/clients/" in html:
         html = html.replace("</head>", TRAVOL_HIDE_CLIENTS + "</head>", 1)
     html = html.replace(">Gallery<", ">Thư viện<")
+    # Nav items common to all travol pages
+    html = html.replace(">Home <i", ">Trang chủ <i")
+    html = html.replace(">About<", ">Giới thiệu<")
+    html = html.replace(">Tours <i", ">Tour <i")
+    html = html.replace(">Destinations<", ">Điểm đến<")
+    html = html.replace(">Contact<", ">Liên hệ<")
+    # Footer common to all travol pages
+    html = html.replace("<h6>Call us</h6>", "<h6>Gọi cho chúng tôi</h6>")
+    html = html.replace(">+1 123-456-0606<", ">+84 239 385 6789<")
+    html = html.replace("<h6>Write to us</h6>", "<h6>Gửi email</h6>")
+    html = html.replace("info@travolagency.com", "contact@travol.demo")
+    html = html.replace("<h6>Address</h6>", "<h6>Địa chỉ</h6>")
+    html = html.replace("24 King St, SC 29401 USA", "Thiên Cầm, Hà Tĩnh")
+    html = html.replace(
+        "Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.",
+        "Công ty du lịch địa phương Hà Tĩnh — tour thiên nhiên, văn hóa và ven biển cho gia đình và nhóm bạn.",
+    )
+    html = html.replace('<h3 class="widget-title">Quick Links</h3>', '<h3 class="widget-title">Liên kết nhanh</h3>')
+    html = html.replace('<h3 class="widget-title">Subscribe</h3>', '<h3 class="widget-title">Đăng ký nhận tin</h3>')
+    html = html.replace(
+        "Sign up for our monthly blogletter to stay informed about travel and tours",
+        "Nhận thông tin tour mới và ưu đãi đặc biệt từ chúng tôi.",
+    )
+    html = html.replace('placeholder="Email Address"', 'placeholder="Địa chỉ email"')
+    html = html.replace("<button type=\"submit\">Send</button>", "<button type=\"submit\">Gửi</button>")
     # Duration: "X Days" → "X Ngày"
     html = re.sub(r"\b(\d+) Days\b", r"\1 Ngày", html)
     # Destination badge: "X Tour Packages" → "X Tour"
@@ -2368,6 +2393,99 @@ def fix_travol_imgs(html: str) -> str:
         ">Được yêu thích Yacht Charter Routes<",
         ">Các tour thuyền biển được yêu thích nhất<",
     )
+    return html
+
+
+def fix_travol_tour_details(html: str) -> str:
+    # Title
+    html = html.replace("<title>Travol Agency</title>", "<title>Ha Tinh Travel — Du lịch Hà Tĩnh</title>")
+    # Section subtitle
+    html = html.replace('<div class="section-subtitle">Travel Agency</div>', '<div class="section-subtitle">Công ty du lịch địa phương</div>')
+    # Review count
+    html = html.replace("(2 Reviews)", "(2 đánh giá)")
+    # Tour meta
+    html = re.sub(r"(\d+) Nights?\b", r"\1 Đêm", html)
+    html = html.replace("Group: 5 - 10 People", "Nhóm: 5 - 10 người")
+    html = html.replace("9.3 Superb", "9.3 Xuất sắc")
+    # List item combining the above
+    html = html.replace(
+        "<p>5 Ngày 4 Đêm, Group: 5 - 10 People, Thiên Cầm</p>",
+        "<p>5 Ngày 4 Đêm, Nhóm: 5 - 10 người, Thiên Cầm</p>",
+    )
+    # Section heading
+    html = html.replace("<h6>Information</h6>", "<h6>Thông tin chuyến đi</h6>")
+    # Lorem ipsum body paragraphs
+    html = html.replace(
+        "Travel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum. Duisterione venenatis lacus gravida eros ut turpis interdum ornare.",
+        "Tour khám phá biển Thiên Cầm và hồ Kẻ Gỗ — hành trình 5 ngày trải nghiệm thiên nhiên, văn hóa và ẩm thực địa phương phù hợp cho gia đình, cặp đôi và nhóm nhỏ.",
+    )
+    html = html.replace(
+        "Interdum et malesu they adamale fames ac anteipsu pimsine faucibus curabitur arcu site feugiat rana volutpat sollicitudin libero. Hotel non lorem acer suscipit bibendum vulla facilisi nedeuter nunc vousa molis sapien velet conseyer turpeutionyer masin libero sempe molis.",
+        "Mỗi chặng dừng được tuyển chọn kỹ — từ bờ biển hoang sơ đến rừng nguyên sinh ven hồ, từ bữa cơm làng chài đến đêm ngủ lều giữa thiên nhiên yên tĩnh của Hà Tĩnh.",
+    )
+    # Time table
+    html = html.replace("<span>Departure</span>", "<span>Điểm khởi hành</span>")
+    html = html.replace("<p>NYC International Airport</p>", "<p>Ga Vinh / Sân bay Vinh</p>")
+    html = html.replace("<span>Departure Time</span>", "<span>Giờ khởi hành</span>")
+    html = html.replace("<span>Return Time</span>", "<span>Giờ về</span>")
+    html = html.replace("<p>Approximately 9.30PM</p>", "<p>Khoảng 21:30</p>")
+    html = html.replace("<span>Dress Code</span>", "<span>Trang phục</span>")
+    html = html.replace("<p>Casual, comfortable and light</p>", "<p>Thoải mái, tiện lợi</p>")
+    # Price includes/excludes
+    html = html.replace("<span>Price Includes</span>", "<span>Đã bao gồm</span>")
+    html = html.replace("<li><i class=\"ti-check\"></i> Accommondatio</li>", "<li><i class=\"ti-check\"></i> Lưu trú</li>")
+    html = html.replace("<li><i class=\"ti-check\"></i> Porter &amp; Personal Guide</li>", "<li><i class=\"ti-check\"></i> Hướng dẫn viên địa phương</li>")
+    html = html.replace("<li><i class=\"ti-check\"></i> Insurance</li>", "<li><i class=\"ti-check\"></i> Bảo hiểm chuyến đi</li>")
+    html = html.replace("<li><i class=\"ti-check\"></i> Breakfast</li>", "<li><i class=\"ti-check\"></i> Bữa sáng</li>")
+    html = html.replace("<li><i class=\"ti-check\"></i> Tranportation / Car</li>", "<li><i class=\"ti-check\"></i> Vận chuyển</li>")
+    html = html.replace("<span>Price Excludes</span>", "<span>Chưa bao gồm</span>")
+    html = html.replace("<li><i class=\"ti-close\"></i> Flights </li>", "<li><i class=\"ti-close\"></i> Vé máy bay</li>")
+    html = html.replace("<li><i class=\"ti-close\"></i> Lunch</li>", "<li><i class=\"ti-close\"></i> Bữa trưa</li>")
+    html = html.replace("<li><i class=\"ti-close\"></i> Typical Souvenir </li>", "<li><i class=\"ti-close\"></i> Quà lưu niệm</li>")
+    html = html.replace("<li><i class=\"ti-close\"></i> Sunscreen, toiletries and personal items</li>", "<li><i class=\"ti-close\"></i> Đồ dùng cá nhân</li>")
+    # Gallery / Plan headings
+    html = html.replace('<h6 class="mb-0">Tour Gallery</h6>', '<h6 class="mb-0">Thư viện ảnh tour</h6>')
+    html = html.replace("<h6>Tour Plan</h6>", "<h6>Lịch trình</h6>")
+    # Day plan items
+    html = html.replace('<div class="acc-btn">Day 1: Departure</div>', '<div class="acc-btn">Ngày 1: Khởi hành</div>')
+    html = html.replace('<div class="acc-btn">Day 2: Adventure Beggins</div>', '<div class="acc-btn">Ngày 2: Bắt đầu hành trình</div>')
+    html = html.replace('<div class="acc-btn">Day 3: Sea Tour</div>', '<div class="acc-btn">Ngày 3: Khám phá biển Thiên Cầm</div>')
+    html = html.replace('<div class="acc-btn">Day 4: Return</div>', '<div class="acc-btn">Ngày 4: Hồ Kẻ Gỗ & trở về</div>')
+    # Day plan lorem ipsum (same text repeated 4 times)
+    html = html.replace(
+        "Travel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum. Duisteyerion venenatis lacus gravida eros ut turpis interdum ornare.",
+        "Khởi hành sáng sớm, nhận phòng, tham quan điểm nổi bật theo lịch trình. Hướng dẫn viên đồng hành, bữa sáng đã bao gồm.",
+    )
+    # Sidebar form
+    html = html.replace('<span class="right-sidebar item__from">From</span>', '<span class="right-sidebar item__from">Từ</span>')
+    html = html.replace(">$900<", "><")
+    html = html.replace('placeholder="Full Name"', 'placeholder="Họ và tên"')
+    html = html.replace('placeholder="Travel Date"', 'placeholder="Ngày khởi hành"')
+    html = html.replace('placeholder="People"', 'placeholder="Số người"')
+    html = html.replace('placeholder="Your Enquiry"', 'placeholder="Nội dung hỏi"')
+    html = html.replace("><span>Book Now</span>", "><span>Đặt tour</span>")
+    # Testimonials
+    html = html.replace(
+        "<h5>We Provide Top Destinations Expecially For You Book Now and Enjoy!</h5>",
+        "<h5>Khám phá những điểm đến tuyệt vời tại Hà Tĩnh — Đặt tour ngay hôm nay!</h5>",
+    )
+    html = html.replace('<p class="color-1">Call Now</p>', '<p class="color-1">Gọi ngay</p>')
+    html = html.replace(">855 333 4444<", ">0239 385 6789<")
+    html = html.replace("<small>Call us, it's toll-free.</small>", "<small>Tư vấn miễn phí 24/7.</small>")
+    html = html.replace("<h6>Testimonials</h6>", "<h6>Đánh giá</h6>")
+    html = html.replace("<h4>Travelers Reviews</h4>", "<h4>Khách hàng nói gì</h4>")
+    html = html.replace(
+        "Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.",
+        "Chuyến đi thực sự ấn tượng — hướng dẫn viên nhiệt tình, phong cảnh Hà Tĩnh đẹp hơn tôi tưởng. Sẽ quay lại lần nữa!",
+    )
+    html = html.replace("<h6>Emily Brown</h6>", "<h6>Nguyễn Thu Hương</h6>")
+    html = html.replace("<h6>Olivia Martin</h6>", "<h6>Trần Thị Mai</h6>")
+    html = html.replace("<h6>Nolan White</h6>", "<h6>Phạm Văn Tuấn</h6>")
+    html = html.replace(" <span>Guest review</span>", " <span>Khách du lịch</span>")
+    # Footer nav links (tour-details variant uses anchor text not inside nav-link)
+    html = html.replace('<li><a href="about.html">About</a></li>', '<li><a href="about.html">Giới thiệu</a></li>')
+    html = html.replace('<li><a href="tours.html">Tours</a></li>', '<li><a href="tours.html">Tour</a></li>')
+    html = html.replace('<li><a href="destination.html">Destinations</a></li>', '<li><a href="destination.html">Điểm đến</a></li>')
     return html
 
 
@@ -2475,6 +2593,8 @@ def process_html(fp: Path, html: str) -> str:
         html = fix_asatha_assets(html)
     elif slug == "travol-duruthemes":
         html = fix_travol_imgs(html)
+        if fp.name == "tour-details.html":
+            html = fix_travol_tour_details(html)
     return fix_global_leftovers(html)
 
 
