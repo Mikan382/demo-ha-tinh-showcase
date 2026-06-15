@@ -899,8 +899,8 @@ MOUNTAIN_VI_EXTRA = [
     ("YOUR PERFECT GETAWAY", "RETREAT BÊN HỒ KẺ GỖ"),
     ("Escape to our enchanting mountain lake boutique hotel, where every moment is a masterpiece of natural beauty. Embrace serenity amidst breathtaking views of towering mountains and tranquil waters", "Không gian nghỉ dưỡng ven hồ Kẻ Gỗ với nhịp sống chậm, cảnh rừng yên tĩnh và những góc lưu trú gần thiên nhiên Hà Tĩnh."),
     ("Immerse yourself in the lavish embrace of sumptuously appointed chambers and an exquisitely crafted ambiance, where every detail whispers of refined luxury and timeless elegance.", "Phòng nghỉ sử dụng hình ảnh địa phương, chất liệu ấm và bố cục gọn để tạo cảm giác thư giãn sau một ngày khám phá hồ Kẻ Gỗ."),
-    ("We offer a range of meticulously curated phòng to suit every discerning guest. Experience unparalleled luxury and comfort in our Deluxe Suites, boasting panoramic views of the serene surroundings and plush tiện ích for a rejuvenating stay. For those seeking a touch of opulence, our Executive Phòng provide an exquisite blend of sophistication and convenience, featuring elegant furnishings and personalized services. ", "Các hạng phòng được sắp xếp cho nhiều nhu cầu: nghỉ cuối tuần, đi cùng gia đình hoặc chuyến retreat nhỏ. Mỗi phòng ưu tiên ánh sáng tự nhiên, tầm nhìn xanh và tiện ích vừa đủ cho kỳ nghỉ ngắn. "),
-    ("Unwind in style and comfort in our cozy yet chic Boutique Phòng, offering a peaceful retreat after a day of exploration. From complimentary high-speed Wi-Fi to indulgent room service, every aspect of your stay is tailored to exceed expectations and create unforgettable memories.", "Sau lịch trình tham quan, khách có thể nghỉ trong không gian yên tĩnh, dùng bữa nhẹ và chuẩn bị cho trải nghiệm chèo thuyền, đi rừng hoặc khám phá ẩm thực địa phương."),
+    ("We offer a range of meticulously curated phòng to suit every discerning guest. Experience unparalleled luxury and comfort in our Deluxe Suites, boasting panoramic views of the serene surroundings and plush amenities for a rejuvenating stay. For those seeking a touch of opulence, our Executive Rooms provide an exquisite blend of sophistication and convenience, featuring elegant furnishings and personalized services. ", "Các hạng phòng được sắp xếp cho nhiều nhu cầu: nghỉ cuối tuần, đi cùng gia đình hoặc chuyến retreat nhỏ. Mỗi phòng ưu tiên ánh sáng tự nhiên, tầm nhìn xanh và tiện ích vừa đủ cho kỳ nghỉ ngắn. "),
+    ("Unwind in style and comfort in our cozy yet chic Boutique Rooms, offering a peaceful retreat after a day of exploration. From complimentary high-speed Wi-Fi to indulgent room service, every aspect of your stay is tailored to exceed expectations and create unforgettable memories.", "Sau lịch trình tham quan, khách có thể nghỉ trong không gian yên tĩnh, dùng bữa nhẹ và chuẩn bị cho trải nghiệm chèo thuyền, đi rừng hoặc khám phá ẩm thực địa phương."),
     ("ABOUT", "GIỚI THIỆU"),
     ("ROOMS", "PHÒNG"),
     ("AREA", "KHU VỰC"),
@@ -963,12 +963,12 @@ MOUNTAIN_VI_EXTRA = [
     ),
     # gallery.html: partially-translated wine/Italian Alps paragraph (Discover→Khám phá already applied)
     (
-        "Khám phá the allure of the wine traditions in the vùng núi Hà Tĩnh at our exclusive hotel, nestled amongst stunning mountain vistas. Enjoy an expertly chosen array of local wines from neighboring hamlets, each narrating a distinct tale of the region's terrain. Revel in the taste of sharp white wines, intense reds, and soft rosés, while taking in views of the tranquil alpine lake.",
+        "Discover the allure of the wine traditions in the vùng núi Hà Tĩnh at our exclusive hotel, nestled amongst stunning mountain vistas. Enjoy an expertly chosen array of local wines from neighboring hamlets, each narrating a distinct tale of the region's terrain. Revel in the taste of sharp white wines, intense reds, and soft ros\\xE9s, while taking in views of the tranquil alpine lake.",
         "Khám phá nét duyên của ẩm thực dân gian Hà Tĩnh tại Ke Go Eco Lodge. Thưởng thức rượu cần, hải sản tươi và các món đặc sản núi rừng từ các làng lân cận, mỗi bữa ăn kể câu chuyện của vùng đất và con người nơi đây.",
     ),
     # index.html: restaurant description
     (
-        "Savour the gastronomic pleasures of contemporary ẩm thực địa phương at our eating establishments, where each recipe marries novelty and heritage. Amplify your experience with our swanky and inventive mixed drinks, meticulously concocted to pair with our wide range of high-quality wines at our chic lounge.",
+        "Savour the gastronomic pleasures of contemporary European dining at our eating establishments, where each recipe marries novelty and heritage. Amplify your experience with our swanky and inventive mixed drinks, meticulously concocted to pair with our wide range of high-quality wines at our chic lounge.",
         "Thưởng thức ẩm thực địa phương tại nhà hàng Ke Go Eco Lodge, nơi mỗi món ăn kết hợp hương vị mới lạ và di sản ẩm thực Hà Tĩnh. Hoàn thiện trải nghiệm bằng cocktail sáng tạo và rượu cần truyền thống tại khu lounge ven hồ.",
     ),
     # contact.html: form instruction
@@ -983,6 +983,17 @@ MOUNTAIN_VI_EXTRA = [
         "Some text about the restaurant and food, where every moment is a masterpiece of natural beauty. Embrace serenity amidst breathtaking views of towering mountains and tranquil waters",
         "Nhà hàng Ke Go Eco Lodge phục vụ ẩm thực địa phương Hà Tĩnh trong không gian thiên nhiên nguyên sơ, nơi mỗi bữa ăn là khoảnh khắc kết nối với rừng núi và mặt hồ yên tĩnh",
     ),
+    # gallery.html: "Get inspired" caption
+    (
+        "Let the breathtaking panoramas and pastoral scenes inspire your next getaway with loved ones, whether for a weekend retreat or an extended vacation.",
+        "Để những bức tranh thiên nhiên hùng vĩ và cảnh sắc yên bình truyền cảm hứng cho chuyến nghỉ tiếp theo — dù là cuối tuần bên hồ hay kỳ nghỉ dài ngày giữa rừng Kẻ Gỗ.",
+    ),
+    # footer: plain-text version (HTML entity version handled in MOUNTAIN_VI)
+    ("TERMS & CONDITIONS", "ĐIỀU KHOẢN & ĐIỀU KIỆN"),
+    # section button labels in mjs (HTML version handled by >DISCOVER< in MOUNTAIN_VI)
+    ("DISCOVER", "KHÁM PHÁ"),
+    # stat counter: runs after long-sentence replacements so no key clash
+    ("amenities", "tiện ích"),
 ]
 
 HOTALE_UPLOAD_MAP = {
@@ -1197,6 +1208,8 @@ LUXESTAY_VI = [
     ("luxestay", "LuxeStay Ha Tinh"),
     ("The timeless luxury of island living", "Không gian nghỉ dưỡng riêng tư tại Hà Tĩnh"),
     ("Stay.  Explore.  Feel alive", "Ở lại. Khám phá. Tận hưởng Hà Tĩnh"),
+    # mjs may have partial replacement (Explore already swapped, Stay/Feel alive still EN)
+    ("Stay.  Khám phá.  Feel alive", "Ở lại. Khám phá. Tận hưởng Hà Tĩnh"),
     ("Book a stay", "Xem villa"),
     ("Everything you need for a perfect island stay", "Mọi thứ cho kỳ nghỉ trọn vẹn tại Hà Tĩnh"),
     ("Every room, a sanctuary of its own", "Mỗi phòng là một không gian riêng tư"),
@@ -1289,6 +1302,57 @@ LUXESTAY_VI = [
     # luxestay wellness headings
     ("Organic well being", "Sức khỏe toàn diện"),
     ("Our treatments", "Liệu pháp của chúng tôi"),
+    # Brand name cleanup after chained replacement "Luxestay"→"LuxeStay Ha Tinh"
+    ("LuxeStay Ha Tinh hotels & resorts", "LuxeStay Hà Tĩnh"),
+    ("Luxestay hotels & resorts", "LuxeStay Hà Tĩnh"),
+    # homepage: hero island description (after "Khám phá " prefix from HTML)
+    (
+        "a tranquil island sanctuary where wellness, nature, and timeless hospitality create space to truly unwind.",
+        "thiên đường bình yên — nơi thiên nhiên, sức khỏe và lòng hiếu khách tạo nên không gian thực sự thư giãn.",
+    ),
+    # homepage: destination cards
+    ("A quiet moment where ancient culture, dramatic landscapes, and island spirituality come together.", "Khoảnh khắc yên bình nơi văn hóa cổ xưa, cảnh quan hùng vĩ và tâm linh hội tụ."),
+    ("A hidden waterfall sanctuary where lush jungle, flowing water, and quiet island magic meet.", "Khu ẩn mình bên thác nước — rừng nhiệt đới xanh mướt, dòng chảy nhẹ nhàng và vẻ đẹp huyền bí."),
+    ("A dramatic coastal escape where turquoise waters, golden sands, and rugged cliffs create pure island awe.", "Bờ biển kỳ vĩ với làn nước xanh ngọc, bãi cát vàng và vách đá hiểm trở tạo nên vẻ đẹp hoang sơ."),
+    ("Endless rice fields unfolding in quiet harmony, offering a true taste of island life.", "Đồng lúa trải dài trong sự yên bình, mang đến hương vị chân thực của cuộc sống bản địa."),
+    # homepage: room description
+    ("Modern cityscape room with queen bed, work desk, and essential business traveler amenities.", "Phòng tiêu chuẩn hiện đại với giường queen, bàn làm việc và đầy đủ tiện nghi cho khách công tác."),
+    # homepage: amenity descriptions
+    ("A serene pool experience designed to visually merge with the surrounding landscape and horizon.", "Hồ bơi vô cực thiết kế hoà vào cảnh quan — nơi mặt nước và chân trời giao thoa trong sự tĩnh lặng."),
+    ("Experiences designed to help guests explore, discover, and connect with the destination.", "Các hoạt động được thiết kế để khám phá, trải nghiệm và kết nối sâu hơn với vùng đất Hà Tĩnh."),
+    ("Tranquil views of lush tropical greenery or expansive ocean horizons from the comfort of your stay.", "Tầm nhìn bình yên ra vườn nhiệt đới xanh mướt hoặc đại dương rộng lớn ngay từ phòng nghỉ của bạn."),
+    ("Quiet, thoughtfully designed areas created for mindfulness, relaxation, and inner balance.", "Không gian tĩnh lặng, được thiết kế tinh tế để thực hành chánh niệm, thư giãn và tìm lại cân bằng nội tâm."),
+    ("Direct access to pristine shores and calm waters for effortless moments of leisure and escape.", "Lối ra thẳng đến bãi biển nguyên sơ và mặt nước trong lành — để mỗi khoảnh khắc thư giãn trở nên dễ dàng."),
+    # homepage: "More than a stay" (fix wrong key "More than a way" in existing entry)
+    ("More than a stay, a complete escape", "Hơn cả một kỳ nghỉ — là lối thoát hoàn toàn"),
+    # homepage: dining/spa/wedding descriptions
+    ("Savor fresh, locally inspired flavors crafted with seasonal ingredients and island traditions.", "Thưởng thức hương vị địa phương tươi ngon, được chế biến từ nguyên liệu theo mùa và truyền thống ẩm thực Hà Tĩnh."),
+    ("Reconnect with body and mind through holistic treatments inspired by ancient wellness rituals.", "Tái kết nối cơ thể và tâm trí qua các liệu pháp toàn diện lấy cảm hứng từ nghi thức sức khỏe cổ xưa."),
+    ("Celebrate your special day in an intimate island setting surrounded by nature, light, and timeless beauty.", "Kỷ niệm ngày trọng đại trong không gian riêng tư, bao quanh bởi thiên nhiên, ánh sáng và vẻ đẹp vượt thời gian."),
+    # FAQ questions
+    ("1. What is the guest capacity?", "1. Sức chứa tối đa là bao nhiêu?"),
+    ("2. Do you offer room rates for guests?", "2. Có mức giá đặc biệt cho khách không?"),
+    ("3. Is my date available?", "3. Ngày tôi chọn có còn chỗ không?"),
+    ("4. Is there a backup for outdoor events?", "4. Có phương án dự phòng cho sự kiện ngoài trời không?"),
+    ("5. Are menus customizable?", "5. Thực đơn có thể tùy chỉnh không?"),
+    ("6. Is guest parking provided?", "6. Có bãi đỗ xe cho khách không?"),
+    ("7. Will we have a wedding coordinator?", "7. Có điều phối viên tiệc cưới không?"),
+    # CTA heading
+    ("An experience you will never forget", "Trải nghiệm bạn sẽ không bao giờ quên"),
+    # footer: fake address + mojibake line separators (â€¨ = U+2028 encoded as cp1252)
+    (
+        "The Girbau de Dalt,â€¨â€¨08183 Barn,â€¨â€¨Hà Tĩnh",
+        "Thiên Cầm, Hà Tĩnh",
+    ),
+    # footer: fake phone
+    ("+1(809) 111-111", "+84 239 385 6789"),
+    # footer nav: "Contact us" leftover (different from "Contact us" handled above)
+    ("Liên hệ us", "Liên hệ"),
+    # footer copyright: mojibake em dash â€" = U+2014 as cp1252
+    (
+        "Â©2026 LuxeStay Ha Tinh. Bản demo concept â€“ Hà Tĩnh.",
+        "©2026 LuxeStay Ha Tinh. Bản demo concept — Hà Tĩnh.",
+    ),
 ]
 
 MOUNTAIN_IMG_POOL = [
@@ -1532,6 +1596,11 @@ def fix_colorlib(html: str) -> str:
         flags=re.I,
     )
     html = re.sub(r'<link[^>]*jquery\.timepicker\.min\.css[^>]*>', "", html, flags=re.I)
+    # Decode any remaining mojibake (UTF-8 bytes stored as cp1252 code-points)
+    html = _fix_luxestay_ssr_mojibake(html)
+    # Copyright: doubled year + vendor remnant
+    html = html.replace("©20262026", "©2026")
+    html = html.replace("|  by", "")
     return html
 
 
@@ -2095,6 +2164,93 @@ def fix_asatha_assets(html: str) -> str:
         "Each ritual is thoughtfully designed to restore balance, blending traditional techniques with contemporary luxury.",
         "Mỗi nghi thức được thiết kế tỉ mỉ để phục hồi cân bằng, kết hợp kỹ thuật truyền thống với sự sang trọng hiện đại.",
     )
+    # hero: "Trusted by" badge
+    html = html.replace(
+        "Trusted by<strong>&nbsp;</strong><span class=\"hero-review-number\"><strong>+159,648</strong></span><strong>&nbsp;</strong>Customer’s",
+        "Hơn <span class=\"hero-review-number\"><strong>159.648</strong></span> khách tin tưởng",
+    )
+    # about section: intro paragraph
+    html = html.replace(
+        "From serene suites to curated experiences, Ke Go Retreat is more than a resort—it's a retreat for the soul. Here, every detail is thoughtfully designed to celebrate the art of living beautifully.",
+        "Từ villa yên tĩnh đến những trải nghiệm được chọn lọc, Ke Go Retreat không chỉ là khu nghỉ dưỡng — đó là nơi tâm hồn thực sự được nghỉ ngơi. Mọi chi tiết đều được thiết kế để tôn vinh nghệ thuật sống đẹp.",
+    )
+    # rooms: amenity tags
+    html = html.replace("Spacious Layout · Designer Furnishings · Evening Service", "Không gian rộng rãi · Nội thất thiết kế · Dịch vụ buổi tối")
+    html = html.replace("Rooftop Deck · Sunset Views · Open Living Space", "Sân thượng · Tầm nhìn hoàng hôn · Không gian mở")
+    html = html.replace("5 Bedrooms · Infinity Edge Pool · Private Cinema", "5 Phòng ngủ · Hồ bơi vô cực · Rạp chiếu phim riêng")
+    html = html.replace("Clifftop Views · 4 Bedrooms · Hồ bơi vô cực · Private Chef", "Tầm nhìn vách núi · 4 Phòng ngủ · Hồ bơi vô cực · Đầu bếp riêng")
+    html = html.replace("Private Balcony · Lounge Area · Dedicated Concierge", "Ban công riêng · Khu vực nghỉ · Trợ lý riêng")
+    # Rewards section
+    html = html.replace(
+        "A world of privileges, crafted to make every stay—and every day—more rewarding.",
+        "Thế giới đặc quyền, được tạo ra để mỗi kỳ nghỉ — và mỗi ngày — thêm phần xứng đáng.",
+    )
+    html = html.replace("Travel, Earn, Indulge", "Đi — Tích điểm — Tận hưởng")
+    html = html.replace(
+        "Every night at Ke Go Retreat brings you closer to exclusive rewards. Collect points while you stay, dine, or rejuvenate at our spa—and spend them on the experiences you love most.",
+        "Mỗi đêm tại Ke Go Retreat đưa bạn đến gần hơn với những đặc quyền độc quyền. Tích điểm khi lưu trú, ăn uống hoặc chăm sóc tại spa — rồi đổi lấy những trải nghiệm bạn yêu thích nhất.",
+    )
+    html = html.replace("Rewards beyond your stay", "Đặc quyền vượt ra ngoài kỳ nghỉ")
+    html = html.replace(
+        "Your benefits don't end at check-out. Use or transfer points anytime with our select partners, or shop your favorite brands while staying connected to the Ke Go Retreat lifestyle.",
+        "Lợi ích của bạn không dừng lại khi trả phòng. Sử dụng hoặc chuyển điểm bất cứ lúc nào cùng đối tác của chúng tôi, hoặc mua sắm thương hiệu yêu thích trong khi vẫn gắn kết với phong cách sống Ke Go Retreat.",
+    )
+    html = html.replace("A Universe of Privileges", "Vũ trụ đặc quyền")
+    html = html.replace(
+        "From member-only offers to late check-out, priority upgrades, and bespoke experiences, Ưu đãi Ke Go Retreat ensures you're always treated like a guest of honor.",
+        "Từ ưu đãi thành viên đến trả phòng muộn, nâng cấp ưu tiên và trải nghiệm cá nhân hóa, Ke Go Retreat luôn đảm bảo bạn được đối đãi như một vị khách danh dự.",
+    )
+    # About villas section
+    html = html.replace("About our villas and resort", "Về khu villa và resort của chúng tôi")
+    html = html.replace(
+        "Every villa at Ke Go Retreat has been thoughtfully crafted, blending modern design with timeless character. No two spaces are alike—each reflects its own unique story, with details that honor the spirit of Ke Go Retreat and the calm beauty of its surroundings.",
+        "Mỗi villa tại Ke Go Retreat được thiết kế tỉ mỉ, kết hợp thiết kế hiện đại với nét đặc trưng vượt thời gian. Không có hai không gian nào giống nhau — mỗi nơi phản ánh câu chuyện riêng với những chi tiết tôn vinh tinh thần Ke Go Retreat và vẻ đẹp bình yên của môi trường xung quanh.",
+    )
+    html = html.replace(
+        "Tọa lạc giữa cảnh quan the biển Hà Tĩnh, Ke Go Retreat brings together the artistry of không gian boutique và sự tĩnh lặng. Here, architecture, landscape, and hospitality come together in perfect harmony to create an experience unlike any other.",
+        "Tọa lạc giữa cảnh quan biển Hà Tĩnh, Ke Go Retreat kết hợp nghệ thuật của không gian boutique và sự tĩnh lặng. Nơi đây, kiến trúc, phong cảnh và lòng hiếu khách hòa quyện hoàn hảo tạo nên trải nghiệm không nơi nào sánh được.",
+    )
+    # Customer reviews: EN quotes
+    html = html.replace(
+        '"The quiet wasn\'t silence, it was music. Waking up to soft light and sleeping under stars made this trip unforgettable."',
+        '"Sự yên lặng ở đây không phải là vắng — đó là âm nhạc. Thức dậy trong ánh sáng dịu và ngủ dưới bầu sao khiến chuyến đi này không thể nào quên."',
+    )
+    html = html.replace(
+        '"I\'ve traveled often, but never felt this cared for. The staff remembered my name, my tea, even my favorite view."',
+        '"Tôi đã đi nhiều nơi, nhưng chưa bao giờ cảm thấy được quan tâm đến vậy. Nhân viên nhớ tên tôi, loại trà tôi uống, cả góc nhìn yêu thích của tôi."',
+    )
+    html = html.replace(
+        '"Ke Go Retreat felt like a pause from life, but one that gave me more energy than before. I left lighter, calmer, and deeply inspired."',
+        '"Ke Go Retreat như một dấu lặng trong cuộc sống, nhưng lại mang lại cho tôi nhiều năng lượng hơn bao giờ hết. Tôi ra về nhẹ nhàng hơn, bình tĩnh hơn và đầy cảm hứng."',
+    )
+    html = html.replace(
+        '"It was more than a resort—it felt like home, but more peaceful, more beautiful, more complete."',
+        '"Đây không chỉ là khu nghỉ dưỡng — nó cảm giác như nhà, nhưng bình yên hơn, đẹp hơn và trọn vẹn hơn."',
+    )
+    # Reviewer origin labels
+    html = html.replace("FROM UK · STAYED IN OCEAN SUITE", "Từ Anh Quốc · Nghỉ tại Ocean Suite")
+    html = html.replace("FROM INDIA · STAYED IN VILLA VƯỜN XANH", "Từ Ấn Độ · Nghỉ tại Villa Vườn Xanh")
+    html = html.replace("FROM HÀ TĨNH · STAYED IN HORIZON PAVILION", "Từ Hà Tĩnh · Nghỉ tại Horizon Pavilion")
+    html = html.replace("FROM GERMANY · STAYED IN SUITE AN YÊN", "Từ Đức · Nghỉ tại Suite An Yên")
+    html = html.replace("FROM JAPAN · STAYED IN THE RESIDENCE", "Từ Nhật Bản · Nghỉ tại The Residence")
+    # Package descriptions
+    html = html.replace(
+        "Journey into Hà Tĩnh's heart with visits to temples, waterfalls, and hidden beaches. Authentic cultural encounters paired with luxury comfort create a memorable escape.",
+        "Khám phá trái tim Hà Tĩnh qua những chuyến thăm đền chùa, thác nước và bãi biển ẩn. Gặp gỡ văn hóa bản địa kết hợp với tiện nghi sang trọng tạo nên kỳ nghỉ đáng nhớ.",
+    )
+    html = html.replace(
+        "Our curated wellness package invites you to slow down and reconnect. From daily yoga by the ocean to personalized spa treatments and nourishing meals, every moment is designed to leave you feeling refreshed and renewed.",
+        "Gói wellness được tuyển chọn của chúng tôi mời bạn chậm lại và kết nối lại bản thân. Từ yoga buổi sáng ven biển đến liệu pháp spa cá nhân hóa và bữa ăn bổ dưỡng, mỗi khoảnh khắc được thiết kế để bạn cảm thấy sảng khoái và đổi mới.",
+    )
+    # Package section labels
+    html = html.replace("Popular Gói nghỉ dưỡng", "Gói nghỉ dưỡng phổ biến")
+    html = html.replace("Explore Gói nghỉ dưỡng", "Khám phá gói nghỉ dưỡng")
+    # Newsletter
+    html = html.replace("Get inspired", "Cảm hứng du lịch")
+    html = html.replace(
+        "To receive updates about exclusive experiences, events, new destinations and more, please register your interest.",
+        "Để nhận cập nhật về các trải nghiệm độc quyền, sự kiện, điểm đến mới và nhiều hơn nữa, vui lòng đăng ký nhận tin.",
+    )
     if "asatha-hide-vendor" not in html and "copyright-flowcub" in html:
         html = html.replace("</head>", ASATHA_HIDE + "</head>", 1)
     return html
@@ -2167,6 +2323,51 @@ def fix_travol_imgs(html: str) -> str:
     if "travol-hide-clients" not in html and "img/clients/" in html:
         html = html.replace("</head>", TRAVOL_HIDE_CLIENTS + "</head>", 1)
     html = html.replace(">Gallery<", ">Thư viện<")
+    # Duration: "X Days" → "X Ngày"
+    html = re.sub(r"\b(\d+) Days\b", r"\1 Ngày", html)
+    # Destination badge: "X Tour Packages" → "X Tour"
+    html = re.sub(r"(\d+) Tour Packages", r"\1 Tour", html)
+    # USD prices → VND (treat numeric value as thousands VND)
+    for usd, vnd in [
+        ("$3.000", "3.000.000đ"),
+        ("$1.750", "1.750.000đ"),
+        ("$1.500", "1.500.000đ"),
+        ("$1.250", "1.250.000đ"),
+        ("$1.200", "1.200.000đ"),
+    ]:
+        html = html.replace(f">{usd}<", f">{vnd}<")
+    # Italian/French city names → Vietnamese locations
+    _city_map = {
+        ">Roma<": ">Thiên Cầm<",
+        ">Milan<": ">Đồng Lộc<",
+        ">Verona<": ">Kẻ Gỗ<",
+        ">Florence<": ">Can Lộc<",
+        ">San Marino<": ">Hồng Lĩnh<",
+        ">Orleans<": ">Kỳ Anh<",
+        ">Nantes<": ">Hương Tích<",
+        ">Toulouse<": ">Đồng Lộc<",
+        ">Nice<": ">Cảng cá<",
+    }
+    for en, vi in _city_map.items():
+        html = html.replace(en, vi)
+    # Lorem ipsum body copy (two variants)
+    html = html.replace(
+        "We provide you with interesting and exciting tours to different parts of the world. Orci varius natoque penatibus et magnis disney turien nascete ridiculus duru in the mus nellen.",
+        "Chúng tôi thiết kế hành trình gần gũi, phù hợp gia đình, nhóm bạn và khách muốn cảm nhận Hà Tĩnh chậm rãi nhưng đủ chiều sâu.",
+    )
+    html = html.replace(
+        "We provide you with interesting and exciting tours to different parts of the world. Orci varius natoque penatibus et magnis disney turien nascete in the ridiculus duru in the mus nellen.",
+        "Từ tour ngắn ngày đến lịch trình riêng, mỗi chuyến đi được tư vấn theo mùa và nhu cầu thực tế tại Hà Tĩnh.",
+    )
+    # Blog titles still in English
+    html = html.replace(
+        ">Practical information for traveling to Kẻ Gỗ<",
+        ">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu<",
+    )
+    html = html.replace(
+        ">Được yêu thích Yacht Charter Routes<",
+        ">Các tour thuyền biển được yêu thích nhất<",
+    )
     return html
 
 
@@ -2180,6 +2381,47 @@ def strip_vendor(html: str) -> str:
         flags=re.I,
     )
     return html
+
+
+# Build mojibake char set: all chars that cp1252 maps bytes 0x80-0xFF to,
+# plus raw C1 control chars for cp1252-undefined bytes (0x81,0x8D,0x8F,0x90,0x9D).
+_MOJIBAKE_CHARS: set[str] = set()
+for _b in range(0x80, 0x100):
+    try:
+        _MOJIBAKE_CHARS.add(bytes([_b]).decode("cp1252"))
+    except (UnicodeDecodeError, ValueError):
+        _MOJIBAKE_CHARS.add(chr(_b))  # undefined cp1252 → raw code-point
+_MOJIBAKE_PAT = re.compile("[" + re.escape("".join(sorted(_MOJIBAKE_CHARS))) + "]{2,}")
+
+
+def _char_to_byte(c: str) -> int:
+    """Map a cp1252-range char back to its original byte value."""
+    cp = ord(c)
+    if cp < 0x100:
+        return cp  # Latin-1 range: code-point == byte
+    return c.encode("cp1252")[0]  # e.g. ž U+017E → 0x9E, Ÿ U+0178 → 0x9F
+
+
+def _fix_luxestay_ssr_mojibake(html: str) -> str:
+    """Decode SSR text that was UTF-8 but stored as cp1252 code-points during scrape.
+
+    Safe: correctly-encoded Vietnamese chars (U+1E00+) are outside the scan range,
+    so they are never touched. Only cp1252-range sequences that form valid UTF-8
+    Vietnamese when decoded byte-wise are replaced.
+    """
+
+    def try_fix(m: re.Match) -> str:
+        s = m.group(0)
+        try:
+            raw = bytes(_char_to_byte(c) for c in s)
+            decoded = raw.decode("utf-8")
+            if re.search(r"[À-ɏḀ-ỿ]", decoded):
+                return decoded
+        except (UnicodeDecodeError, UnicodeEncodeError, ValueError):
+            pass
+        return s
+
+    return _MOJIBAKE_PAT.sub(try_fix, html)
 
 
 def fix_global_leftovers(html: str) -> str:
@@ -2213,6 +2455,7 @@ def process_html(fp: Path, html: str) -> str:
             html = _apply_vi_list(html, FRAMER_VI)
             html = _apply_vi_list(html, FRAMER_VI_EXTRA)
         elif slug == "luxestay-framer":
+            html = _fix_luxestay_ssr_mojibake(html)
             html = fix_luxestay(html)
             html = _apply_vi_list(html, FRAMER_VI)
             html = _apply_vi_list(html, FRAMER_VI_EXTRA)
