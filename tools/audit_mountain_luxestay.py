@@ -9,7 +9,7 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).resolve().parents[1]
 
 MOUNTAIN_CORE = ["index.html", "about.html", "rooms.html", "restaurants.html", "contact.html"]
-MOUNTAIN_NAV = ["Phòng", "Liên hệ", "Gallery"]
+MOUNTAIN_NAV = ["Phòng", "Liên hệ", "Thư viện"]
 MOUNTAIN_MUST = ["Ke Go Eco Lodge", "shared-images", "Hà Tĩnh"]
 MOUNTAIN_INDEX = ["Chạm vào nhịp sống xanh"]
 

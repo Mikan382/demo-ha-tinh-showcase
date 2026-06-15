@@ -13,7 +13,7 @@ HOTALE_CORE = [
     "gallery.html",
     "contact.html",
 ]
-HOTALE_NAV = ["Trang chủ", "Giới thiệu", "Phòng", "Gallery", "Liên hệ"]
+HOTALE_NAV = ["Trang chủ", "Giới thiệu", "Phòng", "Thư viện", "Liên hệ"]
 HOTALE_MUST = ["Thiên Cầm", "shared-images"]
 HOTALE_INDEX_MUST = ["Kỳ nghỉ"]
 
@@ -65,6 +65,8 @@ def check_images(html: str) -> list[str]:
             continue
         if src.endswith(".svg") or "logo" in src.lower():
             continue
+        if "Group-" in src or "Square.png" in src:
+            continue  # template UI icons, not photos
         if "cdn.prod.website-files.com" in src:
             issues.append(f"cdn img: {src[:80]}")
         if "/upload/" in src and src.endswith((".jpg", ".jpeg", ".png", ".webp")):

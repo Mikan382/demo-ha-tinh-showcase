@@ -86,7 +86,7 @@ def main():
         else:
             print("  images: OK")
         # nav
-        for label in ["Trang chủ", "Giới thiệu", "Tour", "Điểm đến", "Gallery", "Liên hệ"]:
+        for label in ["Trang chủ", "Giới thiệu", "Tour", "Điểm đến", "Thư viện", "Liên hệ"]:
             if label not in html:
                 print(f"  nav missing: {label}")
                 all_ok = False

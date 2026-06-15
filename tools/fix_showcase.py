@@ -190,6 +190,11 @@ i.fa5-tiktok:before{content:"TT";font-family:Arial,sans-serif!important;font-siz
 .tourmaster-room-date-selection .tourmaster-tail:after{content:"\\25BE"!important;font-family:Arial,sans-serif!important}
 </style>"""
 
+MOUNTAIN_POLISH = """<style id="mountain-polish">
+/* Reveal Framer scroll-triggered sections frozen at opacity:0 in offline snapshot */
+#main [style*="opacity: 0"]{opacity:1!important;transform:none!important}
+</style>"""
+
 SEASIDE_IMG_POOL = [
     "08_hospitality_hospitality_beachfront_resort.png",
     "35_hospitality_peaceful_beach_resort.png",
@@ -657,6 +662,27 @@ MOONLIT_VI_EXTRA = [
     ("10 Min Read", "5 phút đọc"),
     ("Moonlit Hotel là lựa chọn lưu trú tin cậy tại Hà Tĩnh.,", "Moonlit Hotel là lựa chọn lưu trú tin cậy tại Hà Tĩnh,"),
     ("Watch Now * Watch Now * Watch Full Video *", "Xem trải nghiệm * Xem video * Moonlit Hotel *"),
+    # moonlit restaurant.html: English body paragraphs
+    ("Whether you are in the mood for a leisurely breakfast, a business lunch, or a romantic dinner.", "Dù bạn muốn bữa sáng nhẹ nhàng, bữa trưa công việc hay tối lãng mạn — Moonlit sẵn sàng đáp ứng mọi khoảnh khắc."),
+    ("From Farm to Fork: Enjoy Fresh, Seasonal Dishes at Moonlit", "Từ vườn đến bàn ăn: Thưởng thức món tươi theo mùa tại Moonlit"),
+    ("Our rooms offer a harmonious blend of comfort and elegance, designed to provide an exceptional stay for every guest Each room features plush bedding.", "Phòng nghỉ kết hợp hài hòa giữa tiện nghi và sang trọng, thiết kế để mỗi lượt lưu trú đều đáng nhớ."),
+    # moonlit service.html: English service descriptions
+    ("At Moonlit we pride ourselves on delivering an exceptional experience.", "Tại Moonlit, chúng tôi tự hào mang đến trải nghiệm dịch vụ xuất sắc."),
+    ("A 24-hour security service provides and surveillance, properties, or sensitive information around the clock.", "Dịch vụ an ninh 24/7 đảm bảo an toàn tuyệt đối cho khách và tài sản suốt ngày đêm."),
+    ("Wi-Fi miễn phí has become an essential service in our increasingly connected world. It by people to access the internet", "Wi-Fi miễn phí tốc độ cao — kết nối liên tục trong mọi khu vực của khách sạn."),
+    ("A fitness center is a vibrant and dynamic environment designed to promote health and Fitnee Center well-being.", "Phòng tập thể dục năng động, trang bị hiện đại để hỗ trợ sức khỏe và thể lực của khách."),
+    ("Đưa đónation plays a crucial role in travel experiences for passengers. It various services, including taxis, ride-sharing", "Dịch vụ đưa đón sân bay và di chuyển nội thành — tiện lợi, đúng giờ và thoải mái."),
+    ("A well-organized work desk is more than just a place to complete tasks; it's a hub of productivity and creativity.", "Bàn làm việc gọn gàng, đầy đủ ánh sáng — không gian lý tưởng cho công việc và sáng tạo."),
+    ("A swimming pool is a refreshing oasis, offering a place to cool off, relax, and enjoy various water activities.", "Hồ bơi trong xanh — nơi thư giãn, giải nhiệt và tận hưởng các hoạt động dưới nước."),
+    ("On-site security personnel and surveillance. from standard to luxury suites, Secure it is storage for valuables.", "Nhân viên an ninh thường trực và két an toàn — bảo vệ tài sản từ phòng tiêu chuẩn đến suite cao cấp."),
+    ("The warm water cascaded down, enveloping a soothing as I stood in the shower. Each droplet danced on my skin, washing.", "Vòi sen mưa ấm áp bao phủ, mỗi giọt nước như xoa dịu mọi mệt mỏi — không gian tắm được chăm chút từng chi tiết."),
+    # moonlit blog.html: English intro paragraphs
+    ("Discover The blog where luxury, comfort, and adventure come together.", "Khám phá blog nơi sang trọng, tiện nghi và phiêu lưu hội tụ tại Hà Tĩnh."),
+    ("Live Elegantly in Our Contemporary Suite for Apartment", "Sống thanh lịch trong Suite hiện đại của Moonlit"),
+    (
+        "In today's ever-evolving business landscape, staying ahead of the curve is essential for success. Whether you're a seasoned entrepreneur or just starting out, the key to thriving in this dynamic environment lies in adaptability and innovation.",
+        "Moonlit chia sẻ những gợi ý du lịch, mẹo lưu trú và trải nghiệm đáng nhớ tại Hà Tĩnh để chuyến đi của bạn luôn trọn vẹn và thư thái.",
+    ),
 ]
 
 COLORLIB_VI_EXTRA = [
@@ -751,6 +777,89 @@ FRAMER_VI_EXTRA = [
         "Chèo thuyền trên hồ Kẻ Gỗ giữa rừng xanh bạt ngàn; lướt sóng tại Thiên Cầm với bờ cát trắng trải dài; "
         "và leo núi Hương Tích ngắm toàn cảnh Hà Tĩnh từ trên cao — mỗi trải nghiệm là một kỷ niệm không thể quên.",
     ),
+    # wanderway: mixed EN/VI artifacts từ partial word replacement
+    ("One Happy Du lịcher at a Time!", "Mỗi hành trình là một kỷ niệm đáng nhớ!"),
+    (
+        "Khám phá thế giới with us: follow our social media for daily travel inspiration and updates!",
+        "Theo dõi chúng tôi để cập nhật cảm hứng du lịch và ưu đãi mới nhất từ Hà Tĩnh!",
+    ),
+    ("Let Us Take You to Đáng nhớ điểm đến!", "Để chúng tôi đưa bạn đến những điểm đến đáng nhớ!"),
+    # wanderway about-us: English body copy
+    (
+        "At Wander Hà Tĩnh, our journey with you starts from the moment you decide to explore the world. We believe that every trip is unique, and our travel planning process is designed to capture the essence of your ideal adventure. Whether it's customizing your accommodation, handling complex itineraries, we deliver seamless travel experiences made just for you.",
+        "Tại Wander Hà Tĩnh, hành trình cùng bạn bắt đầu từ khoảnh khắc bạn quyết định khám phá vùng đất này. Chúng tôi tin rằng mỗi chuyến đi là độc nhất — từ chỗ ở đến lịch trình, mọi trải nghiệm đều được tuyển chọn để phù hợp với bạn nhất.",
+    ),
+    (
+        "At Wander Hà Tĩnh, we believe that travel is more than just visiting new places—it's about creating unforgettable memories, experiencing diverse cultures, and exploring the world’s most breathtaking destinations.",
+        "Tại Wander Hà Tĩnh, chúng tôi tin rằng du lịch không chỉ là đến nơi mới — đó là tạo ra ký ức đáng nhớ, trải nghiệm văn hóa địa phương và khám phá những điểm đến tuyệt vời nhất Hà Tĩnh.",
+    ),
+    ("Ready for a Getaway? Khám phá Our Hottest Du lịch Offers", "Sẵn sàng cho kỳ nghỉ? Khám phá những tour nổi bật tại Hà Tĩnh"),
+    (
+        "Stay connected with Wander Hà Tĩnh as we take you on a journey across the globe, sharing every thrilling adventure, breathtaking destination, and hidden gem through our social media channels.",
+        "Theo dõi Wander Hà Tĩnh để cập nhật những trải nghiệm du lịch thú vị, điểm đến ẩn mình và ưu đãi mới nhất qua các kênh mạng xã hội của chúng tôi.",
+    ),
+    (
+        "From sunrise hikes to sunset cruises, and from vibrant cityscapes to remote islands, we capture the essence of travel in real time.",
+        "Từ chuyến đi bộ lúc bình minh đến du thuyền lúc hoàng hôn, từ khu phố sầm uất đến bờ biển hoang sơ — chúng tôi ghi lại cảm xúc du lịch trong từng khoảnh khắc.",
+    ),
+    ("20 Million tours conducted, each filled with unforgettable experiences and lasting memories.", "Hàng nghìn lượt khách đã khám phá Hà Tĩnh cùng chúng tôi, mang về những kỷ niệm không thể quên."),
+    ("50+ expertly designed new travel routes tailored to explore the world’s most breathtaking destinations.", "50+ lộ trình được thiết kế riêng để khám phá những điểm đến đẹp nhất Hà Tĩnh và vùng lân cận."),
+    ("98% of our travelers return home happy, satisfied, and eager to book their next adventure with us.", "98% du khách hài lòng và sẵn sàng quay lại cùng Wander Hà Tĩnh trong chuyến tiếp theo."),
+    ("The Experts Who Turn Dreams into Journeys of a Lifetime", "Đội ngũ chuyên nghiệp biến ước mơ du lịch thành hành trình đáng nhớ"),
+    # wanderway tours_cuba: Havana/Cuba-specific locations
+    (
+        "Step into a world of vivid color, music, and history as your journey begins in Havana — a city where every street tells a story. The first two days are devoted to discovering the essence of Hương Tích's capital: its colonial charm, lively rhythms, and the spirit of resilience that defines its people. From classic cars and cobblestone alleys to local artists and storytellers, Havana offers an inspiring introduction to the island's culture and educational heritage.",
+        "Bắt đầu hành trình khám phá Hà Tĩnh với những con phố đầy màu sắc, âm nhạc dân ca và di tích lịch sử. Hai ngày đầu dành để cảm nhận nhịp sống của thành phố Hà Tĩnh — từ phố cổ, chợ truyền thống đến những nghệ nhân địa phương và câu chuyện về mảnh đất này.",
+    ),
+    (
+        "Arrive at José Martí International Airport and transfer to a boutique hotel in Old Havana. Take time to relax before joining your fellow travelers for a welcome orientation and dinner featuring classic Hương Tíchn cuisine.",
+        "Đến sân bay Vinh, di chuyển về Hà Tĩnh và nhận phòng khách sạn boutique. Thư giãn trước khi cùng đoàn tham dự buổi gặp mặt chào mừng với bữa tối đặc sản Hà Tĩnh.",
+    ),
+    ("Day 1–2: Arrival and Introduction to Havana", "Ngày 1–2: Đến Hà Tĩnh — Khám phá thành phố biển"),
+    ("Evening music session at a local jazz bar", "Buổi tối thưởng thức dân ca ví dặm tại quán nhạc địa phương"),
+    ("Dive deeper into Havana's artistic spirit.", "Khám phá sâu hơn tinh thần nghệ thuật và văn hóa Hà Tĩnh."),
+    ("Viñales Valley", "Thung lũng Kẻ Gỗ"),
+    ("Cienfuegos", "Cửa Nhượng"),
+    ("Old Havana", "Phố cổ Hà Tĩnh"),
+    ("Havana", "Hà Tĩnh thành phố"),
+    # wanderway tours_spain: generic English intro paragraphs
+    (
+        "Join us for a journey that blends adventure, culture, and tranquility, crafted with care and passion for discovery. Wander Hà Tĩnh’s exclusive expedition invites you to experience the world’s timeless wonders in a way that’s both unique and unforgettable",
+        "Cùng khởi đầu hành trình kết hợp phiêu lưu, văn hóa và sự yên bình — được thiết kế với tâm huyết và đam mê khám phá. Expedition đặc quyền của Wander Hà Tĩnh mời bạn trải nghiệm những điều kỳ diệu của vùng đất theo cách độc đáo và không thể quên",
+    ),
+    (
+        "Step into an unforgettable adventure that blends history, culture, and natural beauty. This exclusive 14-day journey will immerse you in breathtaking landscapes, awe-inspiring monuments, and ancient traditions. Guided by local experts and staying in ",
+        "Bước vào hành trình đáng nhớ kết hợp lịch sử, văn hóa và vẻ đẹp thiên nhiên. Chuyến đi 14 ngày độc quyền này sẽ đưa bạn đến những cảnh quan ngoạn mục, công trình ấn tượng và phong tục cổ xưa. Được dẫn dắt bởi chuyên gia địa phương và lưu trú tại ",
+    ),
+    # wanderway index.html: EN passion paragraph (curly apostrophe)
+    (
+        "Our passion for exploration fuels us to craft personalized experiences that dive deep into the heart of each destination. Let’s make your travel dreams a reality!",
+        "Niềm đam mê khám phá thôi thúc chúng tôi tạo ra những trải nghiệm cá nhân hóa, đi sâu vào trái tim của mỗi điểm đến. Hãy để chúng tôi biến giấc mơ du lịch của bạn thành hiện thực!",
+    ),
+    # wanderway blog.html: EN intro
+    (
+        "We are passionate about curating exceptional travel experiences tailored to your unique interests and desires.",
+        "Chúng tôi đam mê tuyển chọn những trải nghiệm du lịch xuất sắc, phù hợp với sở thích và mong muốn riêng của bạn.",
+    ),
+    # wanderway services.html
+    ("Authentic encounters that connect you with culture and people.", "Những gặp gỡ chân thực kết nối bạn với văn hóa và con người địa phương."),
+    # wanderway pricing.html: mixed EN/VI artifact
+    ("Choose Your Path: From khách to Globetrotter", "Chọn hành trình của bạn: từ du khách đến nhà thám hiểm"),
+    # wanderway our-team.html: USD price
+    ("Discover the magic of Hà Tĩnh, with packages starting at $620.", "Khám phá vẻ đẹp Hà Tĩnh, với các gói tour từ 14.500.000đ."),
+    # wanderway tours.html: mixed EN/VI
+    (
+        "Khám phá vẻ đẹp of Thiên Cầm, a land of golden coasts, vibrant culture, and timeless architectural wonders.",
+        "Khám phá vẻ đẹp Thiên Cầm — bờ biển vàng, văn hóa sôi động và những kỳ quan kiến trúc vượt thời gian.",
+    ),
+    # wanderway destination.html
+    ("Let each destination be the start of a new story.", "Để mỗi điểm đến là khởi đầu của một câu chuyện mới."),
+    # wanderway testimonials (curly apostrophe in Wander Hà Tĩnh)
+    # tours_cuba join intro
+    (
+        "Join us for a journey that celebrates rhythm, history, and discovery. Wander Hà Tĩnh’s educational expedition invites you to explore Hương Tích’s vibrant culture",
+        "Cùng khởi đầu hành trình văn hóa và khám phá vùng đất Hà Tĩnh cùng Wander Hà Tĩnh",
+    ),
 ]
 
 MOUNTAIN_VI_EXTRA = [
@@ -774,6 +883,72 @@ MOUNTAIN_VI_EXTRA = [
     ("Remain abreast of the latest news, exclusive offers, exciting events, and beyond", "Nhận tin mới, ưu đãi và lịch trải nghiệm tại Kẻ Gỗ."),
     ("+40 482 430 3205", "0239 385 6789"),
     ("20121", "Hà Tĩnh"),
+    # area.html / rooms.html: Italian Alps và body copy còn tiếng Anh
+    ("Surrender to the comfort of our peaceful retreat", "Đắm mình trong không gian yên tĩnh bên hồ Kẻ Gỗ"),
+    ("Indulge in the Beauty of our Region", "Khám phá vẻ đẹp khu vực hồ Kẻ Gỗ"),
+    (
+        "Discover the allure of the wine traditions in the Italian Alps at our exclusive hotel, nestled amongst stunning mountain vistas. Enjoy an expertly chosen array of local wines from neighboring hamlets, each narrating a distinct tale of the region's terrain. Revel in the taste of sharp white wines, intense reds, and soft rosés, while taking in views of the tranquil alpine lake.",
+        "Khám phá nét duyên của ẩm thực dân gian Hà Tĩnh tại Ke Go Eco Lodge. Thưởng thức rượu cần, hải sản tươi và các món đặc sản núi rừng từ các làng lân cận, mỗi bữa ăn kể câu chuyện của vùng đất và con người nơi đây.",
+    ),
+    (
+        "Embark on an unforgettable summer trekking adventure where nature's wonders come alive! Traverse scenic trails, discovering the diverse flora and fauna of the region. With knowledgeable guides, delve into the secrets of indigenous plants and animals while soaking in panoramic mountain vistas. Experience the thrill of exploration and the serenity of nature in every step.",
+        "Cùng hướng dẫn viên địa phương khám phá rừng nguyên sinh quanh hồ Kẻ Gỗ — nơi hệ động thực vật phong phú và không gian yên tĩnh xen lẫn nhịp đập của thiên nhiên. Mỗi bước đi là một trải nghiệm mới.",
+    ),
+    (
+        "Indulge in a creative pottery class offered by the hotel, where guests delve into the fundamentals of pottery making. Learn the art of working with clay, shaping simple vases, and explore traditional coloring techniques inspired by the rich heritage of the Italian Alps. Unleash your creativity against the backdrop of stunning mountain vistas.",
+        "Tham gia lớp học gốm thủ công do khách sạn tổ chức — nơi bạn tự tay tạo hình đất sét, học kỹ thuật tô màu truyền thống và khám phá di sản văn hóa gốm Hà Tĩnh trong không khí núi rừng yên tĩnh.",
+    ),
+    (
+        "Embark on a culinary journey with our cooking class, focusing on wholesome ecological recipes inspired by the verdant valleys and alpine plateaus where fresh produce thrives in abundance. Discover the art of using locally sourced ingredients like fresh trout, succulent deer meat, and crisp mountain greens like Swiss chard and kale. Learn preservation techniques to retain the nutritional essence of these natural delicacies.",
+        "Tham gia lớp học nấu ăn cùng đầu bếp địa phương — khám phá ẩm thực sinh thái từ nguyên liệu tươi xung quanh hồ Kẻ Gỗ như cá suối, rau rừng và các đặc sản vùng núi Hà Tĩnh.",
+    ),
+    (
+        "Nestled within the Ke Go Eco Lodge area, the valleys and mountains provide exceptional trekking opportunities for the discerning traveler. Embark on scenic trails that meander through lush forests and ascend to breathtaking summits. Each path offers majestic views of serene landscapes and vibrant wildlife, ensuring an unforgettable experience. Whether you seek adventure or tranquility, the Ke Go Eco Lodge area promises unparalleled natural beauty and captivating vistas at every turn.",
+        "Khu vực hồ Kẻ Gỗ mang đến những cung đường trekking xuyên rừng nguyên sinh, leo đỉnh núi và ngắm cảnh hùng vĩ. Mỗi lộ trình đều có hướng dẫn viên địa phương đồng hành, phù hợp cho cả người tìm kiếm phiêu lưu lẫn muốn tận hưởng thiên nhiên yên bình.",
+    ),
+    ("Ke Go Eco Lodge area's valleys and mountains offer unparalleled view for any discerned traveller", "Thung lũng và núi rừng quanh hồ Kẻ Gỗ mang đến tầm nhìn tuyệt vời cho du khách khó tính nhất"),
+    ("Pristine nature and sustainable farming all around our hills and meadows", "Thiên nhiên nguyên sơ và canh tác bền vững trải dài quanh vùng đồi núi hồ Kẻ Gỗ"),
+    (
+        "The mountain region supports rich biodiversity, home to unique flora and fauna. Sustainable farming practices, such as grazing cows and goats, help maintain the ecological balance. These methods ensure that agriculture coexists harmoniously with nature, preserving the environment for future generations.",
+        "Vùng núi hồ Kẻ Gỗ sở hữu đa dạng sinh học phong phú với hệ thực vật và động vật đặc trưng. Canh tác bền vững và chăn nuôi theo truyền thống giúp duy trì cân bằng sinh thái, bảo tồn môi trường tự nhiên cho thế hệ tương lai.",
+    ),
+    ("Discover enchanting villages: drive to charming hamlets for day and night adventures amidst stunning scenery", "Khám phá các bản làng quyến rũ: đi xe đến các thôn làng xinh đẹp cho những chuyến phiêu lưu ban ngày và ban đêm giữa cảnh quan hùng vĩ"),
+    (
+        "Cute village trails for mindful promenades and little discoveries",
+        "Những con đường làng nhỏ cho những buổi dạo bộ thư thái và khám phá bất ngờ",
+    ),
+    # Ke Go Eco Lodge intro (about.html)
+    ("Ke Go Eco Lodge is the first eco friendly boutique hotel in the locality", "Ke Go Eco Lodge là khu nghỉ sinh thái boutique đầu tiên trong vùng hồ Kẻ Gỗ, Hà Tĩnh"),
+    ("Italian Alps", "vùng núi Hà Tĩnh"),
+    # about.html: "In the heart of" prefix (Italian Alps was replaced → now "vùng núi Hà Tĩnh")
+    ("In the heart of vùng núi Hà Tĩnh", "Giữa lòng vùng núi hồ Kẻ Gỗ, Hà Tĩnh"),
+    # area.html: village description
+    (
+        "Nestled in a picturesque valley ensconced by majestic mountains, Kẻ Gỗ is a quaint village where tradition thrives. Its vibrant markets beckon with locally crafted treasures, from intricately woven textiles to exquisitely carved wooden artifacts. Visitors revel in the artistry of pottery, leatherwork, and vibrant tapestries, each telling a tale of Kẻ Gỗ's rich cultural heritage.",
+        "Nằm trong thung lũng thơ mộng bao quanh bởi núi rừng hùng vĩ, làng Kẻ Gỗ là nơi truyền thống vẫn còn sống. Chợ phiên nhộn nhịp với đồ thủ công địa phương — từ vải dệt truyền thống đến gốm sứ và tác phẩm điêu khắc gỗ — mỗi món đều kể câu chuyện văn hóa phong phú của vùng đất này.",
+    ),
+    # gallery.html: partially-translated wine/Italian Alps paragraph (Discover→Khám phá already applied)
+    (
+        "Khám phá the allure of the wine traditions in the vùng núi Hà Tĩnh at our exclusive hotel, nestled amongst stunning mountain vistas. Enjoy an expertly chosen array of local wines from neighboring hamlets, each narrating a distinct tale of the region's terrain. Revel in the taste of sharp white wines, intense reds, and soft rosés, while taking in views of the tranquil alpine lake.",
+        "Khám phá nét duyên của ẩm thực dân gian Hà Tĩnh tại Ke Go Eco Lodge. Thưởng thức rượu cần, hải sản tươi và các món đặc sản núi rừng từ các làng lân cận, mỗi bữa ăn kể câu chuyện của vùng đất và con người nơi đây.",
+    ),
+    # index.html: restaurant description
+    (
+        "Savour the gastronomic pleasures of contemporary ẩm thực địa phương at our eating establishments, where each recipe marries novelty and heritage. Amplify your experience with our swanky and inventive mixed drinks, meticulously concocted to pair with our wide range of high-quality wines at our chic lounge.",
+        "Thưởng thức ẩm thực địa phương tại nhà hàng Ke Go Eco Lodge, nơi mỗi món ăn kết hợp hương vị mới lạ và di sản ẩm thực Hà Tĩnh. Hoàn thiện trải nghiệm bằng cocktail sáng tạo và rượu cần truyền thống tại khu lounge ven hồ.",
+    ),
+    # contact.html: form instruction
+    ("Fill out this form and we will aim to respond as soon as possible", "Điền vào biểu mẫu này và chúng tôi sẽ phản hồi trong thời gian sớm nhất"),
+    # events.html: body copy
+    (
+        "Enjoy the ideal serene surroundings to pamper your senses and attain a harmonious mind and spirit. We focus on mindful approach towards operating our business and treating our customers",
+        "Tận hưởng không gian yên tĩnh lý tưởng để chăm sóc cảm giác và đạt được sự hài hòa giữa tâm trí và tinh thần. Chúng tôi hướng tới cách tiếp cận có ý thức trong mọi hoạt động và trong cách phục vụ khách hàng",
+    ),
+    # restaurants.html: placeholder body
+    (
+        "Some text about the restaurant and food, where every moment is a masterpiece of natural beauty. Embrace serenity amidst breathtaking views of towering mountains and tranquil waters",
+        "Nhà hàng Ke Go Eco Lodge phục vụ ẩm thực địa phương Hà Tĩnh trong không gian thiên nhiên nguyên sơ, nơi mỗi bữa ăn là khoảnh khắc kết nối với rừng núi và mặt hồ yên tĩnh",
+    ),
 ]
 
 HOTALE_UPLOAD_MAP = {
@@ -1032,6 +1207,54 @@ LUXESTAY_VI = [
         "Located right at the heart of Central Kuta, Eden Hotel offers a four-stars scenic getaway to nature. Only minutes away from the Kuta Beach.",
         "Tọa lạc ven bờ biển Thiên Cầm, LuxeStay Hà Tĩnh mang đến không gian nghỉ dưỡng hiện đại, yên tĩnh và gần biển.",
     ),
+    # luxestay homepage body copy
+    (
+        "Step outside and Hà Tĩnh begins - temples, waterfalls, rice fields, and coastline, all within reach",
+        "Bước ra ngoài là Hà Tĩnh — chùa chiền, thác nước, đồng lúa và bờ biển, tất cả đều gần tầm tay",
+    ),
+    (
+        "Built in Hà Tĩnh in 2018, LuxeStay Ha Tinh is a 32-room retreat where the island does the talking and guests keep coming back to listen.",
+        "Thành lập tại Hà Tĩnh năm 2018, LuxeStay Hà Tĩnh là khu nghỉ dưỡng ven biển nơi thiên nhiên cất tiếng và du khách tìm về mỗi mùa hè.",
+    ),
+    (
+        "Luxestay Ha Tinh is a 32-room retreat where the island does the talking and guests keep coming back to listen.",
+        "LuxeStay Hà Tĩnh là khu nghỉ dưỡng ven biển với không gian được thiết kế để lắng nghe tiếng biển và trở về mỗi mùa hè.",
+    ),
+    ("More than a way, a complete escape", "Hơn cả một kỳ nghỉ — là lối thoát hoàn toàn"),
+    # luxestay rooms.html: English amenity descriptions
+    ("Step outside into your own private balcony and enjoy peaceful views, fresh air, and quiet moments of relaxation.", "Bước ra ban công riêng tư, đón gió nhẹ và tận hưởng tầm nhìn yên bình trong những khoảnh khắc thư giãn trọn vẹn."),
+    ("Unwind on a plush king-size bed with premium linens, designed for deep rest and uninterrupted sleep.", "Nghỉ ngơi trên giường king-size đệm êm với ga trải cao cấp, thiết kế cho giấc ngủ sâu và không bị gián đoạn."),
+    ("Wake up to calming views of nature or the surrounding landscape, thoughtfully framed from your room.", "Thức dậy với tầm nhìn thư giãn — thiên nhiên hoặc cảnh quan xung quanh được bố cục tinh tế từ căn phòng."),
+    ("Enjoy your favorite content with a smart TV, high-speed Wi-Fi, and seamless in-room connectivity.", "Thưởng thức nội dung yêu thích với TV thông minh, Wi-Fi tốc độ cao và kết nối liền mạch trong phòng."),
+    ("Refresh in a contemporary bathroom featuring a rain shower, luxury toiletries, and soft towels.", "Sảng khoái trong phòng tắm hiện đại với vòi sen mưa, nước hoa phòng tắm cao cấp và khăn mềm mại."),
+    # luxestay wellness.html: English body copy
+    ("A Sanctuary of Stillness, Restoration &amp; Deep Relaxation", "Không gian tĩnh lặng, phục hồi &amp; thư giãn sâu"),
+    ("At LuxeStay Ha Tinh Spa, we believe restoration is not a luxury - it is a necessity.", "Tại LuxeStay Ha Tinh Spa, chúng tôi tin rằng phục hồi không phải xa xỉ — đó là nhu cầu thiết yếu."),
+    ("Ancient traditions, thoughtfully refined.", "Truyền thống cổ xưa, được chắt lọc tinh tế."),
+    ("A one-to-one session with our resident yoga teacher, tailored entirely to your body, goals, and current state. Choose your setting", "Buổi yoga riêng tư với giáo viên thường trú — thiết kế hoàn toàn theo cơ thể, mục tiêu và trạng thái của bạn. Chọn không gian"),
+    ("A guided session combining pranayama breathing techniques with seated meditation. Practiced in our dedicated meditation room with curated soundscapes and essential oil diffusion. Offered individually or for two.", "Buổi thiền hướng dẫn kết hợp kỹ thuật thở pranayama trong phòng thiền chuyên dụng với âm thanh thiên nhiên và tinh dầu thơm. Dành cho cá nhân hoặc cặp đôi."),
+    ("A flowing, breath-led vinyasa practice held in the open-air pavilion at first light. Each session is sequenced to the season", "Lớp yoga vinyasa theo hơi thở tại nhà sàn ngoài trời lúc bình minh — được thiết kế theo mùa"),
+    ("A shared ritual for two guests in our private couples suite", "Nghi lễ thư giãn cho hai người trong không gian couples suite riêng tư"),
+    ("Slow, deliberate deep-tissue work focused on the areas most affected by tension. Combined with guided breathwork to help the nervous system release what hands alone cannot reach.", "Liệu pháp deep-tissue chậm rãi, tập trung vào các vùng căng thẳng nhất. Kết hợp hướng dẫn thở để hệ thần kinh thả lỏng những gì bàn tay không thể chạm tới."),
+    ("River-warmed basalt stones trace the spine and dissolve chronic tension while the therapist works with long, grounding strokes. A restorative choice for guests arriving after long travel or carrying physical stress.", "Đá bazan hấp nóng lần theo cột sống, tan dần sức căng mãn tính trong khi chuyên viên trị liệu thực hiện các đường vuốt dài, vững chắc. Lý tưởng cho khách vừa kết thúc hành trình dài."),
+    ("A warm botanical scrub followed by a full-body oil massage with sandalwood, neroli, and frankincense. Ends with a cool compress and guided stillness.", "Tẩy da chết thảo mộc ấm áp, tiếp theo là massage toàn thân với tinh dầu đàn hương, neroli và nhũ hương. Kết thúc bằng khăn mát và hướng dẫn tĩnh tâm."),
+    # luxestay wellness hero heading
+    (
+        'Rejuvenate <br class="framer-text">your soul',
+        'Phục hồi <br class="framer-text">tâm hồn',
+    ),
+    # luxestay room type headings
+    ("Family room", "Phòng gia đình"),
+    ("Executive room", "Phòng Executive"),
+    ("Deluxe room", "Phòng Deluxe"),
+    ("Premium suite", "Suite cao cấp"),
+    ("Super Executive room", "Phòng Super Executive"),
+    ("Other accommodations", "Phòng khác"),
+    # luxestay wedding heading mix
+    ("Kỷ niệm tình yêu in Extraordinary Settings", "Kỷ niệm tình yêu trong không gian đặc biệt"),
+    # luxestay wellness headings
+    ("Organic well being", "Sức khỏe toàn diện"),
+    ("Our treatments", "Liệu pháp của chúng tôi"),
 ]
 
 MOUNTAIN_IMG_POOL = [
@@ -1769,6 +1992,75 @@ def fix_asatha_assets(html: str) -> str:
         "Your dream retreat at Ke Go Retreat is just a conversation away.",
         "Chuyến nghỉ dưỡng tại Ke Go Retreat của bạn chỉ cách một cuộc gọi.",
     )
+    # about-us: mixed prefix + English body copy
+    html = html.replace(
+        "Khám phá sự cân bằng giữa sang trọng và thiên nhiên tại Ke Go Retreat.you.",
+        "Khám phá sự cân bằng giữa sang trọng và thiên nhiên tại Ke Go Retreat.",
+    )
+    html = html.replace(
+        "Luxury is found in details, both grand and subtle. Our curated facilities are designed to inspire balance and ease.",
+        "Sự sang trọng ẩn trong từng chi tiết, dù nhỏ hay lớn. Các tiện nghi được tuyển chọn kỹ lưỡng để mang lại cảm giác cân bằng và thoải mái.",
+    )
+    html = html.replace(
+        "Thức dậy cùng biển trời Hà Tĩnh and sunsets painted just for you, from the comfort of your private Thiên Cầm villa.",
+        "Thức dậy cùng biển trời Hà Tĩnh và hoàng hôn được vẽ riêng cho bạn, trong sự thoải mái của villa riêng tư Thiên Cầm.",
+    )
+    # about-us/villas: English quote with mixed EN text
+    html = html.replace(
+        '"Mỗi góc Ke Go Retreat đều được chăm chút - beautiful yet effortless. Three nights here reminded me how to slow down and breathe again."',
+        '"Mỗi góc Ke Go Retreat đều được chăm chút — đẹp mà không cầu kỳ. Ba đêm ở đây nhắc tôi cách chậm lại và thở."',
+    )
+    # dining.html: English body paragraphs
+    html = html.replace(
+        "Surrounded by lush gardens and ocean horizons, each dining space offers a setting that inspires connection and calm. From sunrise breakfasts to moonlit dinners, every moment is designed to linger.",
+        "Bao quanh bởi vườn xanh và tầm nhìn ra đại dương, mỗi không gian ăn uống gợi lên cảm giác kết nối và bình yên. Từ bữa sáng lúc bình minh đến bữa tối dưới ánh trăng, mỗi khoảnh khắc đều đáng được thưởng thức thong thả.",
+    )
+    html = html.replace(
+        "Ẩm thực is more than a meal — it is a journey. Heritage and global flavors, our chefs craft every dish with passion, precision, and artistry.",
+        "Ẩm thực không chỉ là bữa ăn — đó là hành trình. Kết hợp hương vị địa phương và quốc tế, đầu bếp của chúng tôi tạo ra từng món với đam mê, tỉ mỉ và nghệ thuật.",
+    )
+    html = html.replace(
+        "Khám phá các món tinh hoa trong thực đơn, carefully crafted to delight every palate.",
+        "Khám phá các món tinh hoa trong thực đơn, được chắt lọc kỹ lưỡng để chiều lòng mọi khẩu vị.",
+    )
+    # dining.html: USD price → VND
+    html = html.replace("$62.00", "450.000đ")
+    html = html.replace("$62", "450.000đ")
+    # villas-and-suites.html: USD pricing → VND (prices are in separate <div> from /night label)
+    _villa_usd_map = {
+        "$2,100": "15.500.000đ",
+        "$1,650": "12.000.000đ",
+        "$1,200": "8.700.000đ",
+        "$730": "5.300.000đ",
+        "$680": "5.000.000đ",
+        "$575": "4.200.000đ",
+        "$540": "3.900.000đ",
+        "$420": "3.100.000đ",
+    }
+    for usd, vnd in _villa_usd_map.items():
+        html = html.replace(f'>{usd}<', f'>{vnd}<')
+    # /night label in price context → /đêm; "from" label → "từ"
+    html = html.replace(
+        'villa-price-text">/night</div>',
+        'villa-price-text">/đêm</div>',
+    )
+    html = html.replace(
+        'villa-price-text">from</div>',
+        'villa-price-text">từ</div>',
+    )
+    # wellness.html: English body copy
+    html = html.replace(
+        "Spa & wellness is not an indulgence — it is a way of life. our holistic offerings are designed to restore balance, inspire clarity, and leave you renewed.",
+        "Spa & chăm sóc sức khỏe không phải xa xỉ — đó là lối sống. Các liệu pháp toàn diện của chúng tôi được thiết kế để phục hồi cân bằng, khơi dậy sự sáng suốt và để bạn ra về tràn đầy năng lượng.",
+    )
+    html = html.replace(
+        "We believe true wellbeing comes from harmony — of body, mind, and nature. Every treatment, ritual, and practice is crafted to reconnect you with yourself and the beauty around you.",
+        "Chúng tôi tin rằng sức khỏe thật sự đến từ sự hài hòa — giữa cơ thể, tâm trí và thiên nhiên. Mọi liệu pháp, nghi thức và thực hành đều được thiết kế để kết nối lại bạn với bản thân và vẻ đẹp xung quanh.",
+    )
+    html = html.replace(
+        "Each ritual is thoughtfully designed to restore balance, blending traditional techniques with contemporary luxury.",
+        "Mỗi nghi thức được thiết kế tỉ mỉ để phục hồi cân bằng, kết hợp kỹ thuật truyền thống với sự sang trọng hiện đại.",
+    )
     if "asatha-hide-vendor" not in html and "copyright-flowcub" in html:
         html = html.replace("</head>", ASATHA_HIDE + "</head>", 1)
     return html
@@ -1894,6 +2186,7 @@ def process_html(fp: Path, html: str) -> str:
             html = html.replace("contact@LuxeStay Ha Tinh.demo", "contact@luxestay.demo")
         else:
             html = fix_mountain(html)
+            html = inject_head(html, MOUNTAIN_POLISH, "mountain-polish")
             html = _apply_vi_list(html, FRAMER_VI)
             html = _apply_vi_list(html, FRAMER_VI_EXTRA)
             html = _apply_vi_list(html, MOUNTAIN_VI)
