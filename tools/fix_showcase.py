@@ -62,6 +62,19 @@ html,body,#root{max-width:100%;overflow-x:hidden}
 .banner__area .banner__slide__content{transform:none!important}
 .banner__area .banner__slide__content h1{max-width:1000px;margin-left:auto;margin-right:auto;line-height:1.05}
 .offcanvas:not(.show),.offcanvas-start:not(.show){visibility:hidden!important;transform:translateX(-100%)!important}
+.header__top .social__links,.header__top .location{display:flex;flex-wrap:wrap;gap:18px}
+.header__top .link__item,.navigation__menu--item__link,.main__right .theme-btn{white-space:nowrap}
+@media(min-width:992px){
+.main__header__wrapper{display:grid!important;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;column-gap:clamp(20px,3vw,42px)}
+.main__nav{min-width:0}
+.main__logo{justify-self:center}
+.navigation__menu>ul.list-unstyled{display:flex!important;align-items:center;flex-wrap:nowrap;gap:clamp(18px,1.8vw,30px);margin:0}
+.navigation__menu--item{flex:0 0 auto}
+.navigation__menu--item__link{font-size:17px!important}
+.main__right{display:flex!important;align-items:center;gap:16px;flex-wrap:nowrap}
+.main__right .theme-btn{min-width:0;padding-inline:22px}
+.banner__area .banner__slide__content h1{font-size:clamp(68px,5.8vw,96px)!important}
+}
 </style>"""
 
 COLORLIB_LAYOUT_FIX = """<style id="colorlib-layout-fix">
@@ -73,12 +86,13 @@ html,body{max-width:100%;overflow-x:hidden}
    The ENTERING slide (owl-animated-in active) is empty.
    Fix: kill animations, show animated-out item, hide animated-in. */
 .home-slider *{animation:none!important;-webkit-animation:none!important}
+.home-slider{position:relative!important;height:900px!important;overflow:hidden!important}
 .home-slider .owl-item{display:none!important}
 /* Show the outer "leaving" slide which contains the real inner carousel.
    Owl JS sets left:1021px to push it off-screen — must override. */
-.home-slider .owl-item.owl-animated-out{display:block!important;opacity:1!important;width:100%!important;float:none!important;left:0!important;position:relative!important}
+.home-slider .owl-item.active,.home-slider .owl-item.owl-animated-out{display:block!important;opacity:1!important;width:100%!important;float:none!important;left:0!important;top:0!important;position:absolute!important}
 /* Inside the leaving slide, show the inner carousel's active item */
-.home-slider .owl-item.owl-animated-out .owl-item.active{display:block!important;opacity:1!important;width:100%!important}
+.home-slider .owl-item.owl-animated-out .owl-item.active{display:block!important;opacity:1!important;width:100%!important;position:absolute!important}
 /* Stage and outer layout */
 .home-slider .owl-stage-outer{overflow:hidden!important;height:900px!important;max-width:100vw!important}
 .home-slider .owl-stage{transform:none!important;width:100%!important;height:auto!important}
@@ -87,6 +101,13 @@ html,body{max-width:100%;overflow-x:hidden}
 .home-slider .owl-animated-out .slider-item{opacity:1!important}
 .home-slider .slider-item .overlay{background:linear-gradient(90deg,rgba(0,0,0,.4),rgba(0,0,0,.2))!important}
 .home-slider .slider-text h1{max-width:1120px;margin-left:auto;margin-right:auto;line-height:1.05}
+.popup-vimeo .icon-play:before{content:"\\25B6";font-family:Arial,sans-serif!important;font-size:30px;color:#fff;margin-left:4px}
+.ftco-social .icon-twitter:before{content:"X";font-family:Arial,sans-serif!important;font-weight:700}
+.ftco-social .icon-facebook:before{content:"f";font-family:Arial,sans-serif!important;font-weight:700}
+.ftco-social .icon-google-plus:before{content:"G";font-family:Arial,sans-serif!important;font-weight:700}
+.ftco-social .icon-instagram:before{content:"IG";font-family:Arial,sans-serif!important;font-size:12px;font-weight:700}
+.ion-ios-arrow-down:before{content:"\\25BE";font-family:Arial,sans-serif!important}
+.room .icon-instagram:before,.instagram .icon-instagram:before{content:"IG";font-family:Arial,sans-serif!important;font-size:13px;font-weight:700}
 </style>"""
 
 HOTALE_POLISH = """<style id="hotale-polish">
@@ -96,16 +117,77 @@ html,body{max-width:100%;overflow-x:hidden}
 .hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{border-radius:0!important;min-height:760px!important;padding-top:220px!important}
 .hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child .gdlr-core-pbf-background-wrap{border-radius:0!important}
 .hotale-header-wrap .hotale-header-container{max-width:1320px}
-.title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:54px!important;line-height:1.08!important;letter-spacing:0!important;max-width:980px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+.hotale-header-wrap .hotale-header-container-inner{display:flex;align-items:center;gap:28px}
+.hotale-header-wrap .hotale-logo{flex:0 0 170px;padding-left:0!important;padding-right:0!important}
+.hotale-header-wrap .hotale-logo-inner span{font-size:19px!important}
+.hotale-header-wrap .hotale-navigation{flex:1 1 auto;display:flex!important;align-items:center;justify-content:space-between;min-width:0;padding-left:0!important;padding-right:0!important}
+.hotale-header-wrap .hotale-main-menu{flex:1 1 auto;min-width:0}
+.hotale-header-wrap .sf-menu{display:flex!important;align-items:center;justify-content:center;flex-wrap:nowrap;gap:clamp(12px,1.2vw,20px);margin:0}
+.hotale-header-wrap .sf-menu>li{float:none!important}
+.hotale-header-wrap .sf-menu>li>a{padding:0!important;white-space:nowrap;font-size:14px!important;letter-spacing:.1em}
+.hotale-main-menu-right-wrap{display:flex!important;align-items:center;gap:14px;flex:0 0 auto;white-space:nowrap;margin:0!important}
+.tourmaster-currency-switcher,.tourmaster-room-navigation-checkout-wrap{float:none!important}
+.tourmaster-room-navigation-checkout-button{white-space:nowrap}
+body.home .title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(64px,5.2vw,90px)!important;line-height:1.05!important;letter-spacing:0!important;max-width:980px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+body:not(.home) .title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(48px,4.2vw,72px)!important;line-height:1.08!important;letter-spacing:0!important;max-width:760px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+body:not(.home) .hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{min-height:520px!important;padding-top:190px!important;padding-bottom:40px!important}
 .gdlr-core-text-box-item-content p{line-height:1.55}
 .tourmaster-room-search-wrap{box-shadow:0 22px 60px rgba(31,23,12,.18);border-radius:0!important;overflow:hidden}
 .tourmaster-room-search-wrap .tourmaster-room-search-field{min-height:138px}
+.tourmaster-room-search-submit{background:#8d6f3b!important;color:#fff!important;border-color:#8d6f3b!important}
+.tourmaster-room-search-submit:hover{background:#755c31!important;border-color:#755c31!important}
 .tourmaster-head{letter-spacing:.08em}
 i.icon-phone:before{content:"\\260E";font-family:Arial,sans-serif!important}
 i.icon-envelope:before{content:"\\2709";font-family:Arial,sans-serif!important}
 i.icon_lock_alt:before{content:"\\25CB";font-family:Arial,sans-serif!important}
+i.icon_close:before{content:"\\2715";font-family:Arial,sans-serif!important}
+i.icon_plus:before{content:"\\002B";font-family:Arial,sans-serif!important}
+i.icon_minus-06:before{content:"\\2212";font-family:Arial,sans-serif!important}
+i.icon-arrow-right:before{content:"\\2192";font-family:Arial,sans-serif!important}
+i.icon-arrow-left:before{content:"\\2190";font-family:Arial,sans-serif!important}
 i.fa-sort-down:before{content:"\\25BE";font-family:Arial,sans-serif!important}
-@media(max-width:900px){.title-rotate .gdlr-core-title-item-title{font-size:42px!important}.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{padding-top:170px!important}}
+i.fa-facebook:before{content:"f";font-family:Arial,sans-serif!important;font-weight:700}
+i.fa-instagram:before{content:"IG";font-family:Arial,sans-serif!important;font-size:.72em;font-weight:700}
+i.fa-twitter:before{content:"X";font-family:Arial,sans-serif!important;font-weight:700}
+i.fa-pinterest-p:before{content:"P";font-family:Arial,sans-serif!important;font-weight:700}
+i.fa5-tiktok:before{content:"TT";font-family:Arial,sans-serif!important;font-size:.72em;font-weight:700}
+.gdlr-icon-double-bed2:before{content:"\\1F6CF";font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important}
+.gdlr-icon-group:before{content:"\\1F465";font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important}
+.gdlr-icon-clock:before{content:"\\23F1";font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important}
+.tourmaster-room-content-wrap .tourmaster-info i{display:inline-block!important;width:18px!important;margin-right:7px!important;color:#8d6f3b!important;font-style:normal!important}
+.tourmaster-room-content-wrap .tourmaster-info i:before{font-size:14px!important;line-height:1!important}
+.gdlr-core-icon-item .gdlr-core-icon-item-icon{
+  display:inline-flex!important;align-items:center;justify-content:center;
+  width:72px!important;height:72px!important;min-width:72px!important;min-height:72px!important;
+  border-radius:50%;background:rgba(255,255,255,.88);box-shadow:0 18px 45px rgba(0,0,0,.16);
+  color:#8d6f3b!important;font-size:34px!important;line-height:1!important;
+}
+.gdlr-core-icon-item-icon:before{font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important;font-style:normal!important}
+.gdlr-icon-safe-box1:before{content:"\\1F512"}
+.gdlr-icon-swimming-pool1:before{content:"\\1F3CA"}
+.gdlr-icon-massage:before{content:"\\1F486"}
+.gdlr-icon-weights:before{content:"\\1F3CB"}
+.gdlr-icon-wifi-signal:before{content:"\\1F4F6"}
+.gdlr-icon-breakfast:before{content:"\\2615"}
+.gdlr-icon-workspace:before{content:"\\2328"}
+.gdlr-core-image-item-wrap img[title="Group 40"]{
+  width:72px!important;height:72px!important;object-fit:contain!important;padding:16px;border-radius:50%;
+  background:rgba(255,255,255,.88);box-shadow:0 18px 45px rgba(0,0,0,.16);
+}
+#gdlr-core-wrapper-4{position:relative!important;padding-top:74px!important;padding-bottom:150px!important}
+#gdlr-core-wrapper-4:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,248,235,.9),rgba(255,255,255,.58) 42%,rgba(255,255,255,.2));z-index:0;pointer-events:none}
+#gdlr-core-wrapper-4>.gdlr-core-pbf-background-wrap,#gdlr-core-wrapper-4>.gdlr-core-pbf-wrapper-content{position:relative;z-index:1}
+#gdlr-core-wrapper-4 .gdlr-core-title-item-title{color:#171717!important;text-shadow:0 1px 18px rgba(255,255,255,.45)}
+#gdlr-core-wrapper-4 .gdlr-core-text-box-item-content{color:#4d5560!important}
+#gdlr-core-wrapper-4 .gdlr-core-column-12 .gdlr-core-title-item-title{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;line-height:1.35!important;text-shadow:0 1px 16px rgba(255,255,255,.7)}
+@media(max-width:1100px){
+.hotale-header-wrap .hotale-header-container-inner{gap:18px}
+.hotale-header-wrap .sf-menu{gap:14px}
+.hotale-header-wrap .sf-menu>li>a{font-size:13px!important}
+.hotale-main-menu-right-wrap{gap:12px}
+}
+@media(max-width:900px){.title-rotate .gdlr-core-title-item-title{font-size:42px!important}.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{padding-top:170px!important}.hotale-header-wrap .hotale-header-container-inner{display:block}.hotale-header-wrap .hotale-navigation{display:block!important}}
+.tourmaster-room-date-selection .tourmaster-tail:after{content:"\\25BE"!important;font-family:Arial,sans-serif!important}
 </style>"""
 
 SEASIDE_IMG_POOL = [
@@ -378,6 +460,7 @@ COLORLIB_VI = [
     ("lang=\"vi\" lang=\"en\"", 'lang="vi"'),
     ("A small river named Duden flows by their place and supplies.", "Dịch vụ chu đáo cho khách lưu trú."),
     ("A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.", "Khách sạn Deluxe mang đến trải nghiệm nghỉ dưỡng thoải mái tại Thiên Cầm."),
+    ("Deluxe Hotel Ha Tinh, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.", "KhÃ´ng gian lÆ°u trÃº Ä‘Æ°á»£c sáº¯p xáº¿p gá»n gÃ ng, cÃ³ khu áº©m thá»±c, dá»‹ch vá»¥ há»— trá»£ vÃ  cÃ¡c háº¡ng phÃ²ng phÃ¹ há»£p cho chuyáº¿n nghá»‰ táº¡i HÃ  TÄ©nh."),
     ("When she reached the first hills of the Italic Mountains", "Deluxe Hotel Ha Tinh"),
     ("Nathan Smith", "Nguyễn Văn An"),
     ("25/7 Front Desk", "Lễ tân 24/7"),
@@ -401,6 +484,23 @@ COLORLIB_VI = [
 HOTALE_VI = [
     ("About Us 2", "Giới thiệu thêm"),
     ("About Us 3", "Không gian nghỉ dưỡng"),
+    ("Hotale – Hotel HTML Template", "Thien Cam Resort — Demo lưu trú Hà Tĩnh"),
+    ('lang="en-US"', 'lang="vi"'),
+    (">Home<", ">Trang chủ<"),
+    (">Pages<", ">Trang<"),
+    (">Reservation<", ">Đặt phòng<"),
+    (">Blog<", ">Tin tức<"),
+    (">Our Team<", ">Đội ngũ<"),
+    (">Hotel Review<", ">Đánh giá<"),
+    (">FAQ<", ">Câu hỏi thường gặp<"),
+    (">Price Table<", ">Bảng giá<"),
+    (">Maintenance<", ">Bảo trì<"),
+    (">Coming Soon<", ">Sắp ra mắt<"),
+    (">404 Page<", ">Trang lỗi<"),
+    (">Single Posts<", ">Bài viết chi tiết<"),
+    (">Blog Columns<", ">Bài viết dạng cột<"),
+    (">Blog Full<", ">Bài viết toàn trang<"),
+    (">Blog Grid<", ">Bài viết dạng lưới<"),
     (">Rooms<", ">Phòng<"),
     (">Contact<", ">Liên hệ<"),
     (">About Us<", ">Giới thiệu<"),
@@ -420,6 +520,36 @@ HOTALE_VI = [
     ("Book Now", "Đặt phòng"),
     ("Search Room", "Tìm phòng"),
     ("SEARCH ROOM", "TÌM PHÒNG"),
+    ("Reservation", "Đặt phòng"),
+    ("Pages", "Trang"),
+    ("Home", "Trang chủ"),
+    ("Blog", "Tin tức"),
+    ("Our Team", "Đội ngũ"),
+    ("Hotel Review", "Đánh giá"),
+    ("Price Table", "Bảng giá"),
+    ("Maintenance", "Bảo trì"),
+    ("Coming Soon", "Sắp ra mắt"),
+    ("Single Posts", "Bài viết chi tiết"),
+    ("Login", "Đăng nhập"),
+    ("Sign In!", "Đăng nhập"),
+    ("Forgot Password?", "Quên mật khẩu?"),
+    ("Create an Account", "Tạo tài khoản"),
+    ("Already a Member?", "Đã có tài khoản?"),
+    ("Username*", "Tên đăng nhập*"),
+    ("First Name*", "Tên*"),
+    ("Last Name*", "Họ*"),
+    ("Birth Date*", "Ngày sinh*"),
+    ("Country*", "Quốc gia*"),
+    ("Password*", "Mật khẩu*"),
+    ("Confirm Password*", "Xác nhận mật khẩu*"),
+    ("Phone*", "Điện thoại*"),
+    ("Email*", "Email*"),
+    ("Date", "Ngày"),
+    ("Month", "Tháng"),
+    ("Year", "Năm"),
+    ("United States of America (USA)", "Việt Nam"),
+    ("Creating an account means you're okay with our Terms of Service and Privacy Statement.", "Tạo tài khoản demo để xem giao diện đặt phòng và dịch vụ."),
+    ("SIGN UP", "ĐĂNG KÝ"),
     ("Người lớns", "người lớn"),
     ("Jul 28, 2022", "14/06/2026"),
     ("Jul 29, 2022", "15/06/2026"),
@@ -431,9 +561,18 @@ HOTALE_VI = [
     ("there live the blind texts", "có những trải nghiệm nghỉ dưỡng yên tĩnh"),
     ("Bookmarksgrove", "Thiên Cầm"),
     ("Vokalia and Consonantia", "Hà Tĩnh"),
+    (
+        "Our hotel is located in the heart of the New Forrest. A five stars lifestyle surrounded by the forest.",
+        "Thiên Cầm Resort tọa lạc ven bờ biển Thiên Cầm, Cẩm Xuyên, Hà Tĩnh — không gian lưu trú hiện đại dành cho gia đình và kỳ nghỉ ngắn.",
+    ),
 ]
 
 MOONLIT_VI_EXTRA = [
+    # Google Maps embed: thay Phuket → Hà Tĩnh
+    (
+        "maps?width=100%25&amp;height=600&amp;hl=en&amp;q=phuket+(My%20Business%20Họ tên)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+        "maps?width=100%25&amp;height=600&amp;hl=vi&amp;q=Thiên Cầm, Cẩm Xuyên, Hà Tĩnh&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed",
+    ),
     ("Luxury Hotel", "Khách sạn Hà Tĩnh"),
     ("Luxe Vista", "Villa hướng biển"),
     ("Ocean Breeze", "Phòng biển Thiên Cầm"),
@@ -545,6 +684,8 @@ COLORLIB_VI_EXTRA = [
     ("We Are Food Lover", "Ẩm Thực Hà Tĩnh"),
     (">Restaurants<", ">Ẩm thực<"),
     (">RESTAURANTS<", ">ẨM THỰC<"),
+    ("Advanced Search", "Tìm kiếm nâng cao"),
+    ("Star Rating", "Xếp hạng sao"),
 ]
 
 FRAMER_VI_EXTRA = [
@@ -598,6 +739,18 @@ FRAMER_VI_EXTRA = [
     ("GOOGLE FONTS", "FONT CHỮ"),
     ("typography", "kiểu chữ"),
     ("Google Fonts", "Google Fonts"),
+    # wanderway heading fixes (EN fragments remaining after partial translation)
+    ("Experiences from Start to Finish", "Hà Tĩnh — Trọn hành trình"),
+    ("Dream tours", "Tour nổi bật"),
+    ("Turning your travel desires into adventures", "Biến ước mơ du lịch thành hành trình thực"),
+    # wanderway blog: foreign locations (Interlaken/Switzerland/Cappadocia/Turkey + Dubai→Cảng cá artifact)
+    (
+        "Paragliding in Interlaken, Switzerland offers views that stretch from snowcaps to lakes; "
+        "skydiving over Cảng cá paints the desert in gold beneath your feet; "
+        "and hot-air ballooning in Cappadocia, Turkey turns sunrise into pure magic.",
+        "Chèo thuyền trên hồ Kẻ Gỗ giữa rừng xanh bạt ngàn; lướt sóng tại Thiên Cầm với bờ cát trắng trải dài; "
+        "và leo núi Hương Tích ngắm toàn cảnh Hà Tĩnh từ trên cao — mỗi trải nghiệm là một kỷ niệm không thể quên.",
+    ),
 ]
 
 MOUNTAIN_VI_EXTRA = [
@@ -624,6 +777,14 @@ MOUNTAIN_VI_EXTRA = [
 ]
 
 HOTALE_UPLOAD_MAP = {
+    "upload/Group-40.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/Group-40.png",
+    "upload/play.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/play.png",
+    "upload/about-2-icon-1.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/about-2-icon-1.png",
+    "upload/about-2-icon-2.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/about-2-icon-2.png",
+    "upload/about-2-icon-3.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/about-2-icon-3.png",
+    "upload/about-2-icon-4.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/about-2-icon-4.png",
+    "upload/about-2-icon-5.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/about-2-icon-5.png",
+    "upload/about-2-icon-6-1.png": "assets/max-themes.net/demos/hotale/hotale/resort/upload/about-2-icon-6-1.png",
     "upload/Square.png": f"{IMG}/08_hospitality_hospitality_beachfront_resort.png",
     "upload/Group-36.jpg": f"{IMG}/35_hospitality_peaceful_beach_resort.png",
     "upload/grey-color.jpg": f"{IMG}/17_hospitality_modern_beach_hotel_exterior.png",
@@ -860,6 +1021,17 @@ LUXESTAY_VI = [
     ("Tripscout", ""),
     ("LuxeStay Ha Tinh - Framer Template", "LuxeStay Ha Tinh — Villa Hà Tĩnh"),
     ("LuxeStay — Framer Template", "LuxeStay Ha Tinh — Villa Hà Tĩnh"),
+    # luxestay rooms/restaurant EN headings
+    ("Serene spaces,", "Không gian yên tĩnh,"),
+    ("Our rooms are equipped with everything you need", "Mỗi phòng được trang bị đầy đủ tiện nghi"),
+    ("Authentic ", "Ẩm thực địa phương "),
+    ("An intimate dining experience", "Trải nghiệm ẩm thực tinh tế"),
+    (">Our menu<", ">Thực đơn<"),
+    # Eden Hotel (Bali/Kuta) meta description leftover from scrape
+    (
+        "Located right at the heart of Central Kuta, Eden Hotel offers a four-stars scenic getaway to nature. Only minutes away from the Kuta Beach.",
+        "Tọa lạc ven bờ biển Thiên Cầm, LuxeStay Hà Tĩnh mang đến không gian nghỉ dưỡng hiện đại, yên tĩnh và gần biển.",
+    ),
 ]
 
 MOUNTAIN_IMG_POOL = [
@@ -901,6 +1073,10 @@ FRAMER_LOGO_SVG = (
 
 MOUNTAIN_STATIC_HERO = f"""
 <section id="mountain-static-hero" style="position:relative;z-index:20;min-height:92vh;background:linear-gradient(90deg,rgba(18,17,19,.72),rgba(18,17,19,.22)),url('../assets/shared-images/10_experience_experience_ke_go_boat_tour.png') center/cover no-repeat;color:#fff;display:flex;align-items:flex-end;padding:clamp(32px,7vw,96px);box-sizing:border-box">
+  <header style="position:absolute;z-index:50;left:clamp(24px,5vw,72px);right:clamp(24px,5vw,72px);top:24px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 18px;border-radius:999px;background:rgba(18,17,19,.34);backdrop-filter:blur(12px);font:700 13px/1 Arial,sans-serif;letter-spacing:.02em">
+    <a href="index.html" style="color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:#688683;display:inline-block"></span><span>Ke Go Eco Lodge</span></a>
+    <nav style="display:flex;align-items:center;gap:22px;flex-wrap:wrap"><a href="rooms.html" style="color:#fff;text-decoration:none">Phòng</a><a href="about.html" style="color:#fff;text-decoration:none">Giới thiệu</a><a href="contact.html" style="color:#fff;text-decoration:none">Liên hệ</a><a href="rooms.html" style="color:#101113;text-decoration:none;background:#e4e6c3;border-radius:999px;padding:12px 16px">Đặt phòng</a></nav>
+  </header>
   <div style="max-width:820px">
     <p style="font:700 14px/1.2 Arial,sans-serif;letter-spacing:0;text-transform:uppercase;margin:0 0 18px;color:#e4e6c3">Ke Go Eco Lodge</p>
     <h1 style="font:700 clamp(46px,7vw,92px)/.95 Georgia,serif;letter-spacing:0;margin:0 0 24px">Nghỉ dưỡng giữa rừng hồ Kẻ Gỗ</h1>
@@ -1070,6 +1246,11 @@ def fix_colorlib(html: str) -> str:
     html = re.sub(r"Little Blind Text", "nội dung demo", html)
     html = re.sub(r"Lorem ipsum[^<]{0,400}", "Nội dung demo phù hợp khách sạn Hà Tĩnh.", html)
     html = re.sub(
+        r"Deluxe Hotel Ha Tinh,[^<]*Bookmarksgrove[^<]*continued her way\.",
+        "Khong gian luu tru duoc sap xep gon gang, co khu am thuc, dich vu ho tro va cac hang phong phu hop cho chuyen nghi tai Ha Tinh.",
+        html,
+    )
+    html = re.sub(
         r"Even the all-powerful Pointing has no control[^<]{0,200}",
         "Tin tức và ưu đãi tại Deluxe Hotel Ha Tĩnh.",
         html,
@@ -1232,7 +1413,13 @@ def fix_mountain(html: str) -> str:
 
 def inject_mountain_static_hero(html: str) -> str:
     if "mountain-static-hero" in html:
-        return html
+        return re.sub(
+            r'<section id="mountain-static-hero"[\s\S]*?</section>',
+            MOUNTAIN_STATIC_HERO,
+            html,
+            count=1,
+            flags=re.I,
+        )
     return re.sub(r"(<body\b[^>]*>)", r"\1" + MOUNTAIN_STATIC_HERO, html, count=1, flags=re.I)
 
 
@@ -1443,6 +1630,12 @@ def fix_hotale_uploads(html: str) -> str:
         "assets/max-themes.net/demos/hotale/hotale/resort/../assets/shared-images/",
         "../assets/shared-images/",
     )
+    html = re.sub(
+        r'<img src="[^"]+"([^>]*title="Group 40"[^>]*)>',
+        r'<img src="assets/max-themes.net/demos/hotale/hotale/resort/upload/Group-40.png"\1>',
+        html,
+        flags=re.I,
+    )
     idx = 0
 
     def next_img() -> str:
@@ -1454,7 +1647,7 @@ def fix_hotale_uploads(html: str) -> str:
     def upload_attr_repl(m: re.Match) -> str:
         src = m.group(2)
         low = src.lower()
-        if any(x in low for x in ("logo", "icon", "favicon", "map-marker")):
+        if any(x in low for x in ("logo", "icon", "favicon", "map-marker", "group-40", "play.png", "group-36", "footer-cards")):
             return m.group(0)
         return f'{m.group(1)}"{next_img()}"'
 
@@ -1559,6 +1752,22 @@ def fix_asatha_assets(html: str) -> str:
     html = html.replace(
         "Every space is more than a room; it’s a sanctuary where comfort, privacy, and style meet.",
         "Mỗi không gian là một ốc đảo riêng tư — tiện nghi, cảnh quan và dịch vụ hoà quyện.",
+    )
+    html = html.replace(
+        'Escape to <em class="wood-700-text">Bliss.</em>',
+        'Tìm lại bình yên tại <em class="wood-700-text">Kẻ Gỗ.</em>',
+    )
+    html = html.replace(
+        "Introduce your luxury retreat with story, gallery, and amenities. This  template page highlights brand heritage, spa culture, and guest experience.",
+        "Ke Go Retreat — không gian nghỉ dưỡng ven hồ Kẻ Gỗ, Hà Tĩnh. Thiết kế gắn kết thiên nhiên nguyên sơ và tiện nghi hiện đại.",
+    )
+    html = html.replace(
+        "We envisioned more than a resort. We created a haven where nature’s raw beauty and modern comfort exist in effortless harmony. Every villa, every pathway, every view is crafted to let you reconnect with yourself, your loved ones, and the timeless spirit.",
+        "Ke Go Retreat không chỉ là nơi lưu trú — đây là không gian để bạn thực sự nghỉ ngơi. Mỗi không gian được thiết kế gắn với thiên nhiên hồ Kẻ Gỗ, để bạn chạm vào sự yên tĩnh hiếm có giữa rừng núi Hà Tĩnh.",
+    )
+    html = html.replace(
+        "Your dream retreat at Ke Go Retreat is just a conversation away.",
+        "Chuyến nghỉ dưỡng tại Ke Go Retreat của bạn chỉ cách một cuộc gọi.",
     )
     if "asatha-hide-vendor" not in html and "copyright-flowcub" in html:
         html = html.replace("</head>", ASATHA_HIDE + "</head>", 1)

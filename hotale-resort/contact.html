@@ -40,16 +40,77 @@ html,body{max-width:100%;overflow-x:hidden}
 .hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{border-radius:0!important;min-height:760px!important;padding-top:220px!important}
 .hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child .gdlr-core-pbf-background-wrap{border-radius:0!important}
 .hotale-header-wrap .hotale-header-container{max-width:1320px}
-.title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:54px!important;line-height:1.08!important;letter-spacing:0!important;max-width:980px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+.hotale-header-wrap .hotale-header-container-inner{display:flex;align-items:center;gap:28px}
+.hotale-header-wrap .hotale-logo{flex:0 0 170px;padding-left:0!important;padding-right:0!important}
+.hotale-header-wrap .hotale-logo-inner span{font-size:19px!important}
+.hotale-header-wrap .hotale-navigation{flex:1 1 auto;display:flex!important;align-items:center;justify-content:space-between;min-width:0;padding-left:0!important;padding-right:0!important}
+.hotale-header-wrap .hotale-main-menu{flex:1 1 auto;min-width:0}
+.hotale-header-wrap .sf-menu{display:flex!important;align-items:center;justify-content:center;flex-wrap:nowrap;gap:clamp(12px,1.2vw,20px);margin:0}
+.hotale-header-wrap .sf-menu>li{float:none!important}
+.hotale-header-wrap .sf-menu>li>a{padding:0!important;white-space:nowrap;font-size:14px!important;letter-spacing:.1em}
+.hotale-main-menu-right-wrap{display:flex!important;align-items:center;gap:14px;flex:0 0 auto;white-space:nowrap;margin:0!important}
+.tourmaster-currency-switcher,.tourmaster-room-navigation-checkout-wrap{float:none!important}
+.tourmaster-room-navigation-checkout-button{white-space:nowrap}
+body.home .title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(64px,5.2vw,90px)!important;line-height:1.05!important;letter-spacing:0!important;max-width:980px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+body:not(.home) .title-rotate .gdlr-core-title-item-title{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(48px,4.2vw,72px)!important;line-height:1.08!important;letter-spacing:0!important;max-width:760px;margin-left:auto!important;margin-right:auto!important;text-shadow:0 10px 35px rgba(0,0,0,.35)}
+body:not(.home) .hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{min-height:520px!important;padding-top:190px!important;padding-bottom:40px!important}
 .gdlr-core-text-box-item-content p{line-height:1.55}
 .tourmaster-room-search-wrap{box-shadow:0 22px 60px rgba(31,23,12,.18);border-radius:0!important;overflow:hidden}
 .tourmaster-room-search-wrap .tourmaster-room-search-field{min-height:138px}
+.tourmaster-room-search-submit{background:#8d6f3b!important;color:#fff!important;border-color:#8d6f3b!important}
+.tourmaster-room-search-submit:hover{background:#755c31!important;border-color:#755c31!important}
 .tourmaster-head{letter-spacing:.08em}
 i.icon-phone:before{content:"\260E";font-family:Arial,sans-serif!important}
 i.icon-envelope:before{content:"\2709";font-family:Arial,sans-serif!important}
 i.icon_lock_alt:before{content:"\25CB";font-family:Arial,sans-serif!important}
+i.icon_close:before{content:"\2715";font-family:Arial,sans-serif!important}
+i.icon_plus:before{content:"\002B";font-family:Arial,sans-serif!important}
+i.icon_minus-06:before{content:"\2212";font-family:Arial,sans-serif!important}
+i.icon-arrow-right:before{content:"\2192";font-family:Arial,sans-serif!important}
+i.icon-arrow-left:before{content:"\2190";font-family:Arial,sans-serif!important}
 i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
-@media(max-width:900px){.title-rotate .gdlr-core-title-item-title{font-size:42px!important}.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{padding-top:170px!important}}
+i.fa-facebook:before{content:"f";font-family:Arial,sans-serif!important;font-weight:700}
+i.fa-instagram:before{content:"IG";font-family:Arial,sans-serif!important;font-size:.72em;font-weight:700}
+i.fa-twitter:before{content:"X";font-family:Arial,sans-serif!important;font-weight:700}
+i.fa-pinterest-p:before{content:"P";font-family:Arial,sans-serif!important;font-weight:700}
+i.fa5-tiktok:before{content:"TT";font-family:Arial,sans-serif!important;font-size:.72em;font-weight:700}
+.gdlr-icon-double-bed2:before{content:"\1F6CF";font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important}
+.gdlr-icon-group:before{content:"\1F465";font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important}
+.gdlr-icon-clock:before{content:"\23F1";font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important}
+.tourmaster-room-content-wrap .tourmaster-info i{display:inline-block!important;width:18px!important;margin-right:7px!important;color:#8d6f3b!important;font-style:normal!important}
+.tourmaster-room-content-wrap .tourmaster-info i:before{font-size:14px!important;line-height:1!important}
+.gdlr-core-icon-item .gdlr-core-icon-item-icon{
+  display:inline-flex!important;align-items:center;justify-content:center;
+  width:72px!important;height:72px!important;min-width:72px!important;min-height:72px!important;
+  border-radius:50%;background:rgba(255,255,255,.88);box-shadow:0 18px 45px rgba(0,0,0,.16);
+  color:#8d6f3b!important;font-size:34px!important;line-height:1!important;
+}
+.gdlr-core-icon-item-icon:before{font-family:"Segoe UI Symbol","Segoe UI Emoji",sans-serif!important;font-style:normal!important}
+.gdlr-icon-safe-box1:before{content:"\1F512"}
+.gdlr-icon-swimming-pool1:before{content:"\1F3CA"}
+.gdlr-icon-massage:before{content:"\1F486"}
+.gdlr-icon-weights:before{content:"\1F3CB"}
+.gdlr-icon-wifi-signal:before{content:"\1F4F6"}
+.gdlr-icon-breakfast:before{content:"\2615"}
+.gdlr-icon-workspace:before{content:"\2328"}
+.gdlr-core-image-item-wrap img[title="Group 40"]{
+  width:72px!important;height:72px!important;object-fit:contain!important;padding:16px;border-radius:50%;
+  background:rgba(255,255,255,.88);box-shadow:0 18px 45px rgba(0,0,0,.16);
+}
+#gdlr-core-wrapper-4{position:relative!important;padding-top:74px!important;padding-bottom:150px!important}
+#gdlr-core-wrapper-4:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,248,235,.9),rgba(255,255,255,.58) 42%,rgba(255,255,255,.2));z-index:0;pointer-events:none}
+#gdlr-core-wrapper-4>.gdlr-core-pbf-background-wrap,#gdlr-core-wrapper-4>.gdlr-core-pbf-wrapper-content{position:relative;z-index:1}
+#gdlr-core-wrapper-4 .gdlr-core-title-item-title{color:#171717!important;text-shadow:0 1px 18px rgba(255,255,255,.45)}
+#gdlr-core-wrapper-4 .gdlr-core-text-box-item-content{color:#4d5560!important}
+#gdlr-core-wrapper-4 .gdlr-core-column-12 .gdlr-core-title-item-title{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;line-height:1.35!important;text-shadow:0 1px 16px rgba(255,255,255,.7)}
+@media(max-width:1100px){
+.hotale-header-wrap .hotale-header-container-inner{gap:18px}
+.hotale-header-wrap .sf-menu{gap:14px}
+.hotale-header-wrap .sf-menu>li>a{font-size:13px!important}
+.hotale-main-menu-right-wrap{gap:12px}
+}
+@media(max-width:900px){.title-rotate .gdlr-core-title-item-title{font-size:42px!important}.hotale-body-wrapper .gdlr-core-pbf-wrapper:first-child{padding-top:170px!important}.hotale-header-wrap .hotale-header-container-inner{display:block}.hotale-header-wrap .hotale-navigation{display:block!important}}
+.tourmaster-room-date-selection .tourmaster-tail:after{content:"\25BE"!important;font-family:Arial,sans-serif!important}
 </style></head>
 
 <body class="home page-template-default page page-id-14980 theme-hotale gdlr-core-body tourmaster-body woocommerce-no-js hotale-body hotale-body-front hotale-full hotale-with-sticky-navigation hotale-blockquote-style-3 gdlr-core-link-to-lightbox" data-home-url="index.html"><div class="hotale-mm-menu-wrap hotale-navigation-font mm-menu mm-pagedim-black mm-offcanvas mm-right" id="hotale-mobile-menu" data-slide="right"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened mm-current" id="menu-main-navigation"><div class="mm-navbar"><a class="mm-title"><span class="mmenu-custom-close"></span></a></div><ul class="m-menu mm-listview">
@@ -99,7 +160,7 @@ i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
                                     </div>
 
                                     <p class="tourmaster-login-submit">
-                                        <input type="submit" name="wp-submit" class="tourmaster-button" value="Sign In!">
+                                        <input type="submit" name="wp-submit" class="tourmaster-button" value="Đăng nhập">
                                     </p>
                                     <p class="tourmaster-login-lost-password">
                                         <a href="#">Quên mật khẩu?</a>
@@ -109,7 +170,7 @@ i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
 
                                 <div class="tourmaster-login-bottom">
                                     <h3 class="tourmaster-login-bottom-title">Chưa có tài khoản?</h3>
-                                    <a class="tourmaster-login-bottom-link" href="register.html">Create an Account</a>
+                                    <a class="tourmaster-login-bottom-link" href="register.html">Tạo tài khoản</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +219,7 @@ i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
                                                 </div>
 
                                                 <p class="tourmaster-login-submit">
-                                                    <input type="submit" name="wp-submit" class="tourmaster-button" value="Sign In!">
+                                                    <input type="submit" name="wp-submit" class="tourmaster-button" value="Đăng nhập">
                                                 </p>
                                                 <p class="tourmaster-login-lost-password">
                                                     <a href="#">Quên mật khẩu?</a>
@@ -168,7 +229,7 @@ i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
 
                                             <div class="tourmaster-login-bottom">
                                                 <h3 class="tourmaster-login-bottom-title">Chưa có tài khoản?</h3>
-                                                <a class="tourmaster-login-bottom-link" href="register.html">Create an Account</a>
+                                                <a class="tourmaster-login-bottom-link" href="register.html">Tạo tài khoản</a>
                                             </div>
                                         </div>
                                     </div>
@@ -406,7 +467,7 @@ i.fa-sort-down:before{content:"\25BE";font-family:Arial,sans-serif!important}
                                             </div>
                                             <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb">
-                                                    <div role="form" class="wpcf7" id="wpcf7-f1979-p1964-o1" lang="en-US" dir="ltr">
+                                                    <div role="form" class="wpcf7" id="wpcf7-f1979-p1964-o1" lang="vi" dir="ltr">
                                                         <div class="screen-reader-response">
                                                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                             <ul></ul>
