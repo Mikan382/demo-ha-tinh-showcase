@@ -1,0 +1,67 @@
+=== 404.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== about-us.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== blog-posts_a-journey-into-tranquility---the-essence-of-asatha.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== blog-posts_culinary-notes-from-our-chef.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== blog-posts_designing-with-nature.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== blog-posts_sustainable-luxury.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== blog-posts_wellness-rituals-from-bali.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== blog.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== contact-us.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== dining.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== index.html ===
+  - Ke Go Retreat
+  - © KE GO RETREAT - VILLA & RESORT.
+=== packages.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== popular-package_cultural-package.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== popular-package_family-retreat.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== popular-package_love-package.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== popular-package_wellness-escape.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== templates_changelog.html ===
+  - Initial Version Released. - Ke Go Retreat Luxury Template
+=== templates_license.html ===
+  - License
+  - “All graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please check the license below.”
+  - This template's images and Videos are all free for both personal and commercial use. You can review the licensing and get free downloads of any image you choose to use on
+  - We used free personal and commercial use Urbanist & Cardo licensed typography in this template. You can review the licenses and get the typeface for free if you want to use these.
+  - All icons and logos used are from.
+=== templates_styleguide.html ===
+  - Styleguide
+  - Button With Icon
+=== villas-and-suites.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_amber-suite.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_cliffside-villa.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_clifftop-mansion.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_garden-villa.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_oceanfront-pavilion.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_serenity-suite.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_skyline-villa.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_sunset-estate.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== villas-and-suites_the-pavilion-residence.html ===
+  - © KE GO RETREAT - VILLA & RESORT.
+=== wellness.html ===
+  - Ke Go Retreat Spa
+  - © KE GO RETREAT - VILLA & RESORT.

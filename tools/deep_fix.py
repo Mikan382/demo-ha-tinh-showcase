@@ -333,6 +333,8 @@ def fix_asatha():
         ("Wellness Escape", "Gói wellness"),
         ("Discover More", "Xem thêm"),
         ("Discover Khác", "Xem thêm"),
+        ("Read More", "Đọc thêm"),
+        ("Read Khác", "Đọc thêm"),
         ("More", "Khác"),
         (
             "Discover a perfect balance of refined luxury and natural harmony.",
