@@ -2397,6 +2397,60 @@ def fix_travol_imgs(html: str) -> str:
 
 
 def fix_travol_tour_details(html: str) -> str:
+    # Simplify navbar: remove Pages/Blog dropdowns, flatten Trang chủ/Tour to simple links
+    _OLD_NAV = (
+        '<ul class="navbar-nav ms-auto">\n'
+        '                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Trang chủ <i class="ti-angle-down"></i></a>\n'
+        '                        <ul class="dropdown-menu">\n'
+        '                            <li><a href="index.html" class="dropdown-item"><span>Home Layout 1</span></a></li>\n'
+        '                            <li><a href="index2.html" class="dropdown-item"><span>Home Layout 2</span></a></li>\n'
+        '                            <li><a href="index3.html" class="dropdown-item"><span>Home Layout 3</span></a></li>\n'
+        '                            <li><a href="index4.html" class="dropdown-item"><span>Home Layout 4</span></a></li>\n'
+        '                        </ul>\n'
+        '                    </li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>\n'
+        '                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Tour <i class="ti-angle-down"></i></a>\n'
+        '                        <ul class="dropdown-menu">\n'
+        '                            <li><a href="tours.html" class="dropdown-item"><span>Tours 1</span></a></li>\n'
+        '                            <li><a href="tours2.html" class="dropdown-item"><span>Tours 2</span></a></li>\n'
+        '                            <li><a href="tours3.html" class="dropdown-item"><span>Tours 3</span></a></li>\n'
+        '                        </ul>\n'
+        '                    </li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="destination.html">Điểm đến</a></li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="gallery.html">Thư viện</a></li>\n'
+        '                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="ti-angle-down"></i></a>\n'
+        '                        <ul class="dropdown-menu">\n'
+        '                            <li><a href="tour-details.html" class="dropdown-item active"><span>Tour Details</span></a></li>\n'
+        '                            <li><a href="tour-search.html" class="dropdown-item"><span>Tour Search</span></a></li>\n'
+        '                            <li><a href="post.html" class="dropdown-item"><span>Post Single</span></a></li>\n'
+        '                            <li class="dropdown-submenu dropdown"> <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Other Pages <i class="ti-angle-right"></i></span></a>\n'
+        '                                <ul class="dropdown-menu">\n'
+        '                                    <li><a href="coming-soon.html" class="dropdown-item"><span>Coming Soon</span></a></li>\n'
+        '                                    <li><a href="404.html" class="dropdown-item"><span>404 Page</span></a></li>\n'
+        '                                </ul>\n'
+        '                            </li>\n'
+        '                        </ul>\n'
+        '                    </li>\n'
+        '                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Blog <i class="ti-angle-down"></i></a>\n'
+        '                        <ul class="dropdown-menu">\n'
+        '                            <li><a href="blog.html" class="dropdown-item"><span>Blog 01</span></a></li>\n'
+        '                            <li><a href="blog2.html" class="dropdown-item"><span>Blog 02</span></a></li>\n'
+        '                        </ul>\n'
+        '                    </li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>\n'
+        '                </ul>'
+    )
+    _NEW_NAV = (
+        '<ul class="navbar-nav ms-auto">\n'
+        '                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="tours.html">Tour</a></li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="destination.html">Điểm đến</a></li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="gallery.html">Thư viện</a></li>\n'
+        '                    <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>\n'
+        '                </ul>'
+    )
+    html = html.replace(_OLD_NAV, _NEW_NAV)
     # Title
     html = html.replace("<title>Travol Agency</title>", "<title>Ha Tinh Travel — Du lịch Hà Tĩnh</title>")
     # Section subtitle
