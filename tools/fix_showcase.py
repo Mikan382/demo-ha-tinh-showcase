@@ -860,6 +860,38 @@ FRAMER_VI_EXTRA = [
         "Join us for a journey that celebrates rhythm, history, and discovery. Wander Hà Tĩnh’s educational expedition invites you to explore Hương Tích’s vibrant culture",
         "Cùng khởi đầu hành trình văn hóa và khám phá vùng đất Hà Tĩnh cùng Wander Hà Tĩnh",
     ),
+    # wanderway index: marquee scrolling text
+    ("Khám phá Awaits", "Khám phá Hà Tĩnh"),
+    # wanderway index: section subtitle (mixed EN/VI heading)
+    (
+        "Transforming Dreams into Realities, Mỗi hành trình là một kỷ niệm đáng nhớ!",
+        "Mỗi hành trình là một kỷ niệm đáng nhớ — Hà Tĩnh đang chờ bạn!",
+    ),
+    # wanderway index: blog section heading (mixed EN/VI)
+    (
+        "Khám phá News:Du lịch Stories, Tips, and điểm đến Await",
+        "Tin du lịch: Câu chuyện, mẹo hay và điểm đến Hà Tĩnh",
+    ),
+    # wanderway index: services section EN headings
+    ("Group Packages", "Tour nhóm"),
+    ("Solo Journeys", "Hành trình cá nhân"),
+    ("Corporate Du lịch", "Du lịch doanh nghiệp"),
+    # wanderway index: blog card title (mixed EN/VI, curly apostrophe U+2019)
+    (
+        "Romantic điểm đến for Your Next Couple’s Retreat",
+        "Điểm đến lãng mạn cho cặp đôi",
+    ),
+    # wanderway blog sidebar titles (in index.html and blog pages)
+    (
+        "Exploring the World’s Most Stunning Landscapes",
+        "Khám phá những cảnh quan đẹp nhất Việt Nam",
+    ),
+    ("Điểm đến mạo hiểm: Best Places for Extreme Sports", "Điểm đến mạo hiểm: Những nơi thể thao cực hạn tốt nhất"),
+    (
+        "Sustainable Du lịch: How to Be an Du khách thân thiện môi trường",
+        "Du lịch bền vững: Cách trở thành du khách thân thiện môi trường",
+    ),
+    ("10 Must-Have Du lịch Tips for Du khách lần đầu", "10 bí quyết du lịch cần thiết cho người lần đầu"),
 ]
 
 MOUNTAIN_VI_EXTRA = [
@@ -875,7 +907,9 @@ MOUNTAIN_VI_EXTRA = [
     ("RESTAURANTS", "ẨM THỰC"),
     ("EVENTS", "SỰ KIỆN"),
     ("CONTACT", "LIÊN HỆ"),
-    ("BOOK", "ĐẶT PHÒNG"),
+    # Remediate BOOK→ĐẶT PHÒNG which corrupted FACEBOOK; fix first then re-apply narrow
+    ("FACEĐẶT PHÒNG", "FACEBOOK"),
+    (">BOOK</p>", ">ĐẶT PHÒNG</p>"),
     ("BUY THIS TEMPLATE", ""),
     ("Gallery", "Thư viện"),
     ("GIẤY PHÉP", "Thông tin mẫu"),
