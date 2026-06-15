@@ -805,7 +805,12 @@ def fix_framer(slug: str, brand: str, hero_hint: str, imgs: list[str]):
         html = html.replace("Mountain Eco Lodge", brand)
         html = html.replace("Mountain Lodge", brand)
         html = html.replace("Ke Go Eco Eco Lodge", "Ke Go Eco Lodge")
-        html = html.replace("Wanderway", brand).replace("LuxeStay", brand).replace("Luxestay", brand)
+        if slug == "luxestay-framer":
+            html = html.replace("Wanderway", brand)
+            html = re.sub(r'LuxeStay(?!\s+Ha\s+Tinh)', brand, html)
+            html = re.sub(r'Luxestay(?!\s+Ha\s+Tinh)', brand, html)
+        else:
+            html = html.replace("Wanderway", brand).replace("LuxeStay", brand).replace("Luxestay", brand)
         html = html.replace("Book Now", "Đặt phòng").replace("Book now", "Đặt phòng")
         html = html.replace("Contact Us", "Liên hệ").replace("About Us", "Giới thiệu")
         html = html.replace("About us", "Giới thiệu")

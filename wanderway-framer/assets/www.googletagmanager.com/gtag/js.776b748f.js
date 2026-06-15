@@ -1,5 +1,5 @@
 
-// Copyright 2012 Google Inc. All rights reserved.
+// Copyright 2012 Google Inc. Bảo lưu mọi quyền.
  
 (function(){
 

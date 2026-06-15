@@ -1260,11 +1260,11 @@ LUXESTAY_VI = [
         "Bước ra ngoài là Hà Tĩnh — chùa chiền, thác nước, đồng lúa và bờ biển, tất cả đều gần tầm tay",
     ),
     (
-        "Built in Hà Tĩnh in 2018, LuxeStay Ha Tinh is a 32-room retreat where the island does the talking and guests keep coming back to listen.",
+        "Built in Bali in 2018, LuxeStay Ha Tinh is a 32-room retreat where the island does the talking and guests keep coming back to listen.",
         "Thành lập tại Hà Tĩnh năm 2018, LuxeStay Hà Tĩnh là khu nghỉ dưỡng ven biển nơi thiên nhiên cất tiếng và du khách tìm về mỗi mùa hè.",
     ),
     (
-        "Luxestay Ha Tinh is a 32-room retreat where the island does the talking and guests keep coming back to listen.",
+        "LuxeStay Ha Tinh is a 32-room retreat where the island does the talking and guests keep coming back to listen.",
         "LuxeStay Hà Tĩnh là khu nghỉ dưỡng ven biển với không gian được thiết kế để lắng nghe tiếng biển và trở về mỗi mùa hè.",
     ),
     ("More than a way, a complete escape", "Hơn cả một kỳ nghỉ — là lối thoát hoàn toàn"),
@@ -1353,6 +1353,78 @@ LUXESTAY_VI = [
         "Â©2026 LuxeStay Ha Tinh. Bản demo concept â€“ Hà Tĩnh.",
         "©2026 LuxeStay Ha Tinh. Bản demo concept — Hà Tĩnh.",
     ),
+    # contact-us.html
+    ("Helping you plan every moment with ease", "Giúp bạn lên kế hoạch cho mọi khoảnh khắc một cách dễ dàng"),
+    ("Get in touch with", "Liên hệ với"),
+    ("our friendly team", "đội ngũ thân thiện của chúng tôi"),
+    ("Reason to contact", "Lý do liên hệ"),
+    ("Wedding packages", "Gói tiệc cưới"),
+    
+    # restaurant.html
+    ("Fine Dining, World-Class Wines, & Lasting Memories", "Ẩm thực tinh tế, rượu vang đẳng cấp & những kỷ niệm khó quên"),
+    ("Fine Dining, World-Class Wines, &amp; Lasting Memories", "Ẩm thực tinh tế, rượu vang đẳng cấp & những kỷ niệm khó quên"),
+    ("Herb Roasted Chicken Breast", "Ức gà nướng thảo mộc"),
+    
+    # rooms.html
+    ("Suites", "Phòng Suite"),
+    ("Room category", "Hạng phòng"),
+    ("Suites & family", "Suite & Gia đình"),
+    ("Suites &amp; family", "Suite & Gia đình"),
+    ("No of guests", "Số lượng khách"),
+    ("Scenic Views", "Tầm nhìn cảnh quan"),
+    
+    # Room detail pages
+    ("back to rooms", "Quay lại danh sách phòng"),
+    ("Private pool", "Hồ bơi riêng"),
+    ("Large room with 2 queen beds, workspace, family-friendly amenities, and a cozy sitting area.", "Phòng rộng rãi với 2 giường queen, không gian làm việc, tiện ích cho gia đình và khu vực ghế ngồi ấm cúng."),
+    ("2 Queen Beds", "2 Giường Queen"),
+    ("Luxury suite with separate living area, kitchenette, city views, and lounge access.", "Suite sang trọng với phòng khách riêng biệt, bếp nhỏ, tầm nhìn hướng phố và quyền sử dụng phòng chờ thương gia."),
+    ("1 King bedroom + 1 queen sofa bed", "1 Phòng ngủ King + 1 sofa giường Queen"),
+    ("1 Queen-sized bed", "1 Giường Queen"),
+    ("Spacious king room featuring private balcony, marble bath, and premium amenities for couples.", "Phòng King rộng rãi có ban công riêng, bồn tắm đá cẩm thạch và các tiện nghi cao cấp dành cho cặp đôi."),
+    ("King-sized bed", "Giường King"),
+    ("Spacious suite with separate living area, balcony, luxurious bath amenities, and city skyline views.", "Suite rộng rãi có phòng khách riêng biệt, ban công, tiện nghi bồn tắm sang trọng và tầm nhìn toàn cảnh thành phố."),
+    ("1 King Bed + Sofa Bed", "1 Giường King + Sofa giường"),
+    ("Two connecting rooms with king and twin beds, perfect for families seeking comfort.", "Hai phòng thông nhau với giường King và giường đơn, hoàn hảo cho gia đình tìm kiếm sự thoải mái."),
+    ("1 King + 2 Twin beds (adjoining rooms)", "1 Giường King + 2 giường đơn (phòng thông nhau)"),
+    ("Starting from", "Giá từ"),
+    
+    # Room policies
+    ("All guests over 18 require ID", "Tất cả khách trên 18 tuổi cần xuất trình giấy tờ tùy thân"),
+    ("No unregistered guests allowed in rooms", "Không cho phép khách chưa đăng ký vào phòng"),
+    ("Lost key card fee applies", "Áp dụng phí nếu làm mất thẻ chìa khóa"),
+    ("Damage deposit may be required", "Có thể yêu cầu đặt cọc bảo đảm hư hại"),
+    ("No loud music/devices", "Không mở nhạc hoặc thiết bị âm thanh lớn"),
+    ("No smoking or vaping", "Không hút thuốc hoặc sử dụng thuốc lá điện tử"),
+    ("Free cancellation up to 48 hours before check-in", "Hủy phòng miễn phí tối đa 48 giờ trước giờ nhận phòng"),
+    ("50% charge for cancellations within 24-48 hours", "Tính phí 50% nếu hủy phòng trong vòng 24–48 giờ"),
+    ("Full charge for no-shows or same-day cancellations", "Tính phí 100% đối với trường hợp không đến hoặc hủy trong ngày"),
+    ("Non-refundable rates cannot be cancelled", "Giá phòng không hoàn tiền sẽ không được hủy"),
+    
+    # wedding.html
+    ("Design your", "Thiết kế"),
+    ("perfect wedding", "đám cưới hoàn hảo"),
+    ("Where your most important day becomes your most unforgettable one.", "Nơi ngày trọng đại nhất của bạn trở thành ngày khó quên nhất."),
+    ("Create unforgettable moments with our comprehensive wedding packages and stunning venues.", "Tạo nên những khoảnh khắc khó quên với các gói tiệc cưới trọn gói và không gian lộng lẫy."),
+    ("Our wedding", "Dịch vụ"),
+    ("packages", "tiệc cưới"),
+    ("Upto 20 guests", "Tối đa 20 khách"),
+    ("Upto 50 guests", "Tối đa 50 khách"),
+    ("Upto 200 guests", "Tối đa 200 khách"),
+    ("Luxury celebration", "Lễ kỷ niệm sang trọng"),
+    ("250+ guests", "Trên 250 khách"),
+    
+    # wellness.html
+    ("Wellness in its", "Sức khỏe toàn diện"),
+    ("Sanctuary for Two", "Không gian cho hai người"),
+    # general leftovers
+    ("All rights reserved.", "Bảo lưu mọi quyền."),
+    (" , , designers and agencies.", ""),
+    ("Rooms &amp; Suites", "Biệt thự &amp; Phòng"),
+    ("Rooms &amp;", "Biệt thự &amp;"),
+    ("Rooms &", "Biệt thự &"),
+    ("Luxury King Bed", "Giường King sang trọng"),
+    ("The LuxeStay Ha Tinh Ritual", "Liệu trình LuxeStay Hà Tĩnh"),
 ]
 
 MOUNTAIN_IMG_POOL = [
