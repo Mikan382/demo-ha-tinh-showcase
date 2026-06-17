@@ -204,6 +204,46 @@ MOUNTAIN_POLISH = """<style id="mountain-polish">
 }
 </style>"""
 
+TRAVOL_LAYOUT_FIX = """<style id="travol-layout-fix">
+html,body{max-width:100%;overflow-x:hidden}
+/* Owl Carousel double-init fix: HTML saved after Owl JS ran, so owl-stage/owl-item
+   wrappers and inline transforms are pre-baked. When Owl re-initializes, it creates
+   nested wrappers causing flash/layout shift. Fix: reset transforms, show only active. */
+.header.slider-fade .owl-stage{transform:none!important;width:100%!important}
+.header.slider-fade .owl-stage-outer{overflow:hidden!important;max-width:100vw!important}
+.header.slider-fade .owl-item{display:none!important}
+.header.slider-fade .owl-item.active{display:block!important;width:100%!important;opacity:1!important}
+.header.slider-fade .owl-item .item{min-height:100vh}
+/* Testimony/other carousels: same double-init pattern */
+.testimonials .owl-stage{transform:none!important}
+.testimonials .owl-item{display:none!important}
+.testimonials .owl-item.active{display:block!important;opacity:1!important}
+/* Tours section carousel */
+.tours .owl-stage{transform:none!important}
+.tours .owl-item{display:none!important}
+.tours .owl-item.active{display:block!important;opacity:1!important}
+/* Video section with src="#" — hide broken video element to prevent console errors */
+.dynamic-video-wrapper video[src="#"],.dynamic-video-wrapper video source[src="#"]{display:none!important}
+.dynamic-video-wrapper{background:#1a1a2e!important}
+/* Pace progress bar (preloader) — ensure hidden */
+.pace-inactive{display:none!important}
+.pace .pace-progress{display:none!important}
+</style>"""
+
+ASATHA_LAYOUT_FIX = """<style id="asatha-layout-fix">
+/* Webflow animation boxes: reveal overlays pre-baked at mid-animation state.
+   Some have opacity:1 + transform that may cover images if Webflow JS doesn't load.
+   Force them off-screen to prevent image occlusion. */
+.image-animation-box{transform:translate3d(0,101%,0)!important;pointer-events:none}
+/* Nav menu frozen at opacity:0 in pre-rendered HTML — make visible immediately */
+.nav-menu.w-nav-menu{opacity:1!important;visibility:visible!important}
+/* Hero section: ensure visible even without Webflow IX */
+[data-w-id][style*="opacity: 0"]:not(.image-animation-box){opacity:1!important}
+/* Contact modal: keep hidden until user interaction */
+.contact-modal{display:none!important;opacity:0!important}
+.contact-modal.w--open,.contact-modal[style*="display: flex"]{display:flex!important;opacity:1!important}
+</style>"""
+
 SEASIDE_IMG_POOL = [
     "08_hospitality_hospitality_beachfront_resort.png",
     "35_hospitality_peaceful_beach_resort.png",
@@ -3376,8 +3416,10 @@ def process_html(fp: Path, html: str) -> str:
         html = fix_hotale_uploads(html)
     elif slug == "asatha-luxury-webflow":
         html = fix_asatha_assets(html)
+        html = inject_head(html, ASATHA_LAYOUT_FIX, "asatha-layout-fix")
     elif slug == "travol-duruthemes":
         html = fix_travol_imgs(html)
+        html = inject_head(html, TRAVOL_LAYOUT_FIX, "travol-layout-fix")
         if fp.name == "tour-details.html":
             html = fix_travol_tour_details(html)
     return fix_global_leftovers(html)
