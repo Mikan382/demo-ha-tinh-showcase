@@ -1,0 +1,150 @@
+/*
+  Ke Go Eco Lodge — Nature Color Palette Override
+  Replaces the original lavender/purple Framer template colors
+  with an earth-tone forest palette appropriate for an eco-lodge
+  at Ke Go Lake, Ha Tinh.
+
+  Original -> Replacement mapping:
+    #d9bee2  (lavender)         -> #C8D8C0  (sage green)
+    #fbedff  (pale purple)      -> #EFF3E6  (pale fern)
+    rgba(218,191,227,.76)       -> rgba(143,168,140,.76) (sage glass)
+    #688582  (teal-gray)        -> #5A7A68  (forest green, deeper)
+    #e4e6c3  (yellow-green)     -> #D4DCCA  (soft moss)
+    #f4f5e4  (cream)            -> #F2F0E8  (warm cream — keep close)
+    #f7f7f0  (off-white)        -> #F5F3EC  (warm off-white — keep close)
+    #222725  (dark green-black) -> #1E2820  (deep forest — keep)
+    #121113  (near-black)       -> #131612  (near-black forest tint)
+*/
+
+/* ====================================================
+   1. NEWSLETTER SECTION ("GIỮ LIÊN LẠC")
+   Section with lavender #fbedff / #d9bee2 background
+   ==================================================== */
+.framer-1gcfcfp,
+[data-framer-name="Newsletter"],
+[data-framer-name="Subscribe"] {
+  background-color: #EFF3E6 !important;
+}
+
+/* ====================================================
+   2. MOBILE MENU OVERLAY
+   Full-screen menu uses the lavender color
+   ==================================================== */
+/* The mobile nav overlay container */
+.framer-1f1xhkv,
+[data-framer-name="Navigation Menu"],
+[data-framer-name="Menu"],
+[data-framer-name="Mobile Menu"] {
+  background-color: #2D3B2E !important;
+}
+
+/* Menu overlay text color adjustment for dark bg */
+.framer-1f1xhkv *,
+[data-framer-name="Navigation Menu"] * {
+  color: #F2F0E8 !important;
+}
+
+/* ====================================================
+   3. GLOBAL CSS VARIABLE / COLOR OVERRIDES
+   Target any element using the lavender palette
+   ==================================================== */
+
+/* Lavender section backgrounds */
+[style*="background-color: rgb(217, 190, 226)"],
+[style*="background-color: rgb(251, 237, 255)"],
+[style*="background-color:#d9bee2"],
+[style*="background-color:#fbedff"] {
+  background-color: #EFF3E6 !important;
+}
+
+/* Lavender as color (text/border) */
+[style*="color: rgb(217, 190, 226)"],
+[style*="color:#d9bee2"] {
+  color: #5A7A68 !important;
+}
+
+/* Semi-transparent lavender glass overlays */
+[style*="background: rgba(218, 191, 227"],
+[style*="background-color: rgba(218, 191, 227"] {
+  background: rgba(90, 122, 104, 0.15) !important;
+}
+
+/* ====================================================
+   4. ACCENT COLOR — replace teal #688582 with forest green
+   ==================================================== */
+[style*="background-color: rgb(104, 134, 131)"],
+[style*="background-color:#688582"],
+[style*="color: rgb(104, 134, 131)"],
+[style*="color:#688582"] {
+  background-color: #5A7A68 !important;
+  color: #5A7A68 !important;
+}
+
+/* ====================================================
+   5. HIGHLIGHT / PILL BUTTON — "Đặt phòng" button
+   Currently uses a soft lavender-accent background
+   ==================================================== */
+/* The CTA button in nav — make it warm forest green */
+.framer-zidtlq,
+[data-framer-name="Book Now Button"],
+[data-framer-name="Dat phong"] {
+  background-color: #3D5C45 !important;
+  color: #F2F0E8 !important;
+}
+
+/* ====================================================
+   6. SECTION DIVIDERS / DECORATIVE ELEMENTS
+   Any decorative border or fill using lavender
+   ==================================================== */
+[style*="fill: rgb(217, 190, 226)"],
+[style*="stroke: rgb(217, 190, 226)"] {
+  fill: #C8D8C0 !important;
+  stroke: #C8D8C0 !important;
+}
+
+/* ====================================================
+   7. SOFT BACKGROUNDS — yellow-green e4e6c3 -> soft moss
+   ==================================================== */
+[style*="background-color: rgb(228, 230, 195)"],
+[style*="background-color:#e4e6c3"] {
+  background-color: #D4DCCA !important;
+}
+
+/* ====================================================
+   8. BODY / PAGE BACKGROUND warm tint
+   ==================================================== */
+body {
+  background-color: #F5F3EC !important;
+}
+
+/* Keep dark sections truly dark */
+[style*="background-color: rgb(34, 39, 37)"],
+[style*="background-color: rgb(18, 17, 19)"],
+[style*="background-color:#222725"],
+[style*="background-color:#121113"] {
+  /* these are fine — deep forest / near-black */
+}
+
+/* ====================================================
+   9. FOOTER LINK HOVER
+   ==================================================== */
+footer a:hover {
+  color: #8FAB86 !important;
+  text-decoration: none !important;
+}
+
+/* ====================================================
+   10. RESPONSIVE — ensure menu overlay works on mobile
+   ==================================================== */
+@media (max-width: 809px) {
+  /* Mobile menu full screen overlay */
+  [style*="background-color: rgb(217, 190, 226)"],
+  [style*="background-color: rgb(251, 237, 255)"] {
+    background-color: #2D3B2E !important;
+    color: #F2F0E8 !important;
+  }
+  [style*="background-color: rgb(217, 190, 226)"] *,
+  [style*="background-color: rgb(251, 237, 255)"] * {
+    color: #F2F0E8 !important;
+  }
+}

@@ -194,6 +194,14 @@ i.fa5-tiktok:before{content:"TT";font-family:Arial,sans-serif!important;font-siz
 MOUNTAIN_POLISH = """<style id="mountain-polish">
 /* Reveal Framer scroll-triggered sections frozen at opacity:0 in offline snapshot */
 #main [style*="opacity: 0"]{opacity:1!important;transform:none!important}
+/* Fix footer FOUC: both framer-a77uan (columns) and framer-14vf6a1 (bottom bar) use
+   position:absolute+left:50%+translateX. During Framer hydration the inline transform
+   is briefly removed → content shifts right. Convert both to relative flow. */
+@media (min-width:1200px){
+  .framer-QQAjh.framer-1cbyov8{height:auto!important}
+  .framer-QQAjh .framer-a77uan{position:relative!important;left:unset!important;transform:none!important;width:100%!important}
+  .framer-QQAjh .framer-14vf6a1{position:relative!important;left:unset!important;bottom:unset!important;transform:none!important;width:100%!important}
+}
 </style>"""
 
 SEASIDE_IMG_POOL = [
