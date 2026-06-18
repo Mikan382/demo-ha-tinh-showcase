@@ -1,12 +1,13 @@
-<!DOCTYPE html><html lang="vi" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Ha Tinh Travel — Du lịch Hà Tĩnh</title>
-    <link rel="shortcut icon" href="assets/duruthemes.com/demo/html/travol/multipage-slider/img/favicon.png">
-    <link rel="stylesheet" href="assets/fonts.googleapis.com/css2.94f7ed67.css">
-    <link rel="stylesheet" href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/plugins.css">
-    <link rel="stylesheet" href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/style.css">
+<!DOCTYPE html>
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<title>Ha Tinh Travel — Du lịch Hà Tĩnh</title>
+<link href="assets/duruthemes.com/demo/html/travol/multipage-slider/img/favicon.png" rel="shortcut icon"/>
+<link href="assets/fonts.googleapis.com/css2.94f7ed67.css" rel="stylesheet"/>
+<link href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/plugins.css" rel="stylesheet"/>
+<link href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/style.css" rel="stylesheet"/>
 <style id="travol-hide-clients">section.clients{display:none!important}</style><style id="showcase-cleanup">
 .template-popup-wrapper,.showcase-dropdown-wrapper,.showcase-dropdown,.w-webflow-badge,.w-iframe-block,
 a[href*="framer.com/templates"],[data-framer-name="Buy"],
@@ -37,1462 +38,1436 @@ html,body{max-width:100%;overflow-x:hidden}
 /* Pace progress bar (preloader) — ensure hidden */
 .pace-inactive{display:none!important}
 .pace .pace-progress{display:none!important}
-</style></head>
-<body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-  <div class="pace-progress-inner"></div>
+</style>
+<style id="auto-crop-image-style">
+/* Tự động crop ảnh cho các grid/card để tránh vỡ layout do sai tỉ lệ */
+.auto-crop-image {
+    width: 100% !important;
+    aspect-ratio: 4/3 !important;
+    object-fit: cover !important;
+}
+</style>
+</head>
+<body class="pace-done"><div class="pace pace-inactive"><div class="pace-progress" data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
 </div>
 <div class="pace-activity"></div></div>
-    <!-- Preloader -->
-    <div class="preloader-bg" style="display: none;"></div>
-    <div id="preloader" style="display: none;">
-        <div id="preloader-status">
-            <div class="preloader-position loader"> <span></span> </div>
-        </div>
-    </div>
-    <!-- Progress scroll totop -->
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-        </svg>
-    </div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo-wrapper">
-                <a class="logo" href="index.html"><h2 style="color:#fff;margin:0;font-size:22px">HA TINH <span style="color:#e9a225">Du lịch</span></h2></a>
-                <!-- <a class="logo" href="index.html"> <h2>TRAVOL <span>explore the world</span></h2> </a> -->
-            </div>
-            <!-- Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tours.html">Tour</a></li>
-                    <li class="nav-item"><a class="nav-link" href="destination.html">Điểm đến</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Thư viện</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Slider -->
-    <header class="header slider-fade">
-        <div class="owl-carousel owl-theme owl-loaded owl-drag">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            
-            
-            
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2880px, 0px, 0px); transition: all; width: 10080px;"><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/11_hero_wide_beach_sunrise_boats.png" style="background-image: url(&quot;../assets/shared-images/11_hero_wide_beach_sunrise_boats.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Từ biển Thiên Cầm, hồ Kẻ Gỗ đến chùa Hương Tích — mỗi hành trình đều được thiết kế riêng</h4>
-                                <h1>Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/34_hero_empty_beach_sunrise.png" style="background-image: url(&quot;../assets/shared-images/34_hero_empty_beach_sunrise.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Từ biển Thiên Cầm, hồ Kẻ Gỗ đến chùa Hương Tích — mỗi hành trình đều được thiết kế riêng</h4>
-                                <h1>Từ biển Thiên Cầm, hồ Kẻ Gỗ đến chùa Hương Tích</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item active" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" style="background-image: url(&quot;../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4 class="animated fadeInUp">Công ty du lịch địa phương tại Hà Tĩnh</h4>
-                                <h1 class="animated fadeInUp">Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/11_hero_wide_beach_sunrise_boats.png" style="background-image: url(&quot;../assets/shared-images/11_hero_wide_beach_sunrise_boats.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4 class="">Công ty du lịch địa phương tại Hà Tĩnh</h4>
-                                <h1 class="">Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/34_hero_empty_beach_sunrise.png" style="background-image: url(&quot;../assets/shared-images/34_hero_empty_beach_sunrise.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4 class="">Công ty du lịch địa phương tại Hà Tĩnh</h4>
-                                <h1 class="">Khám phá Hà Tĩnh cùng hướng dẫn viên địa phương</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" style="background-image: url(&quot;../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Công ty du lịch địa phương tại Hà Tĩnh</h4>
-                                <h1>Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/11_hero_wide_beach_sunrise_boats.png" style="background-image: url(&quot;../assets/shared-images/11_hero_wide_beach_sunrise_boats.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Công ty du lịch địa phương tại Hà Tĩnh</h4>
-                                <h1>Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i class="ti-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next"><i class="ti-angle-right" aria-hidden="true"></i></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-    </header>
-    <!-- Tour Search -->
-    <div class="booking-wrapper">
-        <div class="container">
-            <div class="tour-inner clearfix form-inline justify-content-center">
-                <form action="tours.html" class="form1 clearfix" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
-                    <div class="col1 c1">
-                        <div class="input2_wrapper">
-                            <label>Bạn muốn đi đâu?</label>
-                            <div class="input2_inner">
-                                <input type="text" class="form-control input" placeholder="Bạn muốn đi đâu?">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col1 c2">
-                        <div class="select1_wrapper">
-                            <label>Điểm đến</label>
-                            <div class="select1_inner">
-                                <select class="select2 select select2-hidden-accessible" style="width: 100%" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                    <option value="0" data-select2-id="3">Điểm đến</option>
-                                    <option value="1">Kẻ Gỗ</option>
-                                    <option value="2">Thiên Cầm</option>
-                                    <option value="3">Thiên Cầm</option>
-                                    <option value="4">Kẻ Gỗ</option>
-                                    <option value="5">Hà Tĩnh</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-unca-container"><span class="select2-selection__rendered" id="select2-unca-container" role="textbox" aria-readonly="true" title="Điểm đến">Điểm đến</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col1 c4">
-                        <div class="select1_wrapper">
-                            <label>Thời gian</label>
-                            <div class="select1_inner">
-                                <select class="select2 select select2-hidden-accessible" style="width: 100%" data-select2-id="4" tabindex="-1" aria-hidden="true">
-                                    <option value="0" data-select2-id="6">Thời gian</option>
-                                    <option value="1">1 ngày</option>
-                                    <option value="2">2–4 ngày</option>
-                                    <option value="3">5–7 ngày</option>
-                                    <option value="4">Trên 7 ngày</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ffkz-container"><span class="select2-selection__rendered" id="select2-ffkz-container" role="textbox" aria-readonly="true" title="Thời gian">Thời gian</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col1 c5">
-                        <button type="submit" class="btn-form1-submit"><i class="ti-search"></i> Tìm tour</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Giới thiệu -->
-    <section class="about cover section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-30 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                    <div class="section-subtitle">Đơn vị lữ hành địa phương</div>
-                    <div class="section-title">Khám phá <span>Hà Tĩnh</span> cùng hướng dẫn viên bản địa</div>
-                    <p>Chúng tôi thiết kế hành trình gần gũi, phù hợp gia đình, nhóm bạn và khách muốn cảm nhận Hà Tĩnh chậm rãi nhưng đủ chiều sâu.</p>
-                    <p>Từ tour ngắn ngày đến lịch trình riêng, mỗi chuyến đi được tư vấn theo mùa và nhu cầu thực tế.</p>
-                    <ul class="list-unstyled about-list mb-30">
-                        <li>
-                            <div class="about-list-icon"> <span class="ti-check"></span> </div>
-                            <div class="about-list-text">
-                                <p>Nhiều năm kinh nghiệm địa phương</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="about-list-icon"> <span class="ti-check"></span> </div>
-                            <div class="about-list-text">
-                                <p>Hơn 20 điểm đến & trải nghiệm</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Info -->
-                    <div class="phone-call mb-30">
-                        <div class="icon"><span class="flaticon-phone-call"></span></div>
-                        <div class="text">
-                            <p>Tư vấn lịch trình</p> <a href="tel:855-333-4444">0239 385 6789</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 offset-md-1 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                    <div class="img-exp">
-                        <div class="about-img">
-                            <div class="img"> <img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" class="img-fluid" alt=""> </div>
-                        </div>
-                        <div id="circle">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-                                <defs>
-                                    <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-                                </defs>
-                                <circle cx="150" cy="100" r="75" fill="none"></circle>
-                                <g>
-                                    <use xlink:href="#circlePath" fill="none"></use>
-                                    <text fill="#0f2454">
-                                        <textPath xlink:href="#circlePath"> . Ha Tinh Travel . </textPath>
-                                    </text>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Tour 1 -->
-    <section class="tours1 section-padding bg-lightnav" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Chọn hành trình</span></div>
-                    <div class="section-title">Tour <span>gợi ý</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="item">
-                        <div class="position-re o-hidden"> <img src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png" alt=""> </div> <span class="category"><a href="#0">2.500.000đ</a></span>
-                        <div class="con">
-                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star"></i>
-                                <div class="reviews-count">(2 Reviews)</div>
-                            </div>
-                            <h5><a href="tour-details.html">Tour biển Thiên Cầm</a></h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                <div class="col col-md-12">
-                                    <ul>
-                                        <li><i class="ti-time"></i> 10 Ngày</li>
-                                        <li><i class="ti-user"></i> 12+</li>
-                                        <li><i class="ti-location-pin"></i> Thiên Cầm</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item">
-                        <div class="position-re o-hidden"><img src="../assets/shared-images/24_destination_huong_tich_pagoda_landscape.png" alt=""></div> <span class="category"><a href="#0">1.300.000đ</a></span>
-                        <div class="con">
-                            <h5><a href="tour-details.html">Hành trình Chùa Hương Tích</a> </h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                <div class="col col-md-12">
-                                    <ul>
-                                        <li><i class="ti-time"></i> 6 Ngày</li>
-                                        <li><i class="ti-user"></i> 10+</li>
-                                        <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item">
-                        <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">850.000đ</a></span>
-                        <div class="con">
-                            <h5><a href="tour-details.html">Tour ven biển & làng chài</a> </h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                <div class="col col-md-12">
-                                    <ul>
-                                        <li><i class="ti-time"></i> 10 Ngày</li>
-                                        <li><i class="ti-user"></i> 6+</li>
-                                        <li><i class="ti-location-pin"></i> Ven biển</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item">
-                        <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#">950.000đ</a></span>
-                        <div class="con">
-                            <h5><a href="tour-details.html">Khám phá hồ Kẻ Gỗ</a> </h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                <div class="col col-md-12">
-                                    <ul>
-                                        <li><i class="ti-time"></i> 10 Ngày</li>
-                                        <li><i class="ti-user"></i> 12+</li>
-                                        <li><i class="ti-location-pin"></i> Kẻ Gỗ</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item">
-                        <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="#0">750.000đ</a></span>
-                        <div class="con">
-                            <h5><a href="tour-details.html">Hành trình Ngã ba Đồng Lộc</a></h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                <div class="col col-md-12">
-                                    <ul>
-                                        <li><i class="ti-time"></i> 7 Ngày</li>
-                                        <li><i class="ti-user"></i> 10+</li>
-                                        <li><i class="ti-location-pin"></i> Đồng Lộc</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Numbers -->
-    <section class="numbers">
-        <div class="section-padding bg-img bg-fixed back-position-center" data-background="../assets/shared-images/18_hero_ke_go_lake_misty_morning.png" data-overlay-dark="6" style="background-image: url(&quot;../assets/shared-images/18_hero_ke_go_lake_misty_morning.png&quot;);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="item text-center">  <span class="icon">
-                                <i class="front flaticon-air-freight"></i>
-                                <i class="back flaticon-air-freight"></i>
-                            </span>
-                            <h3 class="count">600</h3>
-                            <h6>Lịch tour đã tổ chức</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item text-center">  <span class="icon">
-                                <i class="font flaticon-house"></i>
-                                <i class="back flaticon-house"></i>
-                            </span>
-                            <h3 class="count">250</h3>
-                            <h6>Tour đa dạng</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item text-center">  <span class="icon">
-                                <i class="front flaticon-ship"></i>
-                                <i class="back flaticon-ship"></i>
-                            </span>
-                            <h3 class="count">100</h3>
-                            <h6>Tour ven biển</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item text-center"> <span class="icon">
-                                <i class="front flaticon-tag"></i>
-                                <i class="back flaticon-tag"></i>
-                            </span>
-                            <h3 class="count">100</h3>
-                            <h6>Vé tham quan</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Destination 1 -->
-    <section class="destination1 section-padding bg-lightnav">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle">Điểm đến nổi bật</div>
-                    <div class="section-title">Điểm đến <span>phổ biến</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>6 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">15% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Ven biển</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>10 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""></div> <span class="category"><a href="tours2.html">7 Tour</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>4 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/25_destination_dong_loc_memorial_aerial.png" alt=""> </div> <span class="category"><a href="#0">25% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Đồng Lộc</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>3 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="#0">7 Tour</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Hương Tích</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>6 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">15% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Ven biển</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>10 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""></div> <span class="category"><a href="tours2.html">7 Tour</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>4 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/25_destination_dong_loc_memorial_aerial.png" alt=""> </div> <span class="category"><a href="#0">25% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Đồng Lộc</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>3 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="#0">7 Tour</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Hương Tích</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner Tour Video -->
-    <section class="dynamic-video-wrapper" data-overlay-dark="3">
-        <video width="100%" height="100%" autoplay="autoplay" muted="" preload="auto" loop="loop">
-            <source src="#" type="video/mp4">
-        </video>
-        <div class="wrap-content v-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h1><a href="tour-details.html">Tour khám phá Thiên Cầm</a></h1>
-                        <h4><i class="ti-location-pin"></i> Thiên Cầm &nbsp;&nbsp; <i class="ti-timer"></i> 4 ngày 3 đêm</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hương Tích & Tour ven biển & làng chàis 1 -->
-    <section class="tours1 section-padding">
-        <div class="container">
-            <div class="row mb-30">
-                <div class="col-md-12">
-                    <div class="section-subtitle">Được yêu thích</div>
-                    <div class="section-title"><span>Vùng</span> miền</div>
-                </div>
-            </div>
-            <!-- Hành trình Chùa Hương Tíchs -->
-            <div class="row mb-90">
-                <div class="col-md-5">
-                    <div class="country country1 mt-30">
-                        <div class="section-title2">Chùa Hương Tích</div>
-                        <p>Chúng tôi thiết kế hành trình gần gũi, phù hợp gia đình, nhóm bạn và khách muốn cảm nhận Hà Tĩnh chậm rãi nhưng đủ chiều sâu.</p>
-                        <div class="row tour-list">
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Thiên Cầm</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Đồng Lộc</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kẻ Gỗ</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Cẩm Xuyên</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Can Lộc</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hương Tích</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hồng Lĩnh</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Can Lộc</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hồng Lĩnh</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="butn-dark mt-30 mb-30"> <a href="#" data-scroll-nav="1" class=""><span>Xem tất cả tour <i class="ti-arrow-right"></i></span></a> </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1006px, 0px, 0px); transition: all; width: 4026px;"><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">1.750.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hương Tích</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 5+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="#0">1.200.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Can Lộc</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 7 Ngày</li>
-                                            <li><i class="ti-user"></i> 8+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="#0">3.000.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hồng Lĩnh</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 9 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hà Tĩnh</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 3 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""></div> <span class="category"><a href="#">1.300.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Cẩm Xuyên</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 8+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" alt=""></div> <span class="category"><a href="#0">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">TP. Hà Tĩnh</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 6 Ngày</li>
-                                            <li><i class="ti-user"></i> 4+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">1.750.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hương Tích</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 5+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="#0">1.200.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Can Lộc</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 7 Ngày</li>
-                                            <li><i class="ti-user"></i> 8+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="#0">3.000.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hồng Lĩnh</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 9 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hà Tĩnh</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 3 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""></div> <span class="category"><a href="#">1.300.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Cẩm Xuyên</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 8+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" alt=""></div> <span class="category"><a href="#0">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">TP. Hà Tĩnh</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 6 Ngày</li>
-                                            <li><i class="ti-user"></i> 4+</li>
-                                            <li><i class="ti-location-pin"></i> Hương Tích</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                </div>
-            </div>
-            <!-- Tour ven biển & làng chàis -->
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1006px, 0px, 0px); transition: all; width: 4026px;"><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">2.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Thiên Cầm</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 12 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="tours2.html">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hương Tích</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 6 Ngày</li>
-                                            <li><i class="ti-user"></i> 5+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="#0">1.750.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Đồng Lộc</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 5 Ngày</li>
-                                            <li><i class="ti-user"></i> 7+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">1.250.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Kẻ Gỗ</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 7 Ngày</li>
-                                            <li><i class="ti-user"></i> 12+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""></div> <span class="category"><a href="#0">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Kỳ Anh</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 6+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" alt=""></div> <span class="category"><a href="#0">1.750.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Cảng cá</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 7 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">2.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Thiên Cầm</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 12 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="tours2.html">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Hương Tích</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 6 Ngày</li>
-                                            <li><i class="ti-user"></i> 5+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="#0">1.750.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Đồng Lộc</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 5 Ngày</li>
-                                            <li><i class="ti-user"></i> 7+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">1.250.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Kẻ Gỗ</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 7 Ngày</li>
-                                            <li><i class="ti-user"></i> 12+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""></div> <span class="category"><a href="#0">1.500.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Kỳ Anh</a> </h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 6+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" alt=""></div> <span class="category"><a href="#0">1.750.000đ</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html">Cảng cá</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-12">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 7 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                            <li><i class="ti-location-pin"></i> Ven biển</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                </div>
-                <div class="col-md-5">
-                    <div class="country country2 mt-30">
-                        <div class="section-title2">Ven biển, Hà Tĩnh</div>
-                        <p>Từ tour ngắn ngày đến lịch trình riêng, mỗi chuyến đi được tư vấn theo mùa và nhu cầu thực tế tại Hà Tĩnh.</p>
-                        <div class="row tour-list">
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kẻ Gỗ</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kỳ Anh</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hương Tích</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kỳ Anh</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hương Tích</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Đồng Lộc</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Đồng Lộc</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Cảng cá</a></li>
-                                    <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Cảng cá</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="butn-dark mt-30 mb-30"> <a href="#" data-scroll-nav="1" class=""><span>Xem tất cả tour <i class="ti-arrow-right"></i></span></a> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Blog -->
-    <section class="blog section-padding bg-navy">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Blog</span> du lịch</div>
-                    <div class="section-title"><span>Kinh nghiệm</span> du lịch</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/07_experience_experience_local_seafood.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>10</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Du lịch</a>
-                                </span>
-                                <h5><a href="post.html">5 điều không thể bỏ qua ở Thiên Cầm</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>15</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tour</a>
-                                </span>
-                                <h5><a href="post.html">Tour gia đình khám phá Hà Tĩnh</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>18</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tour</a>
-                                </span>
-                                <h5><a href="post.html">Tour nhóm nhỏ khám phá ven biển</a></h5>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/22_experience_seafood_table_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>02</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Du lịch</a>
-                                </span>
-                                <h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/44_experience_seafood_dinner_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>04</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tour</a>
-                                </span>
-                                <h5><a href="post.html">Các tour thuyền biển được yêu thích nhất</a></h5>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/50_culture_fresh_local_market.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>06</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Du lịch</a>
-                                </span>
-                                <h5><a href="post.html">Gợi ý cho chuyến đi tuần trăng mật</a></h5>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/07_experience_experience_local_seafood.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>10</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Du lịch</a>
-                                </span>
-                                <h5><a href="post.html">5 điều không thể bỏ qua ở Thiên Cầm</a></h5>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>15</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tour</a>
-                                </span>
-                                <h5><a href="post.html">Tour gia đình khám phá Hà Tĩnh</a></h5>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>18</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tour</a>
-                                </span>
-                                <h5><a href="post.html">Tour nhóm nhỏ khám phá ven biển</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/22_experience_seafood_table_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>02</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Du lịch</a>
-                                </span>
-                                <h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/44_experience_seafood_dinner_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>04</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tour</a>
-                                </span>
-                                <h5><a href="post.html">Các tour thuyền biển được yêu thích nhất</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/50_culture_fresh_local_market.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>06</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Du lịch</a>
-                                </span>
-                                <h5><a href="post.html">Gợi ý cho chuyến đi tuần trăng mật</a></h5>
-                            </div>
-                        </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Đánh giá khách hàng -->
-    <section class="testimonials">
-        <div class="background bg-img bg-fixed section-padding pb-0" data-background="../assets/shared-images/18_hero_ke_go_lake_misty_morning.png" data-overlay-dark="5" style="background-image: url(&quot;../assets/shared-images/18_hero_ke_go_lake_misty_morning.png&quot;);">
-            <div class="container">
-                <div class="row">
-                    <!-- Gọi ngay  -->
-                    <div class="col-md-5 mb-30 mt-30">
-                        <h5>Điểm đến nổi bật — liên hệ để được tư vấn lịch trình</h5>
-                        <div class="phone-call mb-10">
-                            <div class="icon color-1"><span class="flaticon-phone-call"></span></div>
-                            <div class="text">
-                                <p class="color-1">Gọi ngay</p> <a class="color-1" href="tel:855-333-4444">0239 385 6789</a>
-                            </div>
-                        </div>
-                        <p><i class="ti-check"></i><small>Tư vấn miễn phí qua điện thoại</small></p>
-                    </div>
-                    <!-- Đánh giá khách hàng -->
-                    <div class="col-md-5 offset-md-2">
-                        <div class="testimonials-box">
-                            <div class="head-box">
-                                <h6>Đánh giá khách hàng</h6>
-                                <h4>Khách nói gì về chúng tôi</h4>
-                            </div>
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                                
-                                
-                                
-                            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-782px, 0px, 0px); transition: all; width: 2737px;"><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Nguyễn Thu Hà</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Trần Minh Anh</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item active" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Lê Văn Đức</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Nguyễn Thu Hà</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Trần Minh Anh</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Lê Văn Đức</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Nguyễn Thu Hà</h6> <span>Đánh giá khách</span>
-                                        </div>
-                                    </div>
-                                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Clients -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-671px, 0px, 0px); transition: 0.25s; width: 2013px;"><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png" alt=""></a>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer clearfix">
-        <div class="container">
-            <!-- First footer -->
-            <div class="first-footer">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="links dark footer-contact-links">
-                            <div class="footer-contact-links-wrapper">
-                                <div class="footer-contact-link-wrapper">
-                                    <div class="image-wrapper footer-contact-link-icon">
-                                        <div class="icon-footer"> <i class="flaticon-phone-call"></i> </div>
-                                    </div>
-                                    <div class="footer-contact-link-content">
-                                        <h6>Gọi điện</h6>
-                                        <p>0239 385 6789</p>
-                                    </div>
-                                </div>
-                                <div class="footer-contact-links-divider"></div>
-                                <div class="footer-contact-link-wrapper">
-                                    <div class="image-wrapper footer-contact-link-icon">
-                                        <div class="icon-footer"> <i class="flaticon-message"></i> </div>
-                                    </div>
-                                    <div class="footer-contact-link-content">
-                                        <h6>Email</h6>
-                                        <p>contact@hatinhtravel.demo</p>
-                                    </div>
-                                </div>
-                                <div class="footer-contact-links-divider"></div>
-                                <div class="footer-contact-link-wrapper">
-                                    <div class="image-wrapper footer-contact-link-icon">
-                                        <div class="icon-footer"> <i class="flaticon-placeholder"></i> </div>
-                                    </div>
-                                    <div class="footer-contact-link-content">
-                                        <h6>Địa chỉ</h6>
-                                        <p>TP. Hà Tĩnh, Việt Nam</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Second footer -->
-            <div class="second-footer">
-                <div class="row">
-                    <!-- about & social icons -->
-                    <div class="col-md-4 widget-area">
-                        <div class="widget clearfix">
-                            <div class="footer-logo"> <img class="img-fluid" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" alt=""> </div>
-                            <div class="widget-text">
-                                <p>Ha Tinh Travel — công ty du lịch địa phương, thiết kế hành trình biển, hồ Kẻ Gỗ và di tích lịch sử tại Hà Tĩnh.</p>
-                                <div class="social-icons">
-                                    <ul class="list-inline">
-                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="#"><i class="ti-twitter"></i></a></li>
-                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ti-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- quick links -->
-                    <div class="col-md-3 offset-md-1 widget-area">
-                        <div class="widget clearfix usful-links">
-                            <h3 class="widget-title">Liên kết nhanh</h3>
-                            <ul>
-                                <li><a href="about.html">Giới thiệu</a></li>
-                                <li><a href="tours.html">Tour</a></li>
-                                <li><a href="destination.html">Điểm đến</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- subscribe -->
-                    <div class="col-md-4 widget-area">
-                        <div class="widget clearfix">
-                            <h3 class="widget-title">Đăng ký nhận tin</h3>
-                            <p>Nhận gợi ý tour và điểm đến mới tại Hà Tĩnh</p>
-                            <div class="widget-newsletter">
-                                <form action="#" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
-                                    <input type="email" placeholder="Email" required="">
-                                    <button type="submit">Gửi</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Bottom footer -->
-            <div class="bottom-footer-text">
-                <div class="row copyright">
-                    <div class="col-md-12">
-                        <p class="mb-0">©2026 <a href="#"></a>. Bản demo concept — Hà Tĩnh.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- jQuery -->
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-3.6.3.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/modernizr-2.6.2.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.isotope.v3.0.2.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/pace.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/popper.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/bootstrap.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/scrollIt.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.waypoints.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/owl.carousel.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.stellar.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.magnific-popup.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/YouTubePopUp.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/select2.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/datepicker.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.counterup.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/smooth-scroll.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/custom.js"></script>
-
+<!-- Preloader -->
+<div class="preloader-bg" style="display: none;"></div>
+<div id="preloader" style="display: none;">
+<div id="preloader-status">
+<div class="preloader-position loader"> <span></span> </div>
+</div>
+</div>
+<!-- Progress scroll totop -->
+<div class="progress-wrap cursor-pointer">
+<svg class="progress-circle svg-content" height="100%" viewbox="-1 -1 102 102" width="100%">
+<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+</svg>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<!-- Logo -->
+<div class="logo-wrapper">
+<a class="logo" href="index.html"><h2 style="color:#fff;margin:0;font-size:22px">HA TINH <span style="color:#e9a225">Du lịch</span></h2></a>
+<!-- <a class="logo" href="index.html"> <h2>TRAVOL <span>explore the world</span></h2> </a> -->
+</div>
+<!-- Button -->
+<button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+<!-- Menu -->
+<div class="collapse navbar-collapse" id="navbar">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
+<li class="nav-item"><a class="nav-link" href="tours.html">Tour</a></li>
+<li class="nav-item"><a class="nav-link" href="destination.html">Điểm đến</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Thư viện</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Slider -->
+<header class="header slider-fade">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2880px, 0px, 0px); transition: all; width: 10080px;"><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/11_hero_wide_beach_sunrise_boats.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/11_hero_wide_beach_sunrise_boats.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Từ biển Thiên Cầm, hồ Kẻ Gỗ đến chùa Hương Tích — mỗi hành trình đều được thiết kế riêng</h4>
+<h1>Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/34_hero_empty_beach_sunrise.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/34_hero_empty_beach_sunrise.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Từ biển Thiên Cầm, hồ Kẻ Gỗ đến chùa Hương Tích — mỗi hành trình đều được thiết kế riêng</h4>
+<h1>Từ biển Thiên Cầm, hồ Kẻ Gỗ đến chùa Hương Tích</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4 class="animated fadeInUp">Công ty du lịch địa phương tại Hà Tĩnh</h4>
+<h1 class="animated fadeInUp">Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/11_hero_wide_beach_sunrise_boats.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/11_hero_wide_beach_sunrise_boats.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4 class="">Công ty du lịch địa phương tại Hà Tĩnh</h4>
+<h1 class="">Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/34_hero_empty_beach_sunrise.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/34_hero_empty_beach_sunrise.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4 class="">Công ty du lịch địa phương tại Hà Tĩnh</h4>
+<h1 class="">Khám phá Hà Tĩnh cùng hướng dẫn viên địa phương</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Công ty du lịch địa phương tại Hà Tĩnh</h4>
+<h1>Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/11_hero_wide_beach_sunrise_boats.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/11_hero_wide_beach_sunrise_boats.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Công ty du lịch địa phương tại Hà Tĩnh</h4>
+<h1>Khám phá Hà Tĩnh theo cách riêng của bạn</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><i aria-hidden="true" class="ti-angle-left"></i></button><button class="owl-next" role="presentation" type="button"><i aria-hidden="true" class="ti-angle-right"></i></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</header>
+<!-- Tour Search -->
+<div class="booking-wrapper">
+<div class="container">
+<div class="tour-inner clearfix form-inline justify-content-center">
+<form action="tours.html" class="form1 clearfix" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
+<div class="col1 c1">
+<div class="input2_wrapper">
+<label>Bạn muốn đi đâu?</label>
+<div class="input2_inner">
+<input class="form-control input" placeholder="Bạn muốn đi đâu?" type="text"/>
+</div>
+</div>
+</div>
+<div class="col1 c2">
+<div class="select1_wrapper">
+<label>Điểm đến</label>
+<div class="select1_inner">
+<select aria-hidden="true" class="select2 select select2-hidden-accessible" data-select2-id="1" style="width: 100%" tabindex="-1">
+<option data-select2-id="3" value="0">Điểm đến</option>
+<option value="1">Kẻ Gỗ</option>
+<option value="2">Thiên Cầm</option>
+<option value="3">Thiên Cầm</option>
+<option value="4">Kẻ Gỗ</option>
+<option value="5">Hà Tĩnh</option>
+</select><span class="select2 select2-container select2-container--default" data-select2-id="2" dir="ltr" style="width: 100%;"><span class="selection"><span aria-expanded="false" aria-haspopup="true" aria-labelledby="select2-unca-container" class="select2-selection select2-selection--single" role="combobox" tabindex="0"><span aria-readonly="true" class="select2-selection__rendered" id="select2-unca-container" role="textbox" title="Điểm đến">Điểm đến</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span aria-hidden="true" class="dropdown-wrapper"></span></span>
+</div>
+</div>
+</div>
+<div class="col1 c4">
+<div class="select1_wrapper">
+<label>Thời gian</label>
+<div class="select1_inner">
+<select aria-hidden="true" class="select2 select select2-hidden-accessible" data-select2-id="4" style="width: 100%" tabindex="-1">
+<option data-select2-id="6" value="0">Thời gian</option>
+<option value="1">1 ngày</option>
+<option value="2">2–4 ngày</option>
+<option value="3">5–7 ngày</option>
+<option value="4">Trên 7 ngày</option>
+</select><span class="select2 select2-container select2-container--default" data-select2-id="5" dir="ltr" style="width: 100%;"><span class="selection"><span aria-expanded="false" aria-haspopup="true" aria-labelledby="select2-ffkz-container" class="select2-selection select2-selection--single" role="combobox" tabindex="0"><span aria-readonly="true" class="select2-selection__rendered" id="select2-ffkz-container" role="textbox" title="Thời gian">Thời gian</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span aria-hidden="true" class="dropdown-wrapper"></span></span>
+</div>
+</div>
+</div>
+<div class="col1 c5">
+<button class="btn-form1-submit" type="submit"><i class="ti-search"></i> Tìm tour</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Giới thiệu -->
+<section class="about cover section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-6 mb-30 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+<div class="section-subtitle">Đơn vị lữ hành địa phương</div>
+<div class="section-title">Khám phá <span>Hà Tĩnh</span> cùng hướng dẫn viên bản địa</div>
+<p>Chúng tôi thiết kế hành trình gần gũi, phù hợp gia đình, nhóm bạn và khách muốn cảm nhận Hà Tĩnh chậm rãi nhưng đủ chiều sâu.</p>
+<p>Từ tour ngắn ngày đến lịch trình riêng, mỗi chuyến đi được tư vấn theo mùa và nhu cầu thực tế.</p>
+<ul class="list-unstyled about-list mb-30">
+<li>
+<div class="about-list-icon"> <span class="ti-check"></span> </div>
+<div class="about-list-text">
+<p>Nhiều năm kinh nghiệm địa phương</p>
+</div>
+</li>
+<li>
+<div class="about-list-icon"> <span class="ti-check"></span> </div>
+<div class="about-list-text">
+<p>Hơn 20 điểm đến &amp; trải nghiệm</p>
+</div>
+</li>
+</ul>
+<!-- Info -->
+<div class="phone-call mb-30">
+<div class="icon"><span class="flaticon-phone-call"></span></div>
+<div class="text">
+<p>Tư vấn lịch trình</p> <a href="tel:855-333-4444">0239 385 6789</a>
+</div>
+</div>
+</div>
+<div class="col-md-5 offset-md-1 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+<div class="img-exp">
+<div class="about-img">
+<div class="img"> <img alt="" class="img-fluid auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/> </div>
+</div>
+<div id="circle">
+<svg enable-background="new 0 0 300 300" height="300px" version="1.1" viewbox="0 0 300 300" width="300px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<defs>
+<path d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " id="circlePath"></path>
+</defs>
+<circle cx="150" cy="100" fill="none" r="75"></circle>
+<g>
+<use fill="none" xlink:href="#circlePath"></use>
+<text fill="#0f2454">
+<textpath xlink:href="#circlePath"> . Ha Tinh Travel . </textpath>
+</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tour 1 -->
+<section class="tours1 section-padding bg-lightnav" data-scroll-index="1">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle"><span>Chọn hành trình</span></div>
+<div class="section-title">Tour <span>gợi ý</span></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8">
+<div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png"/> </div> <span class="category"><a href="#0">2.500.000đ</a></span>
+<div class="con">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star"></i>
+<div class="reviews-count">(2 Reviews)</div>
+</div>
+<h5><a href="tour-details.html">Tour biển Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 10 Ngày</li>
+<li><i class="ti-user"></i> 12+</li>
+<li><i class="ti-location-pin"></i> Thiên Cầm</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/24_destination_huong_tich_pagoda_landscape.png"/></div> <span class="category"><a href="#0">1.300.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hành trình Chùa Hương Tích</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 6 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">850.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Tour ven biển &amp; làng chài</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 10 Ngày</li>
+<li><i class="ti-user"></i> 6+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#">950.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Khám phá hồ Kẻ Gỗ</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 10 Ngày</li>
+<li><i class="ti-user"></i> 12+</li>
+<li><i class="ti-location-pin"></i> Kẻ Gỗ</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="#0">750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hành trình Ngã ba Đồng Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Đồng Lộc</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Numbers -->
+<section class="numbers">
+<div class="section-padding bg-img bg-fixed back-position-center" data-background="../assets/shared-images/18_hero_ke_go_lake_misty_morning.png" data-overlay-dark="6" style='background-image: url("../assets/shared-images/18_hero_ke_go_lake_misty_morning.png");'>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="front flaticon-air-freight"></i>
+<i class="back flaticon-air-freight"></i>
+</span>
+<h3 class="count">600</h3>
+<h6>Lịch tour đã tổ chức</h6>
+</div>
+</div>
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="font flaticon-house"></i>
+<i class="back flaticon-house"></i>
+</span>
+<h3 class="count">250</h3>
+<h6>Tour đa dạng</h6>
+</div>
+</div>
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="front flaticon-ship"></i>
+<i class="back flaticon-ship"></i>
+</span>
+<h3 class="count">100</h3>
+<h6>Tour ven biển</h6>
+</div>
+</div>
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="front flaticon-tag"></i>
+<i class="back flaticon-tag"></i>
+</span>
+<h3 class="count">100</h3>
+<h6>Vé tham quan</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Destination 1 -->
+<section class="destination1 section-padding bg-lightnav">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle">Điểm đến nổi bật</div>
+<div class="section-title">Điểm đến <span>phổ biến</span></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>6 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">15% OFF</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Ven biển</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>10 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/></div> <span class="category"><a href="tours2.html">7 Tour</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>4 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/25_destination_dong_loc_memorial_aerial.png"/> </div> <span class="category"><a href="#0">25% OFF</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Đồng Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>3 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="#0">7 Tour</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Hương Tích</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>6 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">15% OFF</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Ven biển</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>10 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/></div> <span class="category"><a href="tours2.html">7 Tour</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>4 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/25_destination_dong_loc_memorial_aerial.png"/> </div> <span class="category"><a href="#0">25% OFF</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Đồng Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>3 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="#0">7 Tour</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Hương Tích</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Khám phá <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Banner Tour Video -->
+<section class="dynamic-video-wrapper" data-overlay-dark="3">
+<video autoplay="autoplay" height="100%" loop="loop" muted="" preload="auto" width="100%">
+<source src="#" type="video/mp4"/>
+</video>
+<div class="wrap-content v-middle">
+<div class="container">
+<div class="row">
+<div class="col-md-8 offset-md-2">
+<h1><a href="tour-details.html">Tour khám phá Thiên Cầm</a></h1>
+<h4><i class="ti-location-pin"></i> Thiên Cầm    <i class="ti-timer"></i> 4 ngày 3 đêm</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hương Tích & Tour ven biển & làng chàis 1 -->
+<section class="tours1 section-padding">
+<div class="container">
+<div class="row mb-30">
+<div class="col-md-12">
+<div class="section-subtitle">Được yêu thích</div>
+<div class="section-title"><span>Vùng</span> miền</div>
+</div>
+</div>
+<!-- Hành trình Chùa Hương Tíchs -->
+<div class="row mb-90">
+<div class="col-md-5">
+<div class="country country1 mt-30">
+<div class="section-title2">Chùa Hương Tích</div>
+<p>Chúng tôi thiết kế hành trình gần gũi, phù hợp gia đình, nhóm bạn và khách muốn cảm nhận Hà Tĩnh chậm rãi nhưng đủ chiều sâu.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Thiên Cầm</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Đồng Lộc</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kẻ Gỗ</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Cẩm Xuyên</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Can Lộc</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hương Tích</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hồng Lĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Can Lộc</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hồng Lĩnh</a></li>
+</ul>
+</div>
+</div>
+<div class="butn-dark mt-30 mb-30"> <a class="" data-scroll-nav="1" href="#"><span>Xem tất cả tour <i class="ti-arrow-right"></i></span></a> </div>
+</div>
+</div>
+<div class="col-md-7">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1006px, 0px, 0px); transition: all; width: 4026px;"><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">1.750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hương Tích</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 5+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="#0">1.200.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Can Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 8+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="#0">3.000.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hồng Lĩnh</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 9 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hà Tĩnh</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 3 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/></div> <span class="category"><a href="#">1.300.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Cẩm Xuyên</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 8+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/></div> <span class="category"><a href="#0">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">TP. Hà Tĩnh</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 6 Ngày</li>
+<li><i class="ti-user"></i> 4+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">1.750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hương Tích</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 5+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="#0">1.200.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Can Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 8+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="#0">3.000.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hồng Lĩnh</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 9 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hà Tĩnh</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 3 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/></div> <span class="category"><a href="#">1.300.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Cẩm Xuyên</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 8+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/></div> <span class="category"><a href="#0">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">TP. Hà Tĩnh</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 6 Ngày</li>
+<li><i class="ti-user"></i> 4+</li>
+<li><i class="ti-location-pin"></i> Hương Tích</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+</div>
+<!-- Tour ven biển & làng chàis -->
+<div class="row">
+<div class="col-md-7">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1006px, 0px, 0px); transition: all; width: 4026px;"><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">2.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 12 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="tours2.html">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hương Tích</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 6 Ngày</li>
+<li><i class="ti-user"></i> 5+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="#0">1.750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Đồng Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 5 Ngày</li>
+<li><i class="ti-user"></i> 7+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">1.250.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Kẻ Gỗ</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 12+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/></div> <span class="category"><a href="#0">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Kỳ Anh</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 6+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/></div> <span class="category"><a href="#0">1.750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Cảng cá</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">2.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 12 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="tours2.html">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Hương Tích</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 6 Ngày</li>
+<li><i class="ti-user"></i> 5+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="#0">1.750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Đồng Lộc</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 5 Ngày</li>
+<li><i class="ti-user"></i> 7+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">1.250.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Kẻ Gỗ</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 12+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/></div> <span class="category"><a href="#0">1.500.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Kỳ Anh</a> </h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 6+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 305.5px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/></div> <span class="category"><a href="#0">1.750.000đ</a></span>
+<div class="con">
+<h5><a href="tour-details.html">Cảng cá</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-12">
+<ul>
+<li><i class="ti-time"></i> 7 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+<li><i class="ti-location-pin"></i> Ven biển</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+<div class="col-md-5">
+<div class="country country2 mt-30">
+<div class="section-title2">Ven biển, Hà Tĩnh</div>
+<p>Từ tour ngắn ngày đến lịch trình riêng, mỗi chuyến đi được tư vấn theo mùa và nhu cầu thực tế tại Hà Tĩnh.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kẻ Gỗ</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kỳ Anh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hương Tích</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kỳ Anh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hương Tích</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Đồng Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Đồng Lộc</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Cảng cá</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Cảng cá</a></li>
+</ul>
+</div>
+</div>
+<div class="butn-dark mt-30 mb-30"> <a class="" data-scroll-nav="1" href="#"><span>Xem tất cả tour <i class="ti-arrow-right"></i></span></a> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog -->
+<section class="blog section-padding bg-navy">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle"><span>Blog</span> du lịch</div>
+<div class="section-title"><span>Kinh nghiệm</span> du lịch</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/07_experience_experience_local_seafood.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>10</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Du lịch</a>
+</span>
+<h5><a href="post.html">5 điều không thể bỏ qua ở Thiên Cầm</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>15</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tour</a>
+</span>
+<h5><a href="post.html">Tour gia đình khám phá Hà Tĩnh</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>18</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tour</a>
+</span>
+<h5><a href="post.html">Tour nhóm nhỏ khám phá ven biển</a></h5>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/22_experience_seafood_table_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>02</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Du lịch</a>
+</span>
+<h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/44_experience_seafood_dinner_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>04</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tour</a>
+</span>
+<h5><a href="post.html">Các tour thuyền biển được yêu thích nhất</a></h5>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/50_culture_fresh_local_market.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>06</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Du lịch</a>
+</span>
+<h5><a href="post.html">Gợi ý cho chuyến đi tuần trăng mật</a></h5>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/07_experience_experience_local_seafood.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>10</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Du lịch</a>
+</span>
+<h5><a href="post.html">5 điều không thể bỏ qua ở Thiên Cầm</a></h5>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>15</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tour</a>
+</span>
+<h5><a href="post.html">Tour gia đình khám phá Hà Tĩnh</a></h5>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>18</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tour</a>
+</span>
+<h5><a href="post.html">Tour nhóm nhỏ khám phá ven biển</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/22_experience_seafood_table_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>02</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Du lịch</a>
+</span>
+<h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/44_experience_seafood_dinner_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>04</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tour</a>
+</span>
+<h5><a href="post.html">Các tour thuyền biển được yêu thích nhất</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/50_culture_fresh_local_market.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>06</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Du lịch</a>
+</span>
+<h5><a href="post.html">Gợi ý cho chuyến đi tuần trăng mật</a></h5>
+</div>
+</div></div></div></div><div class="owl-nav"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Đánh giá khách hàng -->
+<section class="testimonials">
+<div class="background bg-img bg-fixed section-padding pb-0" data-background="../assets/shared-images/18_hero_ke_go_lake_misty_morning.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/18_hero_ke_go_lake_misty_morning.png");'>
+<div class="container">
+<div class="row">
+<!-- Gọi ngay  -->
+<div class="col-md-5 mb-30 mt-30">
+<h5>Điểm đến nổi bật — liên hệ để được tư vấn lịch trình</h5>
+<div class="phone-call mb-10">
+<div class="icon color-1"><span class="flaticon-phone-call"></span></div>
+<div class="text">
+<p class="color-1">Gọi ngay</p> <a class="color-1" href="tel:855-333-4444">0239 385 6789</a>
+</div>
+</div>
+<p><i class="ti-check"></i><small>Tư vấn miễn phí qua điện thoại</small></p>
+</div>
+<!-- Đánh giá khách hàng -->
+<div class="col-md-5 offset-md-2">
+<div class="testimonials-box">
+<div class="head-box">
+<h6>Đánh giá khách hàng</h6>
+<h4>Khách nói gì về chúng tôi</h4>
+</div>
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-782px, 0px, 0px); transition: all; width: 2737px;"><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Nguyễn Thu Hà</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Trần Minh Anh</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Lê Văn Đức</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Nguyễn Thu Hà</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Trần Minh Anh</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Lê Văn Đức</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Tour Thiên Cầm rất tuyệt — hướng dẫn viên nhiệt tình, lịch trình hợp lý cho cả gia đình.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Nguyễn Thu Hà</h6> <span>Đánh giá khách</span>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Clients -->
+<section class="clients">
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-671px, 0px, 0px); transition: 0.25s; width: 2013px;"><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png"/></a>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer clearfix">
+<div class="container">
+<!-- First footer -->
+<div class="first-footer">
+<div class="row">
+<div class="col-md-12">
+<div class="links dark footer-contact-links">
+<div class="footer-contact-links-wrapper">
+<div class="footer-contact-link-wrapper">
+<div class="image-wrapper footer-contact-link-icon">
+<div class="icon-footer"> <i class="flaticon-phone-call"></i> </div>
+</div>
+<div class="footer-contact-link-content">
+<h6>Gọi điện</h6>
+<p>0239 385 6789</p>
+</div>
+</div>
+<div class="footer-contact-links-divider"></div>
+<div class="footer-contact-link-wrapper">
+<div class="image-wrapper footer-contact-link-icon">
+<div class="icon-footer"> <i class="flaticon-message"></i> </div>
+</div>
+<div class="footer-contact-link-content">
+<h6>Email</h6>
+<p>contact@hatinhtravel.demo</p>
+</div>
+</div>
+<div class="footer-contact-links-divider"></div>
+<div class="footer-contact-link-wrapper">
+<div class="image-wrapper footer-contact-link-icon">
+<div class="icon-footer"> <i class="flaticon-placeholder"></i> </div>
+</div>
+<div class="footer-contact-link-content">
+<h6>Địa chỉ</h6>
+<p>TP. Hà Tĩnh, Việt Nam</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Second footer -->
+<div class="second-footer">
+<div class="row">
+<!-- about & social icons -->
+<div class="col-md-4 widget-area">
+<div class="widget clearfix">
+<div class="footer-logo"> <img alt="" class="img-fluid" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png"/> </div>
+<div class="widget-text">
+<p>Ha Tinh Travel — công ty du lịch địa phương, thiết kế hành trình biển, hồ Kẻ Gỗ và di tích lịch sử tại Hà Tĩnh.</p>
+<div class="social-icons">
+<ul class="list-inline">
+<li><a href="#"><i class="ti-instagram"></i></a></li>
+<li><a href="#"><i class="ti-twitter"></i></a></li>
+<li><a href="#"><i class="ti-facebook"></i></a></li>
+<li><a href="#"><i class="ti-youtube"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- quick links -->
+<div class="col-md-3 offset-md-1 widget-area">
+<div class="widget clearfix usful-links">
+<h3 class="widget-title">Liên kết nhanh</h3>
+<ul>
+<li><a href="about.html">Giới thiệu</a></li>
+<li><a href="tours.html">Tour</a></li>
+<li><a href="destination.html">Điểm đến</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</div>
+</div>
+<!-- subscribe -->
+<div class="col-md-4 widget-area">
+<div class="widget clearfix">
+<h3 class="widget-title">Đăng ký nhận tin</h3>
+<p>Nhận gợi ý tour và điểm đến mới tại Hà Tĩnh</p>
+<div class="widget-newsletter">
+<form action="#" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
+<input placeholder="Email" required="" type="email"/>
+<button type="submit">Gửi</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom footer -->
+<div class="bottom-footer-text">
+<div class="row copyright">
+<div class="col-md-12">
+<p class="mb-0">©2026 <a href="#"></a>. Bản demo concept — Hà Tĩnh.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-3.6.3.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-migrate-3.0.0.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/modernizr-2.6.2.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.isotope.v3.0.2.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/pace.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/popper.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/bootstrap.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/scrollIt.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.waypoints.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/owl.carousel.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.stellar.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.magnific-popup.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/YouTubePopUp.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/select2.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/datepicker.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.counterup.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/smooth-scroll.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/custom.js"></script>
 </body></html>

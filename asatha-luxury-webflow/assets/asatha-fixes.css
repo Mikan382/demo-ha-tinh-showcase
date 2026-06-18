@@ -1,0 +1,78 @@
+/* ============================================================
+   Asatha Luxury Webflow — Demo fixes
+   Áp dụng cho tất cả pages. Không edit inline style trong HTML.
+   ============================================================ */
+
+/* --- Animation / visibility fixes --- */
+.image-animation-box { transform: translate3d(0,101%,0) !important; pointer-events: none; }
+.nav-menu.w-nav-menu { opacity: 1 !important; visibility: visible !important; }
+[data-w-id][style*="opacity: 0"]:not(.image-animation-box) { opacity: 1 !important; }
+.contact-modal { display: none !important; opacity: 0 !important; }
+.contact-modal.w--open,
+.contact-modal[style*="display: flex"] { display: flex !important; opacity: 1 !important; }
+
+/* --- Instagram grid fix ---
+   Root cause: ảnh gốc 1072×1072 (1:1 square). CSS gốc không set height/aspect-ratio.
+   Stagger chỉ do margin-top: 24px (var --space-md) trên items 1,3,5.        */
+.insta-image-wrapper {
+  gap: var(--_📐-spacing---1️⃣-spacing--space-sm, 18px) !important;
+  align-items: flex-start !important;
+}
+.insta-image-div {
+  flex: 1 1 0% !important;
+  aspect-ratio: 1 / 1 !important;
+  overflow: hidden !important;
+}
+.insta-image-div.margin {
+  margin-top: var(--_📐-spacing---1️⃣-spacing--space-md, 24px) !important;
+}
+.insta-post-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+.insta-post-button {
+  position: absolute !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translate(-50%) !important;
+  margin: 0 !important;
+  z-index: 10 !important;
+}
+
+/* --- Auto-crop for grid/card images --- */
+.auto-crop-image {
+  width: 100% !important;
+  aspect-ratio: 4 / 3 !important;
+  object-fit: cover !important;
+}
+
+/* --- Villa listing grid: float → CSS grid (prevent height mismatch misalignment) ---
+   Root cause: w-col-4 float layout bị lệch khi cards trong cùng row có chiều cao khác nhau.
+   Villa Hoàng Hôn có description dài hơn → items kế tiếp float vào cột sai.            */
+.villa-tab-pane .w-dyn-items.w-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+}
+.villa-tab-pane .w-dyn-items.w-row::before,
+.villa-tab-pane .w-dyn-items.w-row::after {
+  display: none !important;
+}
+.villa-tab-pane .villa-collection-item.w-col {
+  float: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+/* --- Guest story parallax grid: đồng đều chiều cao ảnh ---
+   Root cause: images có aspect-ratio khác nhau (16:9 vs 4:3)
+   nên mỗi cột trong 4-column grid cao thấp không đều.         */
+.guest-story-image-div {
+  aspect-ratio: 4 / 3 !important;
+  overflow: hidden !important;
+}
+.guest-story-image {
+  object-fit: cover !important;
+}

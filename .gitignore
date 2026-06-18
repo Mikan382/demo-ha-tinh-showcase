@@ -9,3 +9,4 @@ __pycache__/
 *.log
 _visual-audit/
 _edge-profile*/
+.vercel

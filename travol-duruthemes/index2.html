@@ -1,12 +1,13 @@
-<!DOCTYPE html><html lang="zxx" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Travol Agency</title>
-    <link rel="shortcut icon" href="assets/duruthemes.com/demo/html/travol/multipage-slider/img/favicon.png">
-    <link rel="stylesheet" href="assets/fonts.googleapis.com/css2.94f7ed67.css">
-    <link rel="stylesheet" href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/plugins.css">
-    <link rel="stylesheet" href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/style.css">
+<!DOCTYPE html>
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="zxx"><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<title>Travol Agency</title>
+<link href="assets/duruthemes.com/demo/html/travol/multipage-slider/img/favicon.png" rel="shortcut icon"/>
+<link href="assets/fonts.googleapis.com/css2.94f7ed67.css" rel="stylesheet"/>
+<link href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/plugins.css" rel="stylesheet"/>
+<link href="assets/duruthemes.com/demo/html/travol/multipage-slider/css/style.css" rel="stylesheet"/>
 <style id="travol-hide-clients">section.clients{display:none!important}</style><style id="showcase-cleanup">
 .template-popup-wrapper,.showcase-dropdown-wrapper,.showcase-dropdown,.w-webflow-badge,.w-iframe-block,
 a[href*="framer.com/templates"],[data-framer-name="Buy"],
@@ -37,1380 +38,1362 @@ html,body{max-width:100%;overflow-x:hidden}
 /* Pace progress bar (preloader) — ensure hidden */
 .pace-inactive{display:none!important}
 .pace .pace-progress{display:none!important}
-</style></head>
-<body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-  <div class="pace-progress-inner"></div>
+</style>
+<style id="auto-crop-image-style">
+/* Tự động crop ảnh cho các grid/card để tránh vỡ layout do sai tỉ lệ */
+.auto-crop-image {
+    width: 100% !important;
+    aspect-ratio: 4/3 !important;
+    object-fit: cover !important;
+}
+</style>
+</head>
+<body class="pace-done"><div class="pace pace-inactive"><div class="pace-progress" data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px);">
+<div class="pace-progress-inner"></div>
 </div>
 <div class="pace-activity"></div></div>
-    <!-- Preloader -->
-    <div class="preloader-bg" style="display: none;"></div>
-    <div id="preloader" style="display: none;">
-        <div id="preloader-status">
-            <div class="preloader-position loader"> <span></span> </div>
-        </div>
-    </div>
-    <!-- Progress scroll totop -->
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-        </svg>
-    </div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo-wrapper">
-                <a class="logo" href="index.html"> <img src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" class="logo-img" alt=""> </a>
-                <!-- <a class="logo" href="index.html"> <h2>TRAVOL <span>explore the world</span></h2> </a> -->
-            </div>
-            <!-- Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Trang chủ <i class="ti-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html" class="dropdown-item"><span>Home Layout 1</span></a></li>
-                            <li><a href="index2.html" class="dropdown-item active"><span>Home Layout 2</span></a></li>
-                            <li><a href="index3.html" class="dropdown-item"><span>Home Layout 3</span></a></li>
-                            <li><a href="index4.html" class="dropdown-item"><span>Home Layout 4</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Tour <i class="ti-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="tours.html" class="dropdown-item"><span>Tours 1</span></a></li>
-                            <li><a href="tours2.html" class="dropdown-item"><span>Tours 2</span></a></li>
-                            <li><a href="tours3.html" class="dropdown-item"><span>Tours 3</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="destination.html">Điểm đến</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Thư viện</a></li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="ti-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="tour-details.html" class="dropdown-item"><span>Tour Details</span></a></li>
-                            <li><a href="tour-search.html" class="dropdown-item"><span>Tour Search</span></a></li>
-                            <li><a href="post.html" class="dropdown-item"><span>Post Single</span></a></li>
-                            <li class="dropdown-submenu dropdown"> <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Other Pages <i class="ti-angle-right"></i></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="coming-soon.html" class="dropdown-item"><span>Coming Soon</span></a></li>
-                                    <li><a href="404.html" class="dropdown-item"><span>404 Page</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Blog <i class="ti-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog.html" class="dropdown-item"><span>Blog 01</span></a></li>
-                            <li><a href="blog2.html" class="dropdown-item"><span>Blog 02</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Slider -->
-    <header class="header slider-fade">
-        <div class="owl-carousel owl-theme owl-loaded owl-drag">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            
-            
-            
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5760px, 0px, 0px); transition: all; width: 10080px;"><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/02_hero_hero_coastal_beach_morning.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Let's travel the world with us</h4>
-                                <h1>Explore Hà Tĩnh With <span>Travol</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/31_destination_coastal_road_overlook.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Let's travel the world with us</h4>
-                                <h1><span>Discover</span> the world with our guide</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/33_destination_fishing_harbor_sunset.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4 class="">Let's travel the world with us</h4>
-                                <h1 class="">Explore The World With <span class="">Travol</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/37_hero_lake_boat_landscape.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4 class="">Let's travel the world with us</h4>
-                                <h1 class="">Explore Hà Tĩnh With <span class="">Travol</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item active" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/41_hero_quiet_lake_sunrise.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4 class="animated fadeInUp">Let's travel the world with us</h4>
-                                <h1 class="animated fadeInUp"><span class="animated fadeInUp">Discover</span> the world with our guide</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/53_destination_coastal_harbor_golden_hour.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Let's travel the world with us</h4>
-                                <h1>Explore The World With <span>Travol</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-overlay-dark="5" data-background="../assets/shared-images/02_hero_hero_coastal_beach_morning.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <h4>Let's travel the world with us</h4>
-                                <h1>Explore Hà Tĩnh With <span>Travol</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i class="ti-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next"><i class="ti-angle-right" aria-hidden="true"></i></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
-    </header>
-    <!-- Tour Search -->
-    <div class="booking-wrapper">
-        <div class="container">
-            <div class="tour-inner clearfix form-inline justify-content-center">
-                <form action="tours.html" class="form1 clearfix" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
-                    <div class="col1 c1">
-                        <div class="input2_wrapper">
-                            <label>Where to?</label>
-                            <div class="input2_inner">
-                                <input type="text" class="form-control input" placeholder="Where to?">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col1 c2">
-                        <div class="select1_wrapper">
-                            <label>Điểm đến</label>
-                            <div class="select1_inner">
-                                <select class="select2 select select2-hidden-accessible" style="width: 100%" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                    <option value="0" data-select2-id="3">Điểm đến</option>
-                                    <option value="1">Kẻ Gỗ</option>
-                                    <option value="2">Thiên Cầm</option>
-                                    <option value="3">Thiên Cầm</option>
-                                    <option value="4">Hà Tĩnh</option>
-                                    <option value="5">Hà Tĩnh</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-tlck-container"><span class="select2-selection__rendered" id="select2-tlck-container" role="textbox" aria-readonly="true" title="Destinations">Điểm đến</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col1 c4">
-                        <div class="select1_wrapper">
-                            <label>Duration</label>
-                            <div class="select1_inner">
-                                <select class="select2 select select2-hidden-accessible" style="width: 100%" data-select2-id="4" tabindex="-1" aria-hidden="true">
-                                    <option value="0" data-select2-id="6">Duration</option>
-                                    <option value="1">1 Day Tour</option>
-                                    <option value="2">2-4 Ngày Tour</option>
-                                    <option value="3">5-7 Ngày Tour</option>
-                                    <option value="4">7+ Days Tour</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-h9ir-container"><span class="select2-selection__rendered" id="select2-h9ir-container" role="textbox" aria-readonly="true" title="Duration">Duration</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col1 c5">
-                        <button type="submit" class="btn-form1-submit"><i class="ti-search"></i> Find Now</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- About -->
-    <section class="about cover section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-30 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                    <div class="section-subtitle">The best travel agency</div>
-                    <div class="section-title">Discover the <span>world</span> with our guide</div>
-                    <p>You can choose any country with good tourism. Agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec id velit ac arcu posuere blane.</p>
-                    <p>Hotel ut nisl quam nestibulum ac quam nec odio elementum ceisue the miss varius natoque penatibus et magnis dis parturient monte.</p>
-                    <ul class="list-unstyled about-list mb-30">
-                        <li>
-                            <div class="about-list-icon"> <span class="ti-check"></span> </div>
-                            <div class="about-list-text">
-                                <p>20 Years of Experience</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="about-list-icon"> <span class="ti-check"></span> </div>
-                            <div class="about-list-text">
-                                <p>150+ Tour Destinations</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Info -->
-                    <div class="phone-call mb-30">
-                        <div class="icon"><span class="flaticon-phone-call"></span></div>
-                        <div class="text">
-                            <p>For information</p> <a href="tel:855-333-4444">855 333 4444</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 offset-md-1 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                    <div class="img-exp">
-                        <div class="about-img">
-                            <div class="img"> <img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/about.jpeg" class="img-fluid" alt=""> </div>
-                        </div>
-                        <div id="circle">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-                                <defs>
-                                    <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-                                </defs>
-                                <circle cx="150" cy="100" r="75" fill="none"></circle>
-                                <g>
-                                    <use xlink:href="#circlePath" fill="none"></use>
-                                    <text fill="#0f2454">
-                                        <textPath xlink:href="#circlePath"> . travel agency . travel agency </textPath>
-                                    </text>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Tours 3 -->
-    <div class="tours3 section-padding bg-lightnav">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Choose your place</span></div>
-                    <div class="section-title">Popular <span>Tours</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="../assets/shared-images/04_destination_destination_ke_go_lake.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);"> <span class="category"><a href="#0">Hà Tĩnh</a></span>
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Hà Tĩnh</h4>
-                                    <h6>$1.500 / per person</h6>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2 bg-white">
-                            <div class="square-container2">
-                                <h4>Hà Tĩnh, Hà Tĩnh</h4>
-                                <h6>$1.500 / per person</h6>
-                                <p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
-                                <div class="row tour-list mb-30">
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 3 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i> Hà Tĩnh</li>
-                                            <li><i class="ti-face-smile"></i> 9.5 Superb</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-line"><a href="tour-details.html">Tour details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Thiên Cầm</h4>
-                                    <h6>$2.500 / per person</h6>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2 bg-white">
-                            <div class="square-container2">
-                                <h4>Thiên Cầm</h4>
-                                <h6>$2.500 / per person</h6>
-                                <p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
-                                <div class="row tour-list mb-30">
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 5 Ngày</li>
-                                            <li><i class="ti-user"></i> 7+</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i> Thiên Cầm</li>
-                                            <li><i class="ti-face-smile"></i> 9.8 Superb</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-line"><a href="tour-details.html">Tour details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Zakynthos</h4>
-                                    <h6>$3.000 / per person</h6>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2 bg-white">
-                            <div class="square-container2">
-                                <h4>Zakynthos</h4>
-                                <h6>$3.000 / per person</h6>
-                                <p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
-                                <div class="row tour-list mb-30">
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 10 Ngày</li>
-                                            <li><i class="ti-user"></i> 8+</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i> Kẻ Gỗ</li>
-                                            <li><i class="ti-face-smile"></i> 9.5 Superb</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-line"><a href="tour-details.html">Tour details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>France</h4>
-                                    <h6>$2.500 / per person</h6>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2 bg-white">
-                            <div class="square-container2">
-                                <h4>France</h4>
-                                <h6>$2.500 / per person</h6>
-                                <p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
-                                <div class="row tour-list mb-30">
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 3 Ngày</li>
-                                            <li><i class="ti-user"></i> 10+</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i> Hà Tĩnh</li>
-                                            <li><i class="ti-face-smile"></i> 9.5 Superb</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-line"><a href="tour-details.html">Tour details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Hà Tĩnh</h4>
-                                    <h6>$1.500 / per person</h6>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2 bg-white">
-                            <div class="square-container2">
-                                <h4>Hà Tĩnh</h4>
-                                <h6>$1.500 / per person</h6>
-                                <p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
-                                <div class="row tour-list mb-30">
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 5 Ngày</li>
-                                            <li><i class="ti-user"></i> 9+</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i> Hà Tĩnh</li>
-                                            <li><i class="ti-face-smile"></i> 9.3 Superb</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-line"><a href="tour-details.html">Tour details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-img" data-background="../assets/shared-images/23_culture_traditional_market_hatinh.png" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-                            <div class="square-container d-flex align-items-end justify-content-end">
-                                <div class="box-title">
-                                    <h4>Hà Tĩnh</h4>
-                                    <h6>$1.300 / per person</h6>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2 bg-white">
-                            <div class="square-container2">
-                                <h4>Hà Tĩnh</h4>
-                                <h6>$1.300 / per person</h6>
-                                <p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
-                                <div class="row tour-list mb-30">
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-time"></i> 4 Ngày</li>
-                                            <li><i class="ti-user"></i> 6+</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <ul>
-                                            <li><i class="ti-location-pin"></i> Hà Tĩnh</li>
-                                            <li><i class="ti-face-smile"></i> 8.5 Superb</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="btn-line"><a href="tour-details.html">Tour details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Numbers -->
-    <section class="numbers">
-        <div class="section-padding bg-img bg-fixed back-position-center" data-background="../assets/shared-images/31_destination_coastal_road_overlook.png" data-overlay-dark="6" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="item text-center">  <span class="icon">
-                                <i class="front flaticon-air-freight"></i>
-                                <i class="back flaticon-air-freight"></i>
-                            </span>
-                            <h3 class="count">600</h3>
-                            <h6>Flight Booking</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item text-center">  <span class="icon">
-                                <i class="font flaticon-house"></i>
-                                <i class="back flaticon-house"></i>
-                            </span>
-                            <h3 class="count">250</h3>
-                            <h6>Amazing Tour</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item text-center">  <span class="icon">
-                                <i class="front flaticon-ship"></i>
-                                <i class="back flaticon-ship"></i>
-                            </span>
-                            <h3 class="count">100</h3>
-                            <h6>Cruises Booking</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item text-center"> <span class="icon">
-                                <i class="front flaticon-tag"></i>
-                                <i class="back flaticon-tag"></i>
-                            </span>
-                            <h3 class="count">100</h3>
-                            <h6>Ticket Booking</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hà Tĩnh &  France Tours 2 -->
-    <section class="tours2 section-padding bg-lightnav" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Most Popular</span></div>
-                    <div class="section-title">Travel <span>Countries</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2292px, 0px, 0px); transition: all; width: 6876px;"><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2 left">
-                            <figure><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/rome1.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption padding-left">
-                                <div class="country country1">
-                                    <h3>Best Tours</h3>
-                                    <h4><a href="tour-details.html">Hà Tĩnh, Hà Tĩnh</a></h4>
-                                    <p>Travel agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the velit.</p>
-                                    <div class="row tour-list">
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Thiên Cầm</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Đồng Lộc</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Venice</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Can Lộc</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hồng Lĩnh</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Parma</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="border-2">
-                                    <div class="info-wrapper">
-                                        <div class="more"><a href="tour-details.html" class="link-btn" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
-                                        <div class="butn-dark"> <a href="#" data-scroll-nav="1"><span>Book Now</span></a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2">
-                            <figure><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/france2.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption padding-left">
-                                <div class="country country2">
-                                    <h3>Best Tours</h3>
-                                    <h4><a href="tour-details.html">France, Hà Tĩnh</a></h4>
-                                    <p>Spacious, bright guestrooms with tasteful furnishing, wooden floor and panoramic windows from the ceiling to the floor.</p>
-                                    <div class="row tour-list">
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hà Tĩnh</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kỳ Anh</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Lyon</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Bordeaux</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Marseille</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Cannes</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="border-2">
-                                    <div class="info-wrapper">
-                                        <div class="more"><a href="tour-details.html" class="link-btn" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
-                                        <div class="butn-dark"> <a href="#" data-scroll-nav="1"><span>Book Now</span></a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 1116px; margin-right: 30px;"><div class="tours2 left">
-                            <figure><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/rome1.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption padding-left">
-                                <div class="country country1">
-                                    <h3>Best Tours</h3>
-                                    <h4><a href="tour-details.html">Hà Tĩnh, Hà Tĩnh</a></h4>
-                                    <p>Travel agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the velit.</p>
-                                    <div class="row tour-list">
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Thiên Cầm</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Đồng Lộc</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Venice</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Can Lộc</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hồng Lĩnh</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Parma</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="border-2">
-                                    <div class="info-wrapper">
-                                        <div class="more"><a href="tour-details.html" class="link-btn" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
-                                        <div class="butn-dark"> <a href="#" data-scroll-nav="1"><span>Book Now</span></a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 1116px; margin-right: 30px;"><div class="tours2">
-                            <figure><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/france2.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption padding-left">
-                                <div class="country country2">
-                                    <h3>Best Tours</h3>
-                                    <h4><a href="tour-details.html">France, Hà Tĩnh</a></h4>
-                                    <p>Spacious, bright guestrooms with tasteful furnishing, wooden floor and panoramic windows from the ceiling to the floor.</p>
-                                    <div class="row tour-list">
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hà Tĩnh</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kỳ Anh</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Lyon</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Bordeaux</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Marseille</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Cannes</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="border-2">
-                                    <div class="info-wrapper">
-                                        <div class="more"><a href="tour-details.html" class="link-btn" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
-                                        <div class="butn-dark"> <a href="#" data-scroll-nav="1"><span>Book Now</span></a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2 left">
-                            <figure><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/rome1.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption padding-left">
-                                <div class="country country1">
-                                    <h3>Best Tours</h3>
-                                    <h4><a href="tour-details.html">Hà Tĩnh, Hà Tĩnh</a></h4>
-                                    <p>Travel agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the velit.</p>
-                                    <div class="row tour-list">
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Thiên Cầm</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Đồng Lộc</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Venice</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Can Lộc</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hồng Lĩnh</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Parma</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="border-2">
-                                    <div class="info-wrapper">
-                                        <div class="more"><a href="tour-details.html" class="link-btn" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
-                                        <div class="butn-dark"> <a href="#" data-scroll-nav="1"><span>Book Now</span></a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2">
-                            <figure><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/france2.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption padding-left">
-                                <div class="country country2">
-                                    <h3>Best Tours</h3>
-                                    <h4><a href="tour-details.html">France, Hà Tĩnh</a></h4>
-                                    <p>Spacious, bright guestrooms with tasteful furnishing, wooden floor and panoramic windows from the ceiling to the floor.</p>
-                                    <div class="row tour-list">
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Hà Tĩnh</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Kỳ Anh</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Lyon</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Bordeaux</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Marseille</a></li>
-                                                <li><i class="ti-location-pin"></i> <a href="#" class="link-btn">Cannes</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="border-2">
-                                    <div class="info-wrapper">
-                                        <div class="more"><a href="tour-details.html" class="link-btn" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
-                                        <div class="butn-dark"> <a href="#" data-scroll-nav="1"><span>Book Now</span></a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner Tour Video -->
-    <section class="dynamic-video-wrapper" data-overlay-dark="3">
-        <video width="100%" height="100%" autoplay="autoplay" muted="" preload="auto" loop="loop">
-            <source src="#" type="video/mp4">
-        </video>
-        <div class="wrap-content v-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        
-                        <h1>Costa Victoria Cochin</h1>
-                        <h4><i class="ti-location-pin"></i> Thiên Cầm &nbsp;&nbsp; <i class="ti-timer"></i> 4 Ngày + 3 Nights</h4>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Destination 1 -->
-    <section class="destination1 section-padding bg-lightnav">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle">Top Destination</div>
-                    <div class="section-title">Popular <span>Destination</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>6 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="#0">15% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> France</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>10 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="tours2.html">7 Tours</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>4 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""> </div> <span class="category"><a href="#0">25% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>3 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" alt=""></div> <span class="category"><a href="#0">7 Tours</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/04_destination_destination_ke_go_lake.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>6 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" alt=""></div> <span class="category"><a href="#0">15% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> France</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>10 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" alt=""></div> <span class="category"><a href="tours2.html">7 Tours</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" alt=""></div> <span class="category"><a href="#0">New</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>4 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" alt=""> </div> <span class="category"><a href="#0">25% OFF</a></span>
-                            <div class="con">
-                                <h5><a href="tour-details.html"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>3 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"><img src="../assets/shared-images/23_culture_traditional_market_hatinh.png" alt=""></div> <span class="category"><a href="#0">7 Tours</a></span>
-                            <div class="con">
-                                <h5><a href="#0"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
-                                <div class="line"></div>
-                                <div class="row facilities">
-                                    <div class="col col-md-8">
-                                        <p>7 Tour</p>
-                                    </div>
-                                    <div class="col col-md-4 text-right">
-                                        <div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Blog -->
-    <section class="blog section-padding bg-navy">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Travel Blog</span></div>
-                    <div class="section-title"><span>Travel</span> Experience</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/07_experience_experience_local_seafood.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>10</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Travel</a>
-                                </span>
-                                <h5><a href="post.html">5 things you can not miss in Miami</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>15</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tours</a>
-                                </span>
-                                <h5><a href="post.html">Family Adventure Tours for Teens &amp; Kids</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>18</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tours</a>
-                                </span>
-                                <h5><a href="post.html">Small group tours with flights from the USA</a></h5>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/22_experience_seafood_table_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>02</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Travel</a>
-                                </span>
-                                <h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/44_experience_seafood_dinner_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>04</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tours</a>
-                                </span>
-                                <h5><a href="post.html">Most Popular Yacht Charter Routes</a></h5>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/50_culture_fresh_local_market.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>06</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Travel</a>
-                                </span>
-                                <h5><a href="post.html">Tips Towards a Flawless Honeymoon</a></h5>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/07_experience_experience_local_seafood.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>10</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Travel</a>
-                                </span>
-                                <h5><a href="post.html">5 things you can not miss in Miami</a></h5>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>15</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tours</a>
-                                </span>
-                                <h5><a href="post.html">Family Adventure Tours for Teens &amp; Kids</a></h5>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>18</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tours</a>
-                                </span>
-                                <h5><a href="post.html">Small group tours with flights from the USA</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/22_experience_seafood_table_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>02</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Travel</a>
-                                </span>
-                                <h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/44_experience_seafood_dinner_beach.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>04</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Tours</a>
-                                </span>
-                                <h5><a href="post.html">Most Popular Yacht Charter Routes</a></h5>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
-                            <div class="position-re o-hidden"> <img src="../assets/shared-images/50_culture_fresh_local_market.png" alt="">
-                                <div class="date">
-                                    <a href="post.html"> <span>Dec</span> <i>06</i> </a>
-                                </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="blog.html">Travel</a>
-                                </span>
-                                <h5><a href="post.html">Tips Towards a Flawless Honeymoon</a></h5>
-                            </div>
-                        </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="background bg-img bg-fixed section-padding pb-0" data-background="../assets/shared-images/33_destination_fishing_harbor_sunset.png" data-overlay-dark="5" style="background-image: url(&quot;../assets/shared-images/02_hero_hero_coastal_beach_morning.png&quot;);">
-            <div class="container">
-                <div class="row">
-                    <!-- Call Now  -->
-                    <div class="col-md-5 mb-30 mt-30">
-                        <p><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></p>
-                        <h5>We Provide Top Destinations Expecially For You Book Now and Enjoy!</h5>
-                        <div class="phone-call mb-10">
-                            <div class="icon color-1"><span class="flaticon-phone-call"></span></div>
-                            <div class="text">
-                                <p class="color-1">Call Now</p> <a class="color-1" href="tel:855-333-4444">855 333 4444</a>
-                            </div>
-                        </div>
-                        <p><i class="ti-check"></i><small>Call us, it's toll-free.</small></p>
-                    </div>
-                    <!-- Booking From -->
-                    <div class="col-md-5 offset-md-2">
-                        <div class="testimonials-box">
-                            <div class="head-box">
-                                <h6>Testimonials</h6>
-                                <h4>Travelers Reviews</h4>
-                            </div>
-                            <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                                
-                                
-                                
-                            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-782px, 0px, 0px); transition: all; width: 2737px;"><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Emily Brown</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Olivia Martin</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item active" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Nolan White</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Emily Brown</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Olivia Martin</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Nolan White</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
-                                    <p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png" alt=""> </div>
-                                        <div class="cont">
-                                            <div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
-                                            <h6>Emily Brown</h6> <span>Guest review</span>
-                                        </div>
-                                    </div>
-                                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Clients -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-                        
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-838px, 0px, 0px); transition: 0.25s; width: 2013px;"><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png" alt=""></a>
-                        </div></div><div class="owl-item" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png" alt=""></a>
-                        </div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png" alt=""></a>
-                        </div></div><div class="owl-item cloned active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png" alt=""></a>
-                        </div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
-                            <a href="#0"><img src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png" alt=""></a>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span class="lnr ti-angle-left"></span></button><button type="button" role="presentation" class="owl-next"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer clearfix">
-        <div class="container">
-            <!-- First footer -->
-            <div class="first-footer">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="links dark footer-contact-links">
-                            <div class="footer-contact-links-wrapper">
-                                <div class="footer-contact-link-wrapper">
-                                    <div class="image-wrapper footer-contact-link-icon">
-                                        <div class="icon-footer"> <i class="flaticon-phone-call"></i> </div>
-                                    </div>
-                                    <div class="footer-contact-link-content">
-                                        <h6>Gọi cho chúng tôi</h6>
-                                        <p>+84 239 385 6789</p>
-                                    </div>
-                                </div>
-                                <div class="footer-contact-links-divider"></div>
-                                <div class="footer-contact-link-wrapper">
-                                    <div class="image-wrapper footer-contact-link-icon">
-                                        <div class="icon-footer"> <i class="flaticon-message"></i> </div>
-                                    </div>
-                                    <div class="footer-contact-link-content">
-                                        <h6>Gửi email</h6>
-                                        <p>contact@travol.demo</p>
-                                    </div>
-                                </div>
-                                <div class="footer-contact-links-divider"></div>
-                                <div class="footer-contact-link-wrapper">
-                                    <div class="image-wrapper footer-contact-link-icon">
-                                        <div class="icon-footer"> <i class="flaticon-placeholder"></i> </div>
-                                    </div>
-                                    <div class="footer-contact-link-content">
-                                        <h6>Địa chỉ</h6>
-                                        <p>Thiên Cầm, Hà Tĩnh</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Second footer -->
-            <div class="second-footer">
-                <div class="row">
-                    <!-- about & social icons -->
-                    <div class="col-md-4 widget-area">
-                        <div class="widget clearfix">
-                            <div class="footer-logo"> <img class="img-fluid" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png" alt=""> </div>
-                            <div class="widget-text">
-                                <p>Công ty du lịch địa phương Hà Tĩnh — tour thiên nhiên, văn hóa và ven biển cho gia đình và nhóm bạn.</p>
-                                <div class="social-icons">
-                                    <ul class="list-inline">
-                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="#"><i class="ti-twitter"></i></a></li>
-                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ti-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- quick links -->
-                    <div class="col-md-3 offset-md-1 widget-area">
-                        <div class="widget clearfix usful-links">
-                            <h3 class="widget-title">Liên kết nhanh</h3>
-                            <ul>
-                                <li><a href="about.html">Giới thiệu</a></li>
-                                <li><a href="tours.html">Tours</a></li>
-                                <li><a href="destination.html">Điểm đến</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- subscribe -->
-                    <div class="col-md-4 widget-area">
-                        <div class="widget clearfix">
-                            <h3 class="widget-title">Đăng ký nhận tin</h3>
-                            <p>Nhận thông tin tour mới và ưu đãi đặc biệt từ chúng tôi.</p>
-                            <div class="widget-newsletter">
-                                <form action="#" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
-                                    <input type="email" placeholder="Địa chỉ email" required="">
-                                    <button type="submit">Gửi</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Bottom footer -->
-            <div class="bottom-footer-text">
-                <div class="row copyright">
-                    <div class="col-md-12">
-                        <p class="mb-0">©2026 <a href="#"></a>. Bản demo concept — Hà Tĩnh.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- jQuery -->
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-3.6.3.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/modernizr-2.6.2.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.isotope.v3.0.2.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/pace.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/popper.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/bootstrap.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/scrollIt.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.waypoints.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/owl.carousel.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.stellar.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.magnific-popup.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/YouTubePopUp.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/select2.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/datepicker.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.counterup.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/smooth-scroll.min.js"></script>
-    <script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/custom.js"></script>
-
+<!-- Preloader -->
+<div class="preloader-bg" style="display: none;"></div>
+<div id="preloader" style="display: none;">
+<div id="preloader-status">
+<div class="preloader-position loader"> <span></span> </div>
+</div>
+</div>
+<!-- Progress scroll totop -->
+<div class="progress-wrap cursor-pointer">
+<svg class="progress-circle svg-content" height="100%" viewbox="-1 -1 102 102" width="100%">
+<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+</svg>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<!-- Logo -->
+<div class="logo-wrapper">
+<a class="logo" href="index.html"> <img alt="" class="logo-img" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png"/> </a>
+<!-- <a class="logo" href="index.html"> <h2>TRAVOL <span>explore the world</span></h2> </a> -->
+</div>
+<!-- Button -->
+<button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+<!-- Menu -->
+<div class="collapse navbar-collapse" id="navbar">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item dropdown"> <a aria-expanded="false" class="nav-link active dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="#" role="button">Trang chủ <i class="ti-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="index.html"><span>Home Layout 1</span></a></li>
+<li><a class="dropdown-item active" href="index2.html"><span>Home Layout 2</span></a></li>
+<li><a class="dropdown-item" href="index3.html"><span>Home Layout 3</span></a></li>
+<li><a class="dropdown-item" href="index4.html"><span>Home Layout 4</span></a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
+<li class="nav-item dropdown"> <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="#" role="button">Tour <i class="ti-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="tours.html"><span>Tours 1</span></a></li>
+<li><a class="dropdown-item" href="tours2.html"><span>Tours 2</span></a></li>
+<li><a class="dropdown-item" href="tours3.html"><span>Tours 3</span></a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="destination.html">Điểm đến</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Thư viện</a></li>
+<li class="nav-item dropdown"> <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="#" role="button">Pages <i class="ti-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="tour-details.html"><span>Tour Details</span></a></li>
+<li><a class="dropdown-item" href="tour-search.html"><span>Tour Search</span></a></li>
+<li><a class="dropdown-item" href="post.html"><span>Post Single</span></a></li>
+<li class="dropdown-submenu dropdown"> <a aria-expanded="false" class="dropdown-item dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="#"><span>Other Pages <i class="ti-angle-right"></i></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="coming-soon.html"><span>Coming Soon</span></a></li>
+<li><a class="dropdown-item" href="404.html"><span>404 Page</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown"> <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="#" role="button">Blog <i class="ti-angle-down"></i></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="blog.html"><span>Blog 01</span></a></li>
+<li><a class="dropdown-item" href="blog2.html"><span>Blog 02</span></a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Slider -->
+<header class="header slider-fade">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5760px, 0px, 0px); transition: all; width: 10080px;"><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/02_hero_hero_coastal_beach_morning.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Let's travel the world with us</h4>
+<h1>Explore Hà Tĩnh With <span>Travol</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/31_destination_coastal_road_overlook.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Let's travel the world with us</h4>
+<h1><span>Discover</span> the world with our guide</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/33_destination_fishing_harbor_sunset.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4 class="">Let's travel the world with us</h4>
+<h1 class="">Explore The World With <span class="">Travol</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/37_hero_lake_boat_landscape.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4 class="">Let's travel the world with us</h4>
+<h1 class="">Explore Hà Tĩnh With <span class="">Travol</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/41_hero_quiet_lake_sunrise.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4 class="animated fadeInUp">Let's travel the world with us</h4>
+<h1 class="animated fadeInUp"><span class="animated fadeInUp">Discover</span> the world with our guide</h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/53_destination_coastal_harbor_golden_hour.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Let's travel the world with us</h4>
+<h1>Explore The World With <span>Travol</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1440px;"><div class="text-center item bg-img" data-background="../assets/shared-images/02_hero_hero_coastal_beach_morning.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="v-middle caption">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h4>Let's travel the world with us</h4>
+<h1>Explore Hà Tĩnh With <span>Travol</span></h1>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><i aria-hidden="true" class="ti-angle-left"></i></button><button class="owl-next" role="presentation" type="button"><i aria-hidden="true" class="ti-angle-right"></i></button></div><div class="owl-dots"><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot active" role="button"><span></span></button></div></div>
+</header>
+<!-- Tour Search -->
+<div class="booking-wrapper">
+<div class="container">
+<div class="tour-inner clearfix form-inline justify-content-center">
+<form action="tours.html" class="form1 clearfix" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
+<div class="col1 c1">
+<div class="input2_wrapper">
+<label>Where to?</label>
+<div class="input2_inner">
+<input class="form-control input" placeholder="Where to?" type="text"/>
+</div>
+</div>
+</div>
+<div class="col1 c2">
+<div class="select1_wrapper">
+<label>Điểm đến</label>
+<div class="select1_inner">
+<select aria-hidden="true" class="select2 select select2-hidden-accessible" data-select2-id="1" style="width: 100%" tabindex="-1">
+<option data-select2-id="3" value="0">Điểm đến</option>
+<option value="1">Kẻ Gỗ</option>
+<option value="2">Thiên Cầm</option>
+<option value="3">Thiên Cầm</option>
+<option value="4">Hà Tĩnh</option>
+<option value="5">Hà Tĩnh</option>
+</select><span class="select2 select2-container select2-container--default" data-select2-id="2" dir="ltr" style="width: 100%;"><span class="selection"><span aria-expanded="false" aria-haspopup="true" aria-labelledby="select2-tlck-container" class="select2-selection select2-selection--single" role="combobox" tabindex="0"><span aria-readonly="true" class="select2-selection__rendered" id="select2-tlck-container" role="textbox" title="Destinations">Điểm đến</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span aria-hidden="true" class="dropdown-wrapper"></span></span>
+</div>
+</div>
+</div>
+<div class="col1 c4">
+<div class="select1_wrapper">
+<label>Duration</label>
+<div class="select1_inner">
+<select aria-hidden="true" class="select2 select select2-hidden-accessible" data-select2-id="4" style="width: 100%" tabindex="-1">
+<option data-select2-id="6" value="0">Duration</option>
+<option value="1">1 Day Tour</option>
+<option value="2">2-4 Ngày Tour</option>
+<option value="3">5-7 Ngày Tour</option>
+<option value="4">7+ Days Tour</option>
+</select><span class="select2 select2-container select2-container--default" data-select2-id="5" dir="ltr" style="width: 100%;"><span class="selection"><span aria-expanded="false" aria-haspopup="true" aria-labelledby="select2-h9ir-container" class="select2-selection select2-selection--single" role="combobox" tabindex="0"><span aria-readonly="true" class="select2-selection__rendered" id="select2-h9ir-container" role="textbox" title="Duration">Duration</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span aria-hidden="true" class="dropdown-wrapper"></span></span>
+</div>
+</div>
+</div>
+<div class="col1 c5">
+<button class="btn-form1-submit" type="submit"><i class="ti-search"></i> Find Now</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- About -->
+<section class="about cover section-padding">
+<div class="container">
+<div class="row">
+<div class="col-md-6 mb-30 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+<div class="section-subtitle">The best travel agency</div>
+<div class="section-title">Discover the <span>world</span> with our guide</div>
+<p>You can choose any country with good tourism. Agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec id velit ac arcu posuere blane.</p>
+<p>Hotel ut nisl quam nestibulum ac quam nec odio elementum ceisue the miss varius natoque penatibus et magnis dis parturient monte.</p>
+<ul class="list-unstyled about-list mb-30">
+<li>
+<div class="about-list-icon"> <span class="ti-check"></span> </div>
+<div class="about-list-text">
+<p>20 Years of Experience</p>
+</div>
+</li>
+<li>
+<div class="about-list-icon"> <span class="ti-check"></span> </div>
+<div class="about-list-text">
+<p>150+ Tour Destinations</p>
+</div>
+</li>
+</ul>
+<!-- Info -->
+<div class="phone-call mb-30">
+<div class="icon"><span class="flaticon-phone-call"></span></div>
+<div class="text">
+<p>For information</p> <a href="tel:855-333-4444">855 333 4444</a>
+</div>
+</div>
+</div>
+<div class="col-md-5 offset-md-1 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+<div class="img-exp">
+<div class="about-img">
+<div class="img"> <img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/about.jpeg"/> </div>
+</div>
+<div id="circle">
+<svg enable-background="new 0 0 300 300" height="300px" version="1.1" viewbox="0 0 300 300" width="300px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<defs>
+<path d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " id="circlePath"></path>
+</defs>
+<circle cx="150" cy="100" fill="none" r="75"></circle>
+<g>
+<use fill="none" xlink:href="#circlePath"></use>
+<text fill="#0f2454">
+<textpath xlink:href="#circlePath"> . travel agency . travel agency </textpath>
+</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tours 3 -->
+<div class="tours3 section-padding bg-lightnav">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle"><span>Choose your place</span></div>
+<div class="section-title">Popular <span>Tours</span></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="square-flip">
+<div class="square bg-img" data-background="../assets/shared-images/04_destination_destination_ke_go_lake.png" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'> <span class="category"><a href="#0">Hà Tĩnh</a></span>
+<div class="square-container d-flex align-items-end justify-content-end">
+<div class="box-title">
+<h4>Hà Tĩnh</h4>
+<h6>$1.500 / per person</h6>
+</div>
+</div>
+<div class="flip-overlay"></div>
+</div>
+<div class="square2 bg-white">
+<div class="square-container2">
+<h4>Hà Tĩnh, Hà Tĩnh</h4>
+<h6>$1.500 / per person</h6>
+<p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
+<div class="row tour-list mb-30">
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-time"></i> 3 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+</ul>
+</div>
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-location-pin"></i> Hà Tĩnh</li>
+<li><i class="ti-face-smile"></i> 9.5 Superb</li>
+</ul>
+</div>
+</div>
+<div class="btn-line"><a href="tour-details.html">Tour details</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="square-flip">
+<div class="square bg-img" data-background="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="square-container d-flex align-items-end justify-content-end">
+<div class="box-title">
+<h4>Thiên Cầm</h4>
+<h6>$2.500 / per person</h6>
+</div>
+</div>
+<div class="flip-overlay"></div>
+</div>
+<div class="square2 bg-white">
+<div class="square-container2">
+<h4>Thiên Cầm</h4>
+<h6>$2.500 / per person</h6>
+<p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
+<div class="row tour-list mb-30">
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-time"></i> 5 Ngày</li>
+<li><i class="ti-user"></i> 7+</li>
+</ul>
+</div>
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-location-pin"></i> Thiên Cầm</li>
+<li><i class="ti-face-smile"></i> 9.8 Superb</li>
+</ul>
+</div>
+</div>
+<div class="btn-line"><a href="tour-details.html">Tour details</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="square-flip">
+<div class="square bg-img" data-background="../assets/shared-images/06_destination_destination_dong_loc_memorial.png" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="square-container d-flex align-items-end justify-content-end">
+<div class="box-title">
+<h4>Zakynthos</h4>
+<h6>$3.000 / per person</h6>
+</div>
+</div>
+<div class="flip-overlay"></div>
+</div>
+<div class="square2 bg-white">
+<div class="square-container2">
+<h4>Zakynthos</h4>
+<h6>$3.000 / per person</h6>
+<p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
+<div class="row tour-list mb-30">
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-time"></i> 10 Ngày</li>
+<li><i class="ti-user"></i> 8+</li>
+</ul>
+</div>
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-location-pin"></i> Kẻ Gỗ</li>
+<li><i class="ti-face-smile"></i> 9.5 Superb</li>
+</ul>
+</div>
+</div>
+<div class="btn-line"><a href="tour-details.html">Tour details</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="square-flip">
+<div class="square bg-img" data-background="../assets/shared-images/12_destination_coastal_road_mountain_sea.png" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="square-container d-flex align-items-end justify-content-end">
+<div class="box-title">
+<h4>France</h4>
+<h6>$2.500 / per person</h6>
+</div>
+</div>
+<div class="flip-overlay"></div>
+</div>
+<div class="square2 bg-white">
+<div class="square-container2">
+<h4>France</h4>
+<h6>$2.500 / per person</h6>
+<p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
+<div class="row tour-list mb-30">
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-time"></i> 3 Ngày</li>
+<li><i class="ti-user"></i> 10+</li>
+</ul>
+</div>
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-location-pin"></i> Hà Tĩnh</li>
+<li><i class="ti-face-smile"></i> 9.5 Superb</li>
+</ul>
+</div>
+</div>
+<div class="btn-line"><a href="tour-details.html">Tour details</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="square-flip">
+<div class="square bg-img" data-background="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="square-container d-flex align-items-end justify-content-end">
+<div class="box-title">
+<h4>Hà Tĩnh</h4>
+<h6>$1.500 / per person</h6>
+</div>
+</div>
+<div class="flip-overlay"></div>
+</div>
+<div class="square2 bg-white">
+<div class="square-container2">
+<h4>Hà Tĩnh</h4>
+<h6>$1.500 / per person</h6>
+<p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
+<div class="row tour-list mb-30">
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-time"></i> 5 Ngày</li>
+<li><i class="ti-user"></i> 9+</li>
+</ul>
+</div>
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-location-pin"></i> Hà Tĩnh</li>
+<li><i class="ti-face-smile"></i> 9.3 Superb</li>
+</ul>
+</div>
+</div>
+<div class="btn-line"><a href="tour-details.html">Tour details</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="square-flip">
+<div class="square bg-img" data-background="../assets/shared-images/23_culture_traditional_market_hatinh.png" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="square-container d-flex align-items-end justify-content-end">
+<div class="box-title">
+<h4>Hà Tĩnh</h4>
+<h6>$1.300 / per person</h6>
+</div>
+</div>
+<div class="flip-overlay"></div>
+</div>
+<div class="square2 bg-white">
+<div class="square-container2">
+<h4>Hà Tĩnh</h4>
+<h6>$1.300 / per person</h6>
+<p>Travel non lorem ac erat susce bibendum nulla facilisi. Sedeuter nunc voluat miss conse viventa amet vestibulum.</p>
+<div class="row tour-list mb-30">
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-time"></i> 4 Ngày</li>
+<li><i class="ti-user"></i> 6+</li>
+</ul>
+</div>
+<div class="col col-md-6">
+<ul>
+<li><i class="ti-location-pin"></i> Hà Tĩnh</li>
+<li><i class="ti-face-smile"></i> 8.5 Superb</li>
+</ul>
+</div>
+</div>
+<div class="btn-line"><a href="tour-details.html">Tour details</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Numbers -->
+<section class="numbers">
+<div class="section-padding bg-img bg-fixed back-position-center" data-background="../assets/shared-images/31_destination_coastal_road_overlook.png" data-overlay-dark="6" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="front flaticon-air-freight"></i>
+<i class="back flaticon-air-freight"></i>
+</span>
+<h3 class="count">600</h3>
+<h6>Flight Booking</h6>
+</div>
+</div>
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="font flaticon-house"></i>
+<i class="back flaticon-house"></i>
+</span>
+<h3 class="count">250</h3>
+<h6>Amazing Tour</h6>
+</div>
+</div>
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="front flaticon-ship"></i>
+<i class="back flaticon-ship"></i>
+</span>
+<h3 class="count">100</h3>
+<h6>Cruises Booking</h6>
+</div>
+</div>
+<div class="col-md-3">
+<div class="item text-center"> <span class="icon">
+<i class="front flaticon-tag"></i>
+<i class="back flaticon-tag"></i>
+</span>
+<h3 class="count">100</h3>
+<h6>Ticket Booking</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hà Tĩnh &  France Tours 2 -->
+<section class="tours2 section-padding bg-lightnav" data-scroll-index="1">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle"><span>Most Popular</span></div>
+<div class="section-title">Travel <span>Countries</span></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2292px, 0px, 0px); transition: all; width: 6876px;"><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2 left">
+<figure><img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/rome1.jpg"/></figure>
+<div class="caption padding-left">
+<div class="country country1">
+<h3>Best Tours</h3>
+<h4><a href="tour-details.html">Hà Tĩnh, Hà Tĩnh</a></h4>
+<p>Travel agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the velit.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Thiên Cầm</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Đồng Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Venice</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Can Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hồng Lĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Parma</a></li>
+</ul>
+</div>
+</div>
+<hr class="border-2"/>
+<div class="info-wrapper">
+<div class="more"><a class="link-btn" href="tour-details.html" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
+<div class="butn-dark"> <a data-scroll-nav="1" href="#"><span>Book Now</span></a> </div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2">
+<figure><img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/france2.jpg"/></figure>
+<div class="caption padding-left">
+<div class="country country2">
+<h3>Best Tours</h3>
+<h4><a href="tour-details.html">France, Hà Tĩnh</a></h4>
+<p>Spacious, bright guestrooms with tasteful furnishing, wooden floor and panoramic windows from the ceiling to the floor.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hà Tĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kỳ Anh</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Lyon</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Bordeaux</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Marseille</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Cannes</a></li>
+</ul>
+</div>
+</div>
+<hr class="border-2"/>
+<div class="info-wrapper">
+<div class="more"><a class="link-btn" href="tour-details.html" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
+<div class="butn-dark"> <a data-scroll-nav="1" href="#"><span>Book Now</span></a> </div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 1116px; margin-right: 30px;"><div class="tours2 left">
+<figure><img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/rome1.jpg"/></figure>
+<div class="caption padding-left">
+<div class="country country1">
+<h3>Best Tours</h3>
+<h4><a href="tour-details.html">Hà Tĩnh, Hà Tĩnh</a></h4>
+<p>Travel agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the velit.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Thiên Cầm</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Đồng Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Venice</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Can Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hồng Lĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Parma</a></li>
+</ul>
+</div>
+</div>
+<hr class="border-2"/>
+<div class="info-wrapper">
+<div class="more"><a class="link-btn" href="tour-details.html" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
+<div class="butn-dark"> <a data-scroll-nav="1" href="#"><span>Book Now</span></a> </div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1116px; margin-right: 30px;"><div class="tours2">
+<figure><img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/france2.jpg"/></figure>
+<div class="caption padding-left">
+<div class="country country2">
+<h3>Best Tours</h3>
+<h4><a href="tour-details.html">France, Hà Tĩnh</a></h4>
+<p>Spacious, bright guestrooms with tasteful furnishing, wooden floor and panoramic windows from the ceiling to the floor.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hà Tĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kỳ Anh</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Lyon</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Bordeaux</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Marseille</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Cannes</a></li>
+</ul>
+</div>
+</div>
+<hr class="border-2"/>
+<div class="info-wrapper">
+<div class="more"><a class="link-btn" href="tour-details.html" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
+<div class="butn-dark"> <a data-scroll-nav="1" href="#"><span>Book Now</span></a> </div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2 left">
+<figure><img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/rome1.jpg"/></figure>
+<div class="caption padding-left">
+<div class="country country1">
+<h3>Best Tours</h3>
+<h4><a href="tour-details.html">Hà Tĩnh, Hà Tĩnh</a></h4>
+<p>Travel agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the velit.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Thiên Cầm</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Đồng Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Venice</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Can Lộc</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hồng Lĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Parma</a></li>
+</ul>
+</div>
+</div>
+<hr class="border-2"/>
+<div class="info-wrapper">
+<div class="more"><a class="link-btn" href="tour-details.html" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
+<div class="butn-dark"> <a data-scroll-nav="1" href="#"><span>Book Now</span></a> </div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1116px; margin-right: 30px;"><div class="tours2">
+<figure><img alt="" class="img-fluid auto-crop-image" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/tours/france2.jpg"/></figure>
+<div class="caption padding-left">
+<div class="country country2">
+<h3>Best Tours</h3>
+<h4><a href="tour-details.html">France, Hà Tĩnh</a></h4>
+<p>Spacious, bright guestrooms with tasteful furnishing, wooden floor and panoramic windows from the ceiling to the floor.</p>
+<div class="row tour-list">
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Hà Tĩnh</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Kỳ Anh</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Lyon</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Bordeaux</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Marseille</a></li>
+<li><i class="ti-location-pin"></i> <a class="link-btn" href="#">Cannes</a></li>
+</ul>
+</div>
+</div>
+<hr class="border-2"/>
+<div class="info-wrapper">
+<div class="more"><a class="link-btn" href="tour-details.html" tabindex="0">View all places <i class="ti-arrow-right"></i></a></div>
+<div class="butn-dark"> <a data-scroll-nav="1" href="#"><span>Book Now</span></a> </div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Banner Tour Video -->
+<section class="dynamic-video-wrapper" data-overlay-dark="3">
+<video autoplay="autoplay" height="100%" loop="loop" muted="" preload="auto" width="100%">
+<source src="#" type="video/mp4"/>
+</video>
+<div class="wrap-content v-middle">
+<div class="container">
+<div class="row">
+<div class="col-md-8 offset-md-2">
+<h1>Costa Victoria Cochin</h1>
+<h4><i class="ti-location-pin"></i> Thiên Cầm    <i class="ti-timer"></i> 4 Ngày + 3 Nights</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Destination 1 -->
+<section class="destination1 section-padding bg-lightnav">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle">Top Destination</div>
+<div class="section-title">Popular <span>Destination</span></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>6 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="#0">15% OFF</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> France</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>10 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="tours2.html">7 Tours</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>4 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/> </div> <span class="category"><a href="#0">25% OFF</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>3 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/></div> <span class="category"><a href="#0">7 Tours</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/04_destination_destination_ke_go_lake.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Kẻ Gỗ</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>6 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/05_destination_destination_huong_tich_pagoda.png"/></div> <span class="category"><a href="#0">15% OFF</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> France</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>10 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/06_destination_destination_dong_loc_memorial.png"/></div> <span class="category"><a href="tours2.html">7 Tours</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Cảng cá</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/12_destination_coastal_road_mountain_sea.png"/></div> <span class="category"><a href="#0">New</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Thiên Cầm</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>4 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/13_destination_fishing_boats_sunset_bay.png"/> </div> <span class="category"><a href="#0">25% OFF</a></span>
+<div class="con">
+<h5><a href="tour-details.html"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>3 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"><img alt="" class="auto-crop-image" src="../assets/shared-images/23_culture_traditional_market_hatinh.png"/></div> <span class="category"><a href="#0">7 Tours</a></span>
+<div class="con">
+<h5><a href="#0"><i class="ti-location-pin"></i> Hà Tĩnh</a></h5>
+<div class="line"></div>
+<div class="row facilities">
+<div class="col col-md-8">
+<p>7 Tour</p>
+</div>
+<div class="col col-md-4 text-right">
+<div class="permalink"><a href="tour-details.html">Explore <i class="ti-arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog -->
+<section class="blog section-padding bg-navy">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="section-subtitle"><span>Travel Blog</span></div>
+<div class="section-title"><span>Travel</span> Experience</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1146px, 0px, 0px); transition: all; width: 4584px;"><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/07_experience_experience_local_seafood.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>10</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Travel</a>
+</span>
+<h5><a href="post.html">5 things you can not miss in Miami</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>15</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tours</a>
+</span>
+<h5><a href="post.html">Family Adventure Tours for Teens &amp; Kids</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>18</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tours</a>
+</span>
+<h5><a href="post.html">Small group tours with flights from the USA</a></h5>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/22_experience_seafood_table_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>02</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Travel</a>
+</span>
+<h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/44_experience_seafood_dinner_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>04</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tours</a>
+</span>
+<h5><a href="post.html">Most Popular Yacht Charter Routes</a></h5>
+</div>
+</div></div><div class="owl-item active" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/50_culture_fresh_local_market.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>06</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Travel</a>
+</span>
+<h5><a href="post.html">Tips Towards a Flawless Honeymoon</a></h5>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/07_experience_experience_local_seafood.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>10</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Travel</a>
+</span>
+<h5><a href="post.html">5 things you can not miss in Miami</a></h5>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/10_experience_experience_ke_go_boat_tour.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>15</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tours</a>
+</span>
+<h5><a href="post.html">Family Adventure Tours for Teens &amp; Kids</a></h5>
+</div>
+</div></div><div class="owl-item" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/21_experience_kayak_lake_mountain_forest.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>18</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tours</a>
+</span>
+<h5><a href="post.html">Small group tours with flights from the USA</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/22_experience_seafood_table_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>02</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Travel</a>
+</span>
+<h5><a href="post.html">Kinh nghiệm du lịch Kẻ Gỗ dành cho người lần đầu</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/44_experience_seafood_dinner_beach.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>04</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Tours</a>
+</span>
+<h5><a href="post.html">Most Popular Yacht Charter Routes</a></h5>
+</div>
+</div></div><div class="owl-item cloned" style="width: 352px; margin-right: 30px;"><div class="item">
+<div class="position-re o-hidden"> <img alt="" class="auto-crop-image" src="../assets/shared-images/50_culture_fresh_local_market.png"/>
+<div class="date">
+<a href="post.html"> <span>Dec</span> <i>06</i> </a>
+</div>
+</div>
+<div class="con"> <span class="category">
+<a href="blog.html">Travel</a>
+</span>
+<h5><a href="post.html">Tips Towards a Flawless Honeymoon</a></h5>
+</div>
+</div></div></div></div><div class="owl-nav"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="testimonials">
+<div class="background bg-img bg-fixed section-padding pb-0" data-background="../assets/shared-images/33_destination_fishing_harbor_sunset.png" data-overlay-dark="5" style='background-image: url("../assets/shared-images/02_hero_hero_coastal_beach_morning.png");'>
+<div class="container">
+<div class="row">
+<!-- Call Now  -->
+<div class="col-md-5 mb-30 mt-30">
+<p><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></p>
+<h5>We Provide Top Destinations Expecially For You Book Now and Enjoy!</h5>
+<div class="phone-call mb-10">
+<div class="icon color-1"><span class="flaticon-phone-call"></span></div>
+<div class="text">
+<p class="color-1">Call Now</p> <a class="color-1" href="tel:855-333-4444">855 333 4444</a>
+</div>
+</div>
+<p><i class="ti-check"></i><small>Call us, it's toll-free.</small></p>
+</div>
+<!-- Booking From -->
+<div class="col-md-5 offset-md-2">
+<div class="testimonials-box">
+<div class="head-box">
+<h6>Testimonials</h6>
+<h4>Travelers Reviews</h4>
+</div>
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-782px, 0px, 0px); transition: all; width: 2737px;"><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Emily Brown</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Olivia Martin</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Nolan White</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Emily Brown</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/54_lifestyle_friends_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Olivia Martin</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/14_lifestyle_group_travelers_beach_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Nolan White</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 361px; margin-right: 30px;"><div class="item">
+<p>Travel dapibus asue metus the nec feusiate era the miss hendreri the vemante the lemon insan toleon nectan feugiat erat hendrerit necuis vesaire tours inilla neca ine the sene miss habitan.</p>
+<div class="info">
+<div class="author-img"> <img alt="" src="../assets/shared-images/27_lifestyle_couple_beach_walk_sunset.png"/> </div>
+<div class="cont">
+<div class="rating"> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> <i class="star active"></i> </div>
+<h6>Emily Brown</h6> <span>Guest review</span>
+</div>
+</div>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots"><button class="owl-dot active" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button><button class="owl-dot" role="button"><span></span></button></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Clients -->
+<section class="clients">
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<div class="owl-carousel owl-theme owl-loaded owl-drag">
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-838px, 0px, 0px); transition: 0.25s; width: 2013px;"><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png"/></a>
+</div></div><div class="owl-item" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png"/></a>
+</div></div><div class="owl-item active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png"/></a>
+</div></div><div class="owl-item cloned active" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/1.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/2.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/3.png"/></a>
+</div></div><div class="owl-item cloned" style="width: 137.75px; margin-right: 30px;"><div class="clients-logo">
+<a href="#0"><img alt="" src="assets/duruthemes.com/demo/html/travol/multipage-slider/img/clients/4.png"/></a>
+</div></div></div></div><div class="owl-nav disabled"><button class="owl-prev" role="presentation" type="button"><span class="lnr ti-angle-left"></span></button><button class="owl-next" role="presentation" type="button"><span class="lnr ti-angle-right"></span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer clearfix">
+<div class="container">
+<!-- First footer -->
+<div class="first-footer">
+<div class="row">
+<div class="col-md-12">
+<div class="links dark footer-contact-links">
+<div class="footer-contact-links-wrapper">
+<div class="footer-contact-link-wrapper">
+<div class="image-wrapper footer-contact-link-icon">
+<div class="icon-footer"> <i class="flaticon-phone-call"></i> </div>
+</div>
+<div class="footer-contact-link-content">
+<h6>Gọi cho chúng tôi</h6>
+<p>+84 239 385 6789</p>
+</div>
+</div>
+<div class="footer-contact-links-divider"></div>
+<div class="footer-contact-link-wrapper">
+<div class="image-wrapper footer-contact-link-icon">
+<div class="icon-footer"> <i class="flaticon-message"></i> </div>
+</div>
+<div class="footer-contact-link-content">
+<h6>Gửi email</h6>
+<p>contact@travol.demo</p>
+</div>
+</div>
+<div class="footer-contact-links-divider"></div>
+<div class="footer-contact-link-wrapper">
+<div class="image-wrapper footer-contact-link-icon">
+<div class="icon-footer"> <i class="flaticon-placeholder"></i> </div>
+</div>
+<div class="footer-contact-link-content">
+<h6>Địa chỉ</h6>
+<p>Thiên Cầm, Hà Tĩnh</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Second footer -->
+<div class="second-footer">
+<div class="row">
+<!-- about & social icons -->
+<div class="col-md-4 widget-area">
+<div class="widget clearfix">
+<div class="footer-logo"> <img alt="" class="img-fluid" src="../assets/shared-images/01_hero_hero_thien_cam_beach_sunrise.png"/> </div>
+<div class="widget-text">
+<p>Công ty du lịch địa phương Hà Tĩnh — tour thiên nhiên, văn hóa và ven biển cho gia đình và nhóm bạn.</p>
+<div class="social-icons">
+<ul class="list-inline">
+<li><a href="#"><i class="ti-instagram"></i></a></li>
+<li><a href="#"><i class="ti-twitter"></i></a></li>
+<li><a href="#"><i class="ti-facebook"></i></a></li>
+<li><a href="#"><i class="ti-youtube"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- quick links -->
+<div class="col-md-3 offset-md-1 widget-area">
+<div class="widget clearfix usful-links">
+<h3 class="widget-title">Liên kết nhanh</h3>
+<ul>
+<li><a href="about.html">Giới thiệu</a></li>
+<li><a href="tours.html">Tours</a></li>
+<li><a href="destination.html">Điểm đến</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</div>
+</div>
+<!-- subscribe -->
+<div class="col-md-4 widget-area">
+<div class="widget clearfix">
+<h3 class="widget-title">Đăng ký nhận tin</h3>
+<p>Nhận thông tin tour mới và ưu đãi đặc biệt từ chúng tôi.</p>
+<div class="widget-newsletter">
+<form action="#" onsubmit="event.preventDefault();alert('Demo — form chưa kết nối backend.');return false;">
+<input placeholder="Địa chỉ email" required="" type="email"/>
+<button type="submit">Gửi</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom footer -->
+<div class="bottom-footer-text">
+<div class="row copyright">
+<div class="col-md-12">
+<p class="mb-0">©2026 <a href="#"></a>. Bản demo concept — Hà Tĩnh.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-3.6.3.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery-migrate-3.0.0.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/modernizr-2.6.2.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.isotope.v3.0.2.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/pace.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/popper.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/bootstrap.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/scrollIt.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.waypoints.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/owl.carousel.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.stellar.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.magnific-popup.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/YouTubePopUp.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/select2.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/datepicker.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/jquery.counterup.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/smooth-scroll.min.js"></script>
+<script src="assets/duruthemes.com/demo/html/travol/multipage-slider/js/custom.js"></script>
 </body></html>
