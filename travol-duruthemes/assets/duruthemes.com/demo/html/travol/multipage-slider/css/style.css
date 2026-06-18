@@ -4964,3 +4964,22 @@ ol.comment-list li .children li {
         margin-left: 0px;
     }
 }
+/* ========================================= */
+/* TEXT OVERFLOW & LAYOUT FIXES (POST-CRAWL) */
+/* ========================================= */
+
+.tours1 .item .con h5,
+.destination1 .item .con h5,
+.tours2 .caption h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tours1 .item .con .permalink,
+.destination1 .item .con .permalink {
+    height: auto !important;
+}
+
