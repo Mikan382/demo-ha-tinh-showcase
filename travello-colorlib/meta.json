@@ -1,0 +1,48 @@
+{
+  "source": "https://preview.colorlib.com/theme/travello/",
+  "title": "Travello - Travel & Tourism Template",
+  "scrapedAt": "2026-06-18T16:42:40.802Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "https://preview.colorlib.com/theme/travello/"
+    },
+    {
+      "file": "index-1.html",
+      "url": "https://preview.colorlib.com/theme/travello/index.html"
+    },
+    {
+      "file": "about.html",
+      "url": "https://preview.colorlib.com/theme/travello/about.html"
+    },
+    {
+      "file": "services.html",
+      "url": "https://preview.colorlib.com/theme/travello/services.html"
+    },
+    {
+      "file": "news.html",
+      "url": "https://preview.colorlib.com/theme/travello/news.html"
+    },
+    {
+      "file": "contact.html",
+      "url": "https://preview.colorlib.com/theme/travello/contact.html"
+    },
+    {
+      "file": "destinations.html",
+      "url": "https://preview.colorlib.com/theme/travello/destinations.html"
+    },
+    {
+      "file": "tour-single.html",
+      "url": "https://preview.colorlib.com/theme/travello/tour-single.html"
+    },
+    {
+      "file": "tours.html",
+      "url": "https://preview.colorlib.com/theme/travello/tours.html"
+    },
+    {
+      "file": "destination-single.html",
+      "url": "https://preview.colorlib.com/theme/travello/destination-single.html"
+    }
+  ],
+  "assetCount": 99
+}

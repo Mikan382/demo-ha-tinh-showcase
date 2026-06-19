@@ -3126,3 +3126,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* HA TINH FIX: Prevent squished background images */
+.img, .img-2, .slider-item, .img-wrap {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
