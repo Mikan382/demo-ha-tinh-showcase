@@ -155,6 +155,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 /* Floating Luxury Booking Form */
 .ftco-booking {
   margin-top: -100px !important;
+  margin-bottom: 60px !important;
   position: relative;
   z-index: 10;
 }
@@ -601,6 +602,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   border-radius: 12px !important;
   overflow: hidden !important;
   box-shadow: var(--shadow-md) !important;
+  min-height: 500px !important;
+  background-position: center center !important;
 }
 
 .popup-vimeo {
