@@ -70,3 +70,29 @@
 .guest-story-image {
   object-fit: cover !important;
 }
+
+/* --- Menu grid alignment fix ---
+   Root cause: long menu names push the description to a new flex line because of flex-wrap, or varying price widths misalign the description's starting position. 
+   We enforce a nowrap on desktop and a fixed layout for the name and description. */
+@media screen and (min-width: 992px) {
+  .menu-list-div {
+    flex-wrap: nowrap !important;
+  }
+  .large-paragraph.menu-food-name {
+    flex: 0 0 246px !important;
+    max-width: 246px !important;
+  }
+  .menu-info-div {
+    flex: 1 1 0% !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+  }
+  .paragraph.food-ingredient-text {
+    flex: 1 1 0% !important;
+    max-width: none !important;
+  }
+  .menu-info-div > .paragraph:not(.food-ingredient-text) {
+    flex: 0 0 auto !important;
+    text-align: right !important;
+  }
+}
