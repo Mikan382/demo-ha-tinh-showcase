@@ -3,13 +3,7 @@
    Áp dụng cho tất cả pages. Không edit inline style trong HTML.
    ============================================================ */
 
-/* --- Animation / visibility fixes --- */
-.image-animation-box { transform: translate3d(0,101%,0) !important; pointer-events: none; }
-.nav-menu.w-nav-menu { opacity: 1 !important; visibility: visible !important; }
-[data-w-id][style*="opacity: 0"]:not(.image-animation-box) { opacity: 1 !important; }
-.contact-modal { display: none !important; opacity: 0 !important; }
-.contact-modal.w--open,
-.contact-modal[style*="display: flex"] { display: flex !important; opacity: 1 !important; }
+/* Animation / visibility fixes removed to avoid conflicts with Webflow JS */
 
 /* --- Instagram grid fix ---
    Root cause: ảnh gốc 1072×1072 (1:1 square). CSS gốc không set height/aspect-ratio.
